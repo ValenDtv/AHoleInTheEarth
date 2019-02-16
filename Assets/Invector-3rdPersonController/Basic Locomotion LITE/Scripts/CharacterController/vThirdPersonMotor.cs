@@ -223,7 +223,7 @@ namespace Invector.CharacterController
         {
             var _speed = Mathf.Clamp(input.y, -1f, 1f);
             var _direction = Mathf.Clamp(input.x, -1f, 1f);
-            speed = _speed;
+            speed = _speed - 0.5f;
             direction = _direction;
             if (isSprinting) speed += 0.5f;
             if (direction >= 0.7 || direction <= -0.7 || speed <= 0.1) isSprinting = false;
@@ -235,7 +235,8 @@ namespace Invector.CharacterController
             speed = Mathf.Abs(input.x) + Mathf.Abs(input.y);            
             speed = Mathf.Clamp(speed, 0, 1f);
             // add 0.5f on sprint to change the animation on animator
-            if (isSprinting) speed += 0.5f;
+            if (!isSprinting) speed -= .4f;
+            speed = Mathf.Max(.0f, speed);
                         
             if (input != Vector2.zero && targetDirection.magnitude > 0.1f)
             {
