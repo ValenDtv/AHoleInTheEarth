@@ -13,7 +13,8 @@ namespace Invector.CharacterController
         public string horizontalInput = "Horizontal";
         public string verticallInput = "Vertical";
         public KeyCode jumpInput = KeyCode.Space;
-        public KeyCode runInput = KeyCode.LeftShift;
+        public KeyCode strafeInput = KeyCode.Tab;
+        public KeyCode sprintInput = KeyCode.LeftShift;
 
         [Header("Camera Settings")]
         public string rotateCameraXInput ="Mouse X";
@@ -31,7 +32,9 @@ namespace Invector.CharacterController
         [HideInInspector]
         public bool keepDirection;                          // keep the current direction in case you change the cameraState
 
-        protected vThirdPersonController cc;                // access the ThirdPersonController component                
+        protected vThirdPersonController cc;                // access the ThirdPersonController component    
+
+        public bool disable = false;                         //Внесено изменение
 
         #endregion
 
@@ -80,25 +83,44 @@ namespace Invector.CharacterController
             if (!cc.lockMovement)
             {
                 MoveCharacter();
-                RunInput();
-                //StrafeInput();
-                //();
+                SprintInput();
+                StrafeInput();
+                JumpInput();
             }
         }
 
         #region Basic Locomotion Inputs      
 
         protected virtual void MoveCharacter()
-        {            
+        {
+            //Внесено изменение
+            if (disable)
+            {
+                cc.input.x = 0;
+                cc.input.y = 0;
+                return;
+            }
             cc.input.x = Input.GetAxis(horizontalInput);
             cc.input.y = Input.GetAxis(verticallInput);
         }
 
-        protected virtual void RunInput()
+        protected virtual void StrafeInput()
         {
-            if (Input.GetKeyDown(runInput))
+            if (Input.GetKeyDown(strafeInput))
+                cc.Strafe();
+        }
+
+        protected virtual void SprintInput()
+        {
+            //Внесено изменение
+            if (disable)
+            {
+                cc.Sprint(false);
+                return;
+            }
+            if (Input.GetKeyDown(sprintInput))
                 cc.Sprint(true);
-            else if(Input.GetKeyUp(runInput))
+            else if(Input.GetKeyUp(sprintInput))
                 cc.Sprint(false);
         }
 
