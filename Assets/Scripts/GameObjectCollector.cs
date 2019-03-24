@@ -9,7 +9,10 @@ public class GameObjects
     public GameObject Player;
     public GameObject Subtitles;
     public GameObject Dialog_choice;
+    public GameObject InventWindow;
+
     public GameObject[] Options = new GameObject[4];
+
 }
 
 
