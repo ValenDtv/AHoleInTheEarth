@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-[System.Serializable]
+[Serializable]
 public class CursorControlOptions
 {
     public GameObject Collector;
@@ -13,7 +13,7 @@ public class CursorControlOptions
 public class CursorControl : MonoBehaviour
 {
     bool x = true;
-    [SerializeField]
+   // [SerializeField]
     /**/ //    private Transform canvas;
     private GameObject iw;
     public float timing;
