@@ -4,9 +4,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using Invector.CharacterController;
+using UnityEngine.UI;
+
 
 public class Item : MonoBehaviour, IDragHandler, IEndDragHandler
 {
+    GameObject iw;
     [HideInInspector]
     public Cell cell;
     private Transform canvas;
@@ -15,7 +18,7 @@ public class Item : MonoBehaviour, IDragHandler, IEndDragHandler
 
     void Start()
     {
-        
+        iw = Inventary.iw;
         cell = GetComponentInParent<Cell>();
         canvas = GameObject.Find("Canvas").transform;
         Debug.Log(canvas);
@@ -126,7 +129,9 @@ public class Item : MonoBehaviour, IDragHandler, IEndDragHandler
             Time.timeScale = 1.0f;
             print(obj3d);
             tm.GetComponent<CursorControl>().enabled = false;
-     //**       //canvas.GetComponentInParent<Canvas>().enabled = false;
+            //**       //canvas.GetComponentInParent<Canvas>().enabled = false;
+            iw.SetActive(false);
+            this.gameObject.GetComponent<Image>().enabled = false;
             yield return new WaitForSeconds(2.0f);
             //print(name);
             if (name == "Kapsula3D")
@@ -145,7 +150,10 @@ public class Item : MonoBehaviour, IDragHandler, IEndDragHandler
             inputscr.disable = false;
             //float t = new Time.deltaTime;
             tm.GetComponent<CursorControl>().enabled = true;
-            canvas.GetComponentInParent<Canvas>().enabled = true;
+            //canvas.GetComponentInParent<Canvas>().enabled = true;
+            iw.SetActive(true);
+            this.gameObject.GetComponent<Image>().enabled = true;
+            this.gameObject.SetActive(true);
             cam.GetComponent<Camera>().enabled = false;
             Time.timeScale = 0.0f;
             //print(tm);

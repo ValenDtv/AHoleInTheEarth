@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+
 public class Inventary : MonoBehaviour
 {
-
+    public static GameObject iw;
     [SerializeField]
     private int capacity;
     [SerializeField]
@@ -37,6 +39,8 @@ public class Inventary : MonoBehaviour
         CreateCell2();
         CreateCell3();
         CreateCell4();
+        iw = this.gameObject;
+        this.gameObject.SetActive(false);
     }
 
     void CreateCell()
