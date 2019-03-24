@@ -7,28 +7,24 @@ using System;
 public class CursorControlOptions
 {
     public GameObject Collector;
-
 }
 
 public class CursorControl : MonoBehaviour
 {
-    bool x = true;
-    [SerializeField]
-    /**/ //    private Transform canvas;
-    private GameObject iw;
-    public float timing;
-    public bool isPaused = false;
-
     public CursorControlOptions cco;
+    bool x = true;
+    private GameObject iw;
+    private float timing = 1f;
+    private bool isPaused = false;
+    /**/ //    private Transform canvas;
+
+
     //private GameObject panel = GameObject.Find("Panel").GetComponent<GameObject>().;
     //private Light canvas;
     void Start()
     {
-        print("dadad");
-        print(cco);
         iw = cco.Collector.GetComponent<GameObjectCollector>().GameObjects.InventWindow;
   /**/  //canvas = GameObject.Find("Canvas").transform;
-        timing = 1f;
         //canvas = GetComponent<Canvas>();
     }
     void Update()
