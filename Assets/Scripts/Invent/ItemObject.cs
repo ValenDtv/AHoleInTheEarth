@@ -5,12 +5,15 @@ using UnityEngine;
 public class ItemObject : MonoBehaviour
 {
     public GameObject item;
+    void Start()
+    {
 
+    }
   
 
     void Update()
     {
-        CheckPickUp();
+        //CheckPickUp();
     }
 
     void CheckPickUp()
@@ -24,6 +27,13 @@ public class ItemObject : MonoBehaviour
             }
             
             
+        }
+    }
+    void AddI()
+    {
+        if (Inventary.AddItem(item))
+        {
+            Destroy(gameObject);
         }
     }
 }

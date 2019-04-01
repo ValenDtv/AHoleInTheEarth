@@ -6,6 +6,8 @@ using System.IO;
 //Вешать на камеру
 public class Activate : MonoBehaviour
 {
+    public GameObject item;
+
     private class Thing
     {
         private string name;
@@ -48,17 +50,21 @@ public class Activate : MonoBehaviour
             Ray ray = camera.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit))
             {
+                //Debug.Log(hit.collider.name);
                 if (hit.distance <= dis)
                 {
+
                     switch (hit.collider.tag)
                     {
                         case "Interactive": //Интерактивный объект
                             hit.collider.gameObject.SendMessage("Start_dialog");
                             break;
                         case "Thing": //Вещь, которую можно поднять
-                            Thing thing = new Thing(hit.collider.name, "");
-                            inventory.Add(thing);
-                            Destroy(hit.collider.gameObject);
+                            //Thing thing = new Thing(hit.collider.name, "");
+                            //inventory.Add(thing);
+                            //Destroy(hit.collider.gameObject);
+                            hit.collider.gameObject.SendMessage("AddI");
+
                             break;
                         case "Character": //Персонаж
                                           //Активировать диалог

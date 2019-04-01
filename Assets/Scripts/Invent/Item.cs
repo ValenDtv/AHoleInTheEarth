@@ -120,7 +120,7 @@ public class Item : MonoBehaviour, IDragHandler, IEndDragHandler
             string name = gameObject.name + "3D";
             GameObject obj3d = Instantiate(Resources.Load<GameObject>(name));
             Quaternion rotationY = Quaternion.AngleAxis(1, Vector3.up);
-            obj3d.transform.SetPositionAndRotation(campos + Vector3.forward/2, rotationY);
+            obj3d.transform.SetPositionAndRotation(campos + Vector3.left/2, rotationY);
 
             
 
