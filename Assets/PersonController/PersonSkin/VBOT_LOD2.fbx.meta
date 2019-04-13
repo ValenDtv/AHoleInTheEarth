@@ -1,0 +1,2072 @@
+fileFormatVersion: 2
+guid: cc250e42d9d6671439b99f82225f2dbf
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Armature
+    100002: GGMODEL:_Box001
+    100004: GGMODEL:_Cylinder001
+    100006: GGMODEL:_Cylinder002
+    100008: GGMODEL:_Group10096
+    100010: GGMODEL:_Group11664
+    100012: GGMODEL:_Group14960
+    100014: GGMODEL:_Group15888
+    100016: GGMODEL:_Group23341
+    100018: GGMODEL:_Group2400
+    100020: GGMODEL:_Group4448
+    100022: GGMODEL:_Group61193
+    100024: GGMODEL:_Group61194
+    100026: GGMODEL:_Group61195
+    100028: GGMODEL:_Group61196
+    100030: GGMODEL:_Group6352
+    100032: GGMODEL:_Group9296
+    100034: GGMODEL:_Sphere002
+    100036: GGMODEL:_Sphere003
+    100038: GGMODEL:transform1
+    100040: GGMODEL:transform10
+    100042: GGMODEL:transform11
+    100044: GGMODEL:transform12
+    100046: GGMODEL:transform13
+    100048: GGMODEL:transform14
+    100050: GGMODEL:transform15
+    100052: GGMODEL:transform16
+    100054: GGMODEL:transform17
+    100056: GGMODEL:transform2
+    100058: GGMODEL:transform3
+    100060: GGMODEL:transform4
+    100062: GGMODEL:transform5
+    100064: GGMODEL:transform6
+    100066: GGMODEL:transform7
+    100068: GGMODEL:transform8
+    100070: GGMODEL:transform9
+    100072: polySurface1
+    100074: polySurface1 1
+    100076: polySurface10
+    100078: polySurface11
+    100080: polySurface12
+    100082: polySurface13
+    100084: polySurface14
+    100086: polySurface15
+    100088: polySurface16
+    100090: polySurface17
+    100092: polySurface18
+    100094: polySurface19
+    100096: polySurface2
+    100098: polySurface2 1
+    100100: polySurface20
+    100102: polySurface21
+    100104: polySurface22
+    100106: polySurface23
+    100108: polySurface24
+    100110: polySurface25
+    100112: polySurface26
+    100114: polySurface27
+    100116: polySurface28
+    100118: polySurface28 1
+    100120: polySurface29
+    100122: polySurface3
+    100124: polySurface3 1
+    100126: polySurface30
+    100128: polySurface31
+    100130: polySurface32
+    100132: polySurface33
+    100134: polySurface34
+    100136: polySurface35
+    100138: polySurface36
+    100140: polySurface37
+    100142: polySurface38
+    100144: polySurface39
+    100146: polySurface4
+    100148: polySurface40
+    100150: polySurface40 1
+    100152: polySurface41
+    100154: polySurface42
+    100156: polySurface43
+    100158: polySurface44
+    100160: polySurface45
+    100162: polySurface46
+    100164: polySurface47
+    100166: polySurface48
+    100168: polySurface49
+    100170: polySurface5
+    100172: polySurface6
+    100174: polySurface7
+    100176: polySurface8
+    100178: polySurface9
+    100180: transform1
+    100182: transform10
+    100184: transform11
+    100186: transform12
+    100188: transform13
+    100190: transform14
+    100192: transform15
+    100194: transform16
+    100196: transform17
+    100198: transform18
+    100200: transform19
+    100202: transform2
+    100204: transform20
+    100206: transform21
+    100208: transform22
+    100210: transform23
+    100212: transform24
+    100214: transform25
+    100216: transform26
+    100218: transform27
+    100220: transform28
+    100222: transform29
+    100224: transform3
+    100226: transform30
+    100228: transform31
+    100230: transform32
+    100232: transform33
+    100234: transform34
+    100236: transform35
+    100238: transform36
+    100240: transform37
+    100242: transform38
+    100244: transform39
+    100246: transform4
+    100248: transform40
+    100250: transform41
+    100252: transform42
+    100254: transform43
+    100256: transform44
+    100258: transform45
+    100260: transform46
+    100262: transform5
+    100264: transform6
+    100266: transform7
+    100268: transform8
+    100270: transform9
+    100272: VBOT_:Head
+    100274: VBOT_:HeadTop_End
+    100276: VBOT_:HeadTop_End_end
+    100278: VBOT_:Hips
+    100280: VBOT_:LeftArm
+    100282: VBOT_:LeftFoot
+    100284: VBOT_:LeftForeArm
+    100286: VBOT_:LeftHand
+    100288: VBOT_:LeftHandIndex1
+    100290: VBOT_:LeftHandIndex2
+    100292: VBOT_:LeftHandIndex3
+    100294: VBOT_:LeftHandIndex4
+    100296: VBOT_:LeftHandIndex4_end
+    100298: VBOT_:LeftHandMiddle1
+    100300: VBOT_:LeftHandMiddle2
+    100302: VBOT_:LeftHandMiddle3
+    100304: VBOT_:LeftHandMiddle4
+    100306: VBOT_:LeftHandMiddle4_end
+    100308: VBOT_:LeftHandPinky1
+    100310: VBOT_:LeftHandPinky2
+    100312: VBOT_:LeftHandPinky3
+    100314: VBOT_:LeftHandPinky4
+    100316: VBOT_:LeftHandPinky4_end
+    100318: VBOT_:LeftHandRing1
+    100320: VBOT_:LeftHandRing2
+    100322: VBOT_:LeftHandRing3
+    100324: VBOT_:LeftHandRing4
+    100326: VBOT_:LeftHandRing4_end
+    100328: VBOT_:LeftHandThumb1
+    100330: VBOT_:LeftHandThumb2
+    100332: VBOT_:LeftHandThumb3
+    100334: VBOT_:LeftHandThumb4
+    100336: VBOT_:LeftHandThumb4_end
+    100338: VBOT_:LeftLeg
+    100340: VBOT_:LeftShoulder
+    100342: VBOT_:LeftToe_End
+    100344: VBOT_:LeftToe_End_end
+    100346: VBOT_:LeftToeBase
+    100348: VBOT_:LeftUpLeg
+    100350: VBOT_:Neck
+    100352: VBOT_:RightArm
+    100354: VBOT_:RightFoot
+    100356: VBOT_:RightForeArm
+    100358: VBOT_:RightHand
+    100360: VBOT_:RightHandIndex1
+    100362: VBOT_:RightHandIndex2
+    100364: VBOT_:RightHandIndex3
+    100366: VBOT_:RightHandIndex4
+    100368: VBOT_:RightHandIndex4_end
+    100370: VBOT_:RightHandMiddle1
+    100372: VBOT_:RightHandMiddle2
+    100374: VBOT_:RightHandMiddle3
+    100376: VBOT_:RightHandMiddle4
+    100378: VBOT_:RightHandMiddle4_end
+    100380: VBOT_:RightHandPinky1
+    100382: VBOT_:RightHandPinky2
+    100384: VBOT_:RightHandPinky3
+    100386: VBOT_:RightHandPinky4
+    100388: VBOT_:RightHandPinky4_end
+    100390: VBOT_:RightHandRing1
+    100392: VBOT_:RightHandRing2
+    100394: VBOT_:RightHandRing3
+    100396: VBOT_:RightHandRing4
+    100398: VBOT_:RightHandRing4_end
+    100400: VBOT_:RightHandThumb1
+    100402: VBOT_:RightHandThumb2
+    100404: VBOT_:RightHandThumb3
+    100406: VBOT_:RightHandThumb4
+    100408: VBOT_:RightHandThumb4_end
+    100410: VBOT_:RightLeg
+    100412: VBOT_:RightShoulder
+    100414: VBOT_:RightToe_End
+    100416: VBOT_:RightToe_End_end
+    100418: VBOT_:RightToeBase
+    100420: VBOT_:RightUpLeg
+    100422: VBOT_:Spine
+    100424: VBOT_:Spine1
+    100426: VBOT_:Spine2
+    100428: //RootNode
+    400000: Armature
+    400002: GGMODEL:_Box001
+    400004: GGMODEL:_Cylinder001
+    400006: GGMODEL:_Cylinder002
+    400008: GGMODEL:_Group10096
+    400010: GGMODEL:_Group11664
+    400012: GGMODEL:_Group14960
+    400014: GGMODEL:_Group15888
+    400016: GGMODEL:_Group23341
+    400018: GGMODEL:_Group2400
+    400020: GGMODEL:_Group4448
+    400022: GGMODEL:_Group61193
+    400024: GGMODEL:_Group61194
+    400026: GGMODEL:_Group61195
+    400028: GGMODEL:_Group61196
+    400030: GGMODEL:_Group6352
+    400032: GGMODEL:_Group9296
+    400034: GGMODEL:_Sphere002
+    400036: GGMODEL:_Sphere003
+    400038: GGMODEL:transform1
+    400040: GGMODEL:transform10
+    400042: GGMODEL:transform11
+    400044: GGMODEL:transform12
+    400046: GGMODEL:transform13
+    400048: GGMODEL:transform14
+    400050: GGMODEL:transform15
+    400052: GGMODEL:transform16
+    400054: GGMODEL:transform17
+    400056: GGMODEL:transform2
+    400058: GGMODEL:transform3
+    400060: GGMODEL:transform4
+    400062: GGMODEL:transform5
+    400064: GGMODEL:transform6
+    400066: GGMODEL:transform7
+    400068: GGMODEL:transform8
+    400070: GGMODEL:transform9
+    400072: polySurface1
+    400074: polySurface1 1
+    400076: polySurface10
+    400078: polySurface11
+    400080: polySurface12
+    400082: polySurface13
+    400084: polySurface14
+    400086: polySurface15
+    400088: polySurface16
+    400090: polySurface17
+    400092: polySurface18
+    400094: polySurface19
+    400096: polySurface2
+    400098: polySurface2 1
+    400100: polySurface20
+    400102: polySurface21
+    400104: polySurface22
+    400106: polySurface23
+    400108: polySurface24
+    400110: polySurface25
+    400112: polySurface26
+    400114: polySurface27
+    400116: polySurface28
+    400118: polySurface28 1
+    400120: polySurface29
+    400122: polySurface3
+    400124: polySurface3 1
+    400126: polySurface30
+    400128: polySurface31
+    400130: polySurface32
+    400132: polySurface33
+    400134: polySurface34
+    400136: polySurface35
+    400138: polySurface36
+    400140: polySurface37
+    400142: polySurface38
+    400144: polySurface39
+    400146: polySurface4
+    400148: polySurface40
+    400150: polySurface40 1
+    400152: polySurface41
+    400154: polySurface42
+    400156: polySurface43
+    400158: polySurface44
+    400160: polySurface45
+    400162: polySurface46
+    400164: polySurface47
+    400166: polySurface48
+    400168: polySurface49
+    400170: polySurface5
+    400172: polySurface6
+    400174: polySurface7
+    400176: polySurface8
+    400178: polySurface9
+    400180: transform1
+    400182: transform10
+    400184: transform11
+    400186: transform12
+    400188: transform13
+    400190: transform14
+    400192: transform15
+    400194: transform16
+    400196: transform17
+    400198: transform18
+    400200: transform19
+    400202: transform2
+    400204: transform20
+    400206: transform21
+    400208: transform22
+    400210: transform23
+    400212: transform24
+    400214: transform25
+    400216: transform26
+    400218: transform27
+    400220: transform28
+    400222: transform29
+    400224: transform3
+    400226: transform30
+    400228: transform31
+    400230: transform32
+    400232: transform33
+    400234: transform34
+    400236: transform35
+    400238: transform36
+    400240: transform37
+    400242: transform38
+    400244: transform39
+    400246: transform4
+    400248: transform40
+    400250: transform41
+    400252: transform42
+    400254: transform43
+    400256: transform44
+    400258: transform45
+    400260: transform46
+    400262: transform5
+    400264: transform6
+    400266: transform7
+    400268: transform8
+    400270: transform9
+    400272: VBOT_:Head
+    400274: VBOT_:HeadTop_End
+    400276: VBOT_:HeadTop_End_end
+    400278: VBOT_:Hips
+    400280: VBOT_:LeftArm
+    400282: VBOT_:LeftFoot
+    400284: VBOT_:LeftForeArm
+    400286: VBOT_:LeftHand
+    400288: VBOT_:LeftHandIndex1
+    400290: VBOT_:LeftHandIndex2
+    400292: VBOT_:LeftHandIndex3
+    400294: VBOT_:LeftHandIndex4
+    400296: VBOT_:LeftHandIndex4_end
+    400298: VBOT_:LeftHandMiddle1
+    400300: VBOT_:LeftHandMiddle2
+    400302: VBOT_:LeftHandMiddle3
+    400304: VBOT_:LeftHandMiddle4
+    400306: VBOT_:LeftHandMiddle4_end
+    400308: VBOT_:LeftHandPinky1
+    400310: VBOT_:LeftHandPinky2
+    400312: VBOT_:LeftHandPinky3
+    400314: VBOT_:LeftHandPinky4
+    400316: VBOT_:LeftHandPinky4_end
+    400318: VBOT_:LeftHandRing1
+    400320: VBOT_:LeftHandRing2
+    400322: VBOT_:LeftHandRing3
+    400324: VBOT_:LeftHandRing4
+    400326: VBOT_:LeftHandRing4_end
+    400328: VBOT_:LeftHandThumb1
+    400330: VBOT_:LeftHandThumb2
+    400332: VBOT_:LeftHandThumb3
+    400334: VBOT_:LeftHandThumb4
+    400336: VBOT_:LeftHandThumb4_end
+    400338: VBOT_:LeftLeg
+    400340: VBOT_:LeftShoulder
+    400342: VBOT_:LeftToe_End
+    400344: VBOT_:LeftToe_End_end
+    400346: VBOT_:LeftToeBase
+    400348: VBOT_:LeftUpLeg
+    400350: VBOT_:Neck
+    400352: VBOT_:RightArm
+    400354: VBOT_:RightFoot
+    400356: VBOT_:RightForeArm
+    400358: VBOT_:RightHand
+    400360: VBOT_:RightHandIndex1
+    400362: VBOT_:RightHandIndex2
+    400364: VBOT_:RightHandIndex3
+    400366: VBOT_:RightHandIndex4
+    400368: VBOT_:RightHandIndex4_end
+    400370: VBOT_:RightHandMiddle1
+    400372: VBOT_:RightHandMiddle2
+    400374: VBOT_:RightHandMiddle3
+    400376: VBOT_:RightHandMiddle4
+    400378: VBOT_:RightHandMiddle4_end
+    400380: VBOT_:RightHandPinky1
+    400382: VBOT_:RightHandPinky2
+    400384: VBOT_:RightHandPinky3
+    400386: VBOT_:RightHandPinky4
+    400388: VBOT_:RightHandPinky4_end
+    400390: VBOT_:RightHandRing1
+    400392: VBOT_:RightHandRing2
+    400394: VBOT_:RightHandRing3
+    400396: VBOT_:RightHandRing4
+    400398: VBOT_:RightHandRing4_end
+    400400: VBOT_:RightHandThumb1
+    400402: VBOT_:RightHandThumb2
+    400404: VBOT_:RightHandThumb3
+    400406: VBOT_:RightHandThumb4
+    400408: VBOT_:RightHandThumb4_end
+    400410: VBOT_:RightLeg
+    400412: VBOT_:RightShoulder
+    400414: VBOT_:RightToe_End
+    400416: VBOT_:RightToe_End_end
+    400418: VBOT_:RightToeBase
+    400420: VBOT_:RightUpLeg
+    400422: VBOT_:Spine
+    400424: VBOT_:Spine1
+    400426: VBOT_:Spine2
+    400428: //RootNode
+    2100000: lambert1
+    2300000: polySurface45
+    2300002: polySurface46
+    2300004: polySurface47
+    2300006: polySurface48
+    2300008: polySurface49
+    3300000: polySurface45
+    3300002: polySurface46
+    3300004: polySurface47
+    3300006: polySurface48
+    3300008: polySurface49
+    4300000: polySurface45
+    4300002: polySurface46
+    4300004: polySurface47
+    4300006: polySurface48
+    4300008: polySurface49
+    4300010: polySurface26
+    4300012: polySurface40
+    4300014: polySurface43
+    4300016: polySurface44
+    7400000: T-pose
+    9500000: //RootNode
+    13700000: polySurface26
+    13700002: polySurface40
+    13700004: polySurface43
+    13700006: polySurface44
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: T-pose
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: VBOT_:Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:LeftHandThumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:LeftHandMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:LeftHandMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:LeftHandMiddle3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:LeftHandRing1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:LeftHandRing2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:LeftHandRing3
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:LeftHandPinky1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:LeftHandPinky2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:LeftHandPinky3
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:RightHandThumb3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:RightHandMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:RightHandMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:RightHandMiddle3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:RightHandRing1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:RightHandRing2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:RightHandRing3
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:RightHandPinky1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:RightHandPinky2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:RightHandPinky3
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VBOT_:Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: VBOT_LOD2(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Armature
+      parentName: VBOT_LOD2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000081460335, y: -0, z: -0, w: 1}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+    - name: VBOT_:Hips
+      parentName: Armature
+      position: {x: 0.0000019899553, y: 1.0491374, z: -0.019585699}
+      rotation: {x: -0.00000017530357, y: 0.00000047677122, z: -0.000014443002, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VBOT_:RightUpLeg
+      parentName: VBOT_:Hips
+      position: {x: 0.10920648, y: -0.053976487, z: 0.016830439}
+      rotation: {x: 0.00000074489566, y: 0.006958819, z: 0.99995744, w: -0.006058274}
+      scale: {x: 1.0005851, y: 0.99999964, z: 1.0000213}
+    - name: VBOT_:RightLeg
+      parentName: VBOT_:RightUpLeg
+      position: {x: 0.0000000036699384, y: 0.4644298, z: 6.6764183e-10}
+      rotation: {x: -0.045270246, y: 0.00038048133, z: -0.012654801, w: 0.9988946}
+      scale: {x: 0.99999946, y: 1.0000006, z: 0.99999976}
+    - name: VBOT_:RightFoot
+      parentName: VBOT_:RightLeg
+      position: {x: 0.0000000071883184, y: 0.4251528, z: -0.000000045327468}
+      rotation: {x: 0.4819916, y: 0.0065317303, z: 0.0049211965, w: 0.8761377}
+      scale: {x: 1.0000006, y: 1.0000002, z: 0.9999993}
+    - name: VBOT_:RightToeBase
+      parentName: VBOT_:RightFoot
+      position: {x: 1.2107193e-10, y: 0.1710289, z: 0.000000004842877}
+      rotation: {x: 0.30412865, y: -0.055317834, z: 0.017672166, w: 0.9508593}
+      scale: {x: 0.9999993, y: 1.0000002, z: 0.9999997}
+    - name: VBOT_:RightToe_End
+      parentName: VBOT_:RightToeBase
+      position: {x: 0.000000009965151, y: 0.062413614, z: -0.0000000017881393}
+      rotation: {x: -0.000000027357602, y: 0.000034474506, z: -0.0000000888831, w: 1}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: VBOT_:RightToe_End_end
+      parentName: VBOT_:RightToe_End
+      position: {x: -0, y: 0.062414277, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VBOT_:Spine
+      parentName: VBOT_:Hips
+      position: {x: -1.6871126e-12, y: 0.09702706, z: -0.0015236209}
+      rotation: {x: -0.007850627, y: -0.0000005901344, z: 0.000014438815, w: 0.9999692}
+      scale: {x: 1, y: 1.0000002, z: 1.0000002}
+    - name: VBOT_:Spine1
+      parentName: VBOT_:Spine
+      position: {x: 1.0209052e-13, y: 0.11321214, z: -0.0000000017881392}
+      rotation: {x: 0.0000000046566133, y: -5.333572e-14, z: 6.8136756e-13, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: VBOT_:Spine2
+      parentName: VBOT_:Spine1
+      position: {x: -4.740097e-14, y: 0.12938553, z: 0.0000000017881394}
+      rotation: {x: -0.000000011175873, y: 1.3353475e-18, z: -8.1315156e-20, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: VBOT_:RightShoulder
+      parentName: VBOT_:Spine2
+      position: {x: 0.062330186, y: 0.12722448, z: 0.0000318867}
+      rotation: {x: 0.568461, y: 0.42061526, z: -0.56822985, w: 0.4207728}
+      scale: {x: 0.9999998, y: 1.0000004, z: 0.9999994}
+    - name: VBOT_:RightArm
+      parentName: VBOT_:RightShoulder
+      position: {x: -0.000000004218891, y: 0.12885062, z: -0.000000033304094}
+      rotation: {x: -0.14777023, y: -0.0063015977, z: 0.00074138155, w: 0.9890014}
+      scale: {x: 0.99999994, y: 0.99999934, z: 0.9999998}
+    - name: VBOT_:RightForeArm
+      parentName: VBOT_:RightArm
+      position: {x: 0.0000000052186078, y: 0.28777096, z: -0.0000000024959443}
+      rotation: {x: 0.00000016583917, y: -0.0000813696, z: -0.0000003511705, w: 1}
+      scale: {x: 0.9999995, y: 1.0000006, z: 1.0000001}
+    - name: VBOT_:RightHand
+      parentName: VBOT_:RightForeArm
+      position: {x: 0.0000000020841253, y: 0.2988406, z: 0.00000014346092}
+      rotation: {x: 0.0051883897, y: 0.021200966, z: -0.052770805, w: 0.9983681}
+      scale: {x: 1.0000007, y: 1, z: 1}
+    - name: VBOT_:RightHandThumb1
+      parentName: VBOT_:RightHand
+      position: {x: -0.021773485, y: 0.028607782, z: 0.0150001235}
+      rotation: {x: 0.20649847, y: 0.08570003, z: 0.37565327, w: 0.89938784}
+      scale: {x: 1.0000001, y: 0.9999995, z: 0.9999996}
+    - name: VBOT_:RightHandThumb2
+      parentName: VBOT_:RightHandThumb1
+      position: {x: 0.0044791913, y: 0.030840447, z: 0.00000002771616}
+      rotation: {x: 0.00010331243, y: 0.003032002, z: -0.10960612, w: 0.9939705}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VBOT_:RightHandThumb3
+      parentName: VBOT_:RightHandThumb2
+      position: {x: -0.0026757836, y: 0.03540693, z: 0.00000021934508}
+      rotation: {x: 0.000032287433, y: -0.00049903296, z: 0.011669388, w: 0.9999318}
+      scale: {x: 1, y: 0.9999996, z: 1.0000001}
+    - name: VBOT_:RightHandThumb4
+      parentName: VBOT_:RightHandThumb3
+      position: {x: -0.0018034029, y: 0.034578033, z: -0.00000009894371}
+      rotation: {x: -0.000000001862645, y: -0.0000000037252899, z: 0.000000028870998,
+        w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: VBOT_:RightHandThumb4_end
+      parentName: VBOT_:RightHandThumb4
+      position: {x: -0, y: 0.034625076, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VBOT_:RightHandIndex1
+      parentName: VBOT_:RightHand
+      position: {x: -0.03260992, y: 0.10302797, z: 0.0020424768}
+      rotation: {x: -0.006308148, y: 0.000009262221, z: 0.052337017, w: 0.9986096}
+      scale: {x: 1, y: 0.9999997, z: 0.99999976}
+    - name: VBOT_:RightHandIndex2
+      parentName: VBOT_:RightHandIndex1
+      position: {x: -0.000021917522, y: 0.035275146, z: -0.000000073621045}
+      rotation: {x: -0.00000036630905, y: 0.00003379532, z: -0.00061720755, w: 0.9999998}
+      scale: {x: 0.99999994, y: 0.99999964, z: 1.0000005}
+    - name: VBOT_:RightHandIndex3
+      parentName: VBOT_:RightHandIndex2
+      position: {x: -0.00006155074, y: 0.033369713, z: 0.000000052740795}
+      rotation: {x: -0.00000062817367, y: 0.000036295332, z: 0.002351098, w: 0.99999726}
+      scale: {x: 0.99999994, y: 1.0000004, z: 1}
+    - name: VBOT_:RightHandIndex4
+      parentName: VBOT_:RightHandIndex3
+      position: {x: 0.000083463485, y: 0.029180033, z: -0.000000014519318}
+      rotation: {x: 0.00000000842556, y: 0.000000092695934, z: 0.00000008829295, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: VBOT_:RightHandIndex4_end
+      parentName: VBOT_:RightHandIndex4
+      position: {x: -0, y: 0.029180164, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VBOT_:RightHandMiddle1
+      parentName: VBOT_:RightHand
+      position: {x: -0.010459457, y: 0.098909445, z: -0.0012528583}
+      rotation: {x: -0.006425467, y: 0.002276494, z: 0.053364556, w: 0.99855185}
+      scale: {x: 0.99999934, y: 0.9999995, z: 0.9999997}
+    - name: VBOT_:RightHandMiddle2
+      parentName: VBOT_:RightHandMiddle1
+      position: {x: 0.000060392915, y: 0.041008152, z: 0.00000013880431}
+      rotation: {x: -0.0000010921335, y: -0.000014545862, z: -0.00018764834, w: 1}
+      scale: {x: 1, y: 0.9999995, z: 0.9999998}
+    - name: VBOT_:RightHandMiddle3
+      parentName: VBOT_:RightHandMiddle2
+      position: {x: 0.000041791645, y: 0.038612884, z: -0.00000013139099}
+      rotation: {x: -0.0000004923334, y: 0.000086348875, z: -0.001940938, w: 0.99999815}
+      scale: {x: 1, y: 1.0000007, z: 0.99999994}
+    - name: VBOT_:RightHandMiddle4
+      parentName: VBOT_:RightHandMiddle3
+      position: {x: -0.00010218024, y: 0.036506318, z: -0.00000012870878}
+      rotation: {x: -0.00000003355308, y: -7.557048e-10, z: -0.000000006678988, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VBOT_:RightHandMiddle4_end
+      parentName: VBOT_:RightHandMiddle4
+      position: {x: -0, y: 0.036506534, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VBOT_:RightHandRing1
+      parentName: VBOT_:RightHand
+      position: {x: 0.010770533, y: 0.09615878, z: -0.00044990084}
+      rotation: {x: -0.0064634937, y: 0.0029677008, z: 0.052755825, w: 0.9985821}
+      scale: {x: 0.9999992, y: 0.99999964, z: 1}
+    - name: VBOT_:RightHandRing2
+      parentName: VBOT_:RightHandRing1
+      position: {x: 0.000008644611, y: 0.035615306, z: -0.00000015171244}
+      rotation: {x: -0.0000007118655, y: -0.00000040345734, z: -0.00024250762, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: VBOT_:RightHandRing3
+      parentName: VBOT_:RightHandRing2
+      position: {x: -0.000008447822, y: 0.034413192, z: 0.000000045374033}
+      rotation: {x: 0.0000003853574, y: -0.0000024102292, z: 0.000116190175, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 0.9999997}
+    - name: VBOT_:RightHandRing4
+      parentName: VBOT_:RightHandRing3
+      position: {x: -0.00000018931925, y: 0.03130997, z: -0.00000009484589}
+      rotation: {x: -0.000000040627246, y: -0.000000007421774, z: 0.0000000014611032,
+        w: 1}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: VBOT_:RightHandRing4_end
+      parentName: VBOT_:RightHandRing4
+      position: {x: -0, y: 0.031309977, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VBOT_:RightHandPinky1
+      parentName: VBOT_:RightHand
+      position: {x: 0.03229885, y: 0.086354665, z: 0.0026456283}
+      rotation: {x: -0.0067263856, y: 0.007935547, z: 0.052596204, w: 0.9985617}
+      scale: {x: 0.999999, y: 0.99999946, z: 1.0000002}
+    - name: VBOT_:RightHandPinky2
+      parentName: VBOT_:RightHandPinky1
+      position: {x: 0.000000063971385, y: 0.03513641, z: 0.00000001296401}
+      rotation: {x: -0.00000052158674, y: 0.0000013498303, z: 0.000034841643, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 0.999999}
+    - name: VBOT_:RightHandPinky3
+      parentName: VBOT_:RightHandPinky2
+      position: {x: 0.000001785024, y: 0.028926264, z: -0.0000000144355}
+      rotation: {x: 0.0000013946006, y: 0.00000016396328, z: -0.000073763025, w: 1}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000002}
+    - name: VBOT_:RightHandPinky4
+      parentName: VBOT_:RightHandPinky3
+      position: {x: -0.0000018684844, y: 0.025621478, z: 0.000000047087667}
+      rotation: {x: 0.00000000583043, y: -0.0000000037147578, z: 0.000000024821702,
+        w: 1}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: VBOT_:RightHandPinky4_end
+      parentName: VBOT_:RightHandPinky4
+      position: {x: -0, y: 0.025621492, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VBOT_:Neck
+      parentName: VBOT_:Spine2
+      position: {x: -1.8170867e-13, y: 0.14555821, z: -0.0000000017881392}
+      rotation: {x: 0.00785081, y: 4.084771e-14, z: 2.2770148e-13, w: 0.9999692}
+      scale: {x: 1, y: 0.9999996, z: 0.99999964}
+    - name: VBOT_:Head
+      parentName: VBOT_:Neck
+      position: {x: -7.368366e-14, y: 0.05697281, z: 0.024140099}
+      rotation: {x: 1.6653348e-16, y: 4.387005e-19, z: 9.1814114e-20, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface45
+      parentName: VBOT_:Head
+      position: {x: -0.000004791228, y: -1.5912459, z: 0.0030637374}
+      rotation: {x: -0.000000077559946, y: -1.13180515e-11, z: -1.1830721e-12, w: 1}
+      scale: {x: 1.0000001, y: 1.0000005, z: 1.0000004}
+    - name: polySurface46
+      parentName: VBOT_:Head
+      position: {x: -0.000004791228, y: -1.5912459, z: 0.0030637374}
+      rotation: {x: -0.000000077559946, y: -1.13180515e-11, z: -1.1830721e-12, w: 1}
+      scale: {x: 1.0000001, y: 1.0000005, z: 1.0000004}
+    - name: polySurface47
+      parentName: VBOT_:Head
+      position: {x: -0.000004791228, y: -1.5912459, z: 0.0030637374}
+      rotation: {x: -0.000000077559946, y: -1.13180515e-11, z: -1.1830721e-12, w: 1}
+      scale: {x: 1.0000001, y: 1.0000005, z: 1.0000004}
+    - name: polySurface48
+      parentName: VBOT_:Head
+      position: {x: -0.000004791228, y: -1.5912459, z: 0.0030637374}
+      rotation: {x: -0.000000077559946, y: -1.13180515e-11, z: -1.1830721e-12, w: 1}
+      scale: {x: 1.0000001, y: 1.0000005, z: 1.0000004}
+    - name: polySurface49
+      parentName: VBOT_:Head
+      position: {x: -0.000004791228, y: -1.5912459, z: 0.0030637374}
+      rotation: {x: -0.000000077559946, y: -1.13180515e-11, z: -1.1830721e-12, w: 1}
+      scale: {x: 1.0000001, y: 1.0000005, z: 1.0000004}
+    - name: VBOT_:HeadTop_End
+      parentName: VBOT_:Head
+      position: {x: -1.5957929e-13, y: 0.20432785, z: 0.08657653}
+      rotation: {x: 1.6653348e-16, y: 4.387005e-19, z: 9.1814114e-20, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VBOT_:HeadTop_End_end
+      parentName: VBOT_:HeadTop_End
+      position: {x: -0, y: 0.22191283, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VBOT_:LeftShoulder
+      parentName: VBOT_:Spine2
+      position: {x: -0.06233017, y: 0.12723452, z: -0.0006075257}
+      rotation: {x: 0.56555074, y: -0.42279127, z: 0.5711599, w: 0.41854063}
+      scale: {x: 0.99999946, y: 0.9999997, z: 0.9999995}
+    - name: VBOT_:LeftArm
+      parentName: VBOT_:LeftShoulder
+      position: {x: -0.000000004172325, y: 0.12885076, z: 0.000000094808634}
+      rotation: {x: -0.1476417, y: 0.007941283, z: -0.00621769, w: 0.9889895}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1.0000001}
+    - name: VBOT_:LeftForeArm
+      parentName: VBOT_:LeftArm
+      position: {x: -0.0000000024976907, y: 0.28782937, z: 0.00000004796884}
+      rotation: {x: 0.0000014798451, y: 0.00010023918, z: 0.00000030412875, w: 1}
+      scale: {x: 1.0000001, y: 0.99999964, z: 0.9999999}
+    - name: VBOT_:LeftHand
+      parentName: VBOT_:LeftForeArm
+      position: {x: -0.000000003194691, y: 0.29885256, z: -0.000000056620337}
+      rotation: {x: -0.000122516, y: -0.012010347, z: 0.057643548, w: 0.99826497}
+      scale: {x: 1.0000005, y: 1, z: 1.0000001}
+    - name: VBOT_:LeftHandThumb1
+      parentName: VBOT_:LeftHand
+      position: {x: 0.022070322, y: 0.02891597, z: 0.013849903}
+      rotation: {x: 0.21708518, y: -0.08679054, z: -0.38361028, w: 0.89341176}
+      scale: {x: 1, y: 1.0000002, z: 0.99999964}
+    - name: VBOT_:LeftHandThumb2
+      parentName: VBOT_:LeftHandThumb1
+      position: {x: -0.0049680844, y: 0.030740164, z: 0.0000001385063}
+      rotation: {x: 0.00008349873, y: -0.003154348, z: 0.13292927, w: 0.9911205}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: VBOT_:LeftHandThumb3
+      parentName: VBOT_:LeftHandThumb2
+      position: {x: 0.0037320494, y: 0.03493654, z: 0.0000000017881393}
+      rotation: {x: -0.00010924415, y: -0.0015527824, z: -0.035468064, w: 0.9993696}
+      scale: {x: 1, y: 0.9999999, z: 0.99999946}
+    - name: VBOT_:LeftHandThumb4
+      parentName: VBOT_:LeftHandThumb3
+      position: {x: 0.0012360835, y: 0.034833554, z: -0.000000096559525}
+      rotation: {x: 0.000000011175872, y: 0.000000011175872, z: 0.000000056810677,
+        w: 1}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: VBOT_:LeftHandThumb4_end
+      parentName: VBOT_:LeftHandThumb4
+      position: {x: -0, y: 0.034855407, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VBOT_:LeftHandIndex1
+      parentName: VBOT_:LeftHand
+      position: {x: 0.033063553, y: 0.102145776, z: 0.0016185998}
+      rotation: {x: -0.00057633274, y: -0.00008826893, z: -0.057947285, w: 0.9983195}
+      scale: {x: 0.9999994, y: 1.0000005, z: 0.99999946}
+    - name: VBOT_:LeftHandIndex2
+      parentName: VBOT_:LeftHandIndex1
+      position: {x: -0.000022915676, y: 0.03742948, z: -0.000000026019697}
+      rotation: {x: 0.00000022857085, y: 0.000003505723, z: 0.0004560625, w: 0.99999994}
+      scale: {x: 0.99999994, y: 0.99999964, z: 1.0000001}
+    - name: VBOT_:LeftHandIndex3
+      parentName: VBOT_:LeftHandIndex2
+      position: {x: 0.00001010254, y: 0.033576712, z: 0.0000000063699552}
+      rotation: {x: 0.00000029828897, y: -0.0000003028567, z: 0.00006260211, w: 1}
+      scale: {x: 1, y: 0.99999976, z: 1}
+    - name: VBOT_:LeftHandIndex4
+      parentName: VBOT_:LeftHandIndex3
+      position: {x: 0.000012805797, y: 0.030745365, z: -0.00000006300746}
+      rotation: {x: -0.00000008045498, y: 2.508182e-10, z: -5.8730437e-10, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VBOT_:LeftHandIndex4_end
+      parentName: VBOT_:LeftHandIndex4
+      position: {x: -0, y: 0.0307454, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VBOT_:LeftHandMiddle1
+      parentName: VBOT_:LeftHand
+      position: {x: 0.011613123, y: 0.10023254, z: -0.00011463714}
+      rotation: {x: -0.0007780783, y: -0.0035744617, z: -0.057712052, w: 0.9983266}
+      scale: {x: 1, y: 1.0000005, z: 0.9999997}
+    - name: VBOT_:LeftHandMiddle2
+      parentName: VBOT_:LeftHandMiddle1
+      position: {x: -0.000006056288, y: 0.040604156, z: 0.000000010763251}
+      rotation: {x: 0.00000047429356, y: -0.0000044267067, z: -0.00016212398, w: 1}
+      scale: {x: 1, y: 0.9999993, z: 1.0000004}
+    - name: VBOT_:LeftHandMiddle3
+      parentName: VBOT_:LeftHandMiddle2
+      position: {x: -0.00001841262, y: 0.038137585, z: 0.00000007169321}
+      rotation: {x: 0.0000016969184, y: -0.000004723498, z: 0.0005666729, w: 0.9999999}
+      scale: {x: 0.99999994, y: 1.0000006, z: 0.99999976}
+    - name: VBOT_:LeftHandMiddle4
+      parentName: VBOT_:LeftHandMiddle3
+      position: {x: 0.000024477318, y: 0.03627489, z: -0.000000036316923}
+      rotation: {x: 0.00000005096203, y: -1.3542201e-10, z: -0.0000000016708129, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: VBOT_:LeftHandMiddle4_end
+      parentName: VBOT_:LeftHandMiddle4
+      position: {x: -0, y: 0.036274854, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VBOT_:LeftHandRing1
+      parentName: VBOT_:LeftHand
+      position: {x: -0.013299953, y: 0.10050947, z: -0.000104290695}
+      rotation: {x: -0.0007830648, y: -0.003655989, z: -0.05754699, w: 0.99833584}
+      scale: {x: 0.9999994, y: 1.0000001, z: 0.99999976}
+    - name: VBOT_:LeftHandRing2
+      parentName: VBOT_:LeftHandRing1
+      position: {x: 0.000005650576, y: 0.032887828, z: -0.00000016068152}
+      rotation: {x: -0.0000003780744, y: -0.0000008826013, z: -0.00012194871, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1.0000002}
+    - name: VBOT_:LeftHandRing3
+      parentName: VBOT_:LeftHandRing2
+      position: {x: -0.0000015043421, y: 0.03256652, z: 0.00000012098185}
+      rotation: {x: 0.0000019568083, y: -0.000005436704, z: -0.00003674567, w: 1}
+      scale: {x: 1.0000001, y: 0.99999994, z: 0.9999996}
+    - name: VBOT_:LeftHandRing4
+      parentName: VBOT_:LeftHandRing3
+      position: {x: -0.000004135864, y: 0.029665047, z: 0.00000024707987}
+      rotation: {x: 0.00000003154195, y: 0.0000000055908194, z: 0.0000000044438986,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VBOT_:LeftHandRing4_end
+      parentName: VBOT_:LeftHandRing4
+      position: {x: -0, y: 0.02966476, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VBOT_:LeftHandPinky1
+      parentName: VBOT_:LeftHand
+      position: {x: -0.03137671, y: 0.09433375, z: 0.00092714524}
+      rotation: {x: -0.0004632812, y: 0.0018745903, z: -0.05825882, w: 0.99829966}
+      scale: {x: 0.99999994, y: 0.9999999, z: 0.99999994}
+    - name: VBOT_:LeftHandPinky2
+      parentName: VBOT_:LeftHandPinky1
+      position: {x: -0.000039647817, y: 0.032343887, z: -0.00000012723379}
+      rotation: {x: -0.0000011046868, y: 0.000015655518, z: 0.0005995122, w: 0.9999998}
+      scale: {x: 1.0000001, y: 0.9999998, z: 0.9999997}
+    - name: VBOT_:LeftHandPinky3
+      parentName: VBOT_:LeftHandPinky2
+      position: {x: -0.0000007703411, y: 0.026718639, z: 0.0000001878482}
+      rotation: {x: -0.00000036671616, y: 0.00006196149, z: 0.00089296716, w: 0.99999964}
+      scale: {x: 0.9999999, y: 1.0000007, z: 1.0000002}
+    - name: VBOT_:LeftHandPinky4
+      parentName: VBOT_:LeftHandPinky3
+      position: {x: 0.00004042044, y: 0.022874357, z: 0.000000013776297}
+      rotation: {x: 0.0000000027521878, y: -9.31788e-10, z: -0.000000019734088, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VBOT_:LeftHandPinky4_end
+      parentName: VBOT_:LeftHandPinky4
+      position: {x: -0, y: 0.022874298, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: VBOT_:LeftUpLeg
+      parentName: VBOT_:Hips
+      position: {x: -0.109206475, y: -0.05397647, z: 0.019481007}
+      rotation: {x: -0.000032394124, y: 0.0055751884, z: 0.99996626, w: 0.0060344283}
+      scale: {x: 1.0000803, y: 1.0000002, z: 1.0000001}
+    - name: VBOT_:LeftLeg
+      parentName: VBOT_:LeftUpLeg
+      position: {x: 0.000000013736862, y: 0.46442303, z: -0.0000000012147938}
+      rotation: {x: -0.045484938, y: -0.0005017409, z: 0.01265651, w: 0.99888474}
+      scale: {x: 0.9999995, y: 0.9999993, z: 0.99999976}
+    - name: VBOT_:LeftFoot
+      parentName: VBOT_:LeftLeg
+      position: {x: 0.000000004396843, y: 0.42525753, z: 0.000000009657815}
+      rotation: {x: 0.48034218, y: -0.0065366975, z: -0.0049221627, w: 0.877043}
+      scale: {x: 1.0000001, y: 1, z: 1.0000004}
+    - name: VBOT_:LeftToeBase
+      parentName: VBOT_:LeftFoot
+      position: {x: -0.000000004688045, y: 0.16945316, z: -0.0000000080466265}
+      rotation: {x: 0.30737466, y: 0.05506234, z: -0.01781606, w: 0.94982713}
+      scale: {x: 0.99999976, y: 0.9999996, z: 0.9999995}
+    - name: VBOT_:LeftToe_End
+      parentName: VBOT_:LeftToeBase
+      position: {x: -0.000000015217811, y: 0.062084917, z: 5.9604643e-10}
+      rotation: {x: -0.000000012223608, y: -0.000004991947, z: 0.00000046117927, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: VBOT_:LeftToe_End_end
+      parentName: VBOT_:LeftToe_End
+      position: {x: -0, y: 0.062084902, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:_Group2400
+      parentName: VBOT_LOD2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:transform17
+      parentName: GGMODEL:_Group2400
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:_Group14960
+      parentName: VBOT_LOD2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:transform16
+      parentName: GGMODEL:_Group14960
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:_Group15888
+      parentName: VBOT_LOD2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:transform15
+      parentName: GGMODEL:_Group15888
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:_Group10096
+      parentName: VBOT_LOD2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:transform14
+      parentName: GGMODEL:_Group10096
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:_Group9296
+      parentName: VBOT_LOD2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:transform13
+      parentName: GGMODEL:_Group9296
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:_Group4448
+      parentName: VBOT_LOD2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:transform12
+      parentName: GGMODEL:_Group4448
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:_Group6352
+      parentName: VBOT_LOD2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:transform11
+      parentName: GGMODEL:_Group6352
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:_Group23341
+      parentName: VBOT_LOD2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:transform10
+      parentName: GGMODEL:_Group23341
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:_Group61193
+      parentName: VBOT_LOD2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:transform9
+      parentName: GGMODEL:_Group61193
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:_Group11664
+      parentName: VBOT_LOD2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:transform8
+      parentName: GGMODEL:_Group11664
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:_Sphere002
+      parentName: VBOT_LOD2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:transform7
+      parentName: GGMODEL:_Sphere002
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:_Box001
+      parentName: VBOT_LOD2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:transform6
+      parentName: GGMODEL:_Box001
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:_Cylinder002
+      parentName: VBOT_LOD2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:transform5
+      parentName: GGMODEL:_Cylinder002
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:_Cylinder001
+      parentName: VBOT_LOD2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:transform4
+      parentName: GGMODEL:_Cylinder001
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:_Group61194
+      parentName: VBOT_LOD2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:transform3
+      parentName: GGMODEL:_Group61194
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:_Group61195
+      parentName: VBOT_LOD2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:transform2
+      parentName: GGMODEL:_Group61195
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:_Sphere003
+      parentName: VBOT_LOD2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:transform1
+      parentName: GGMODEL:_Sphere003
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GGMODEL:_Group61196
+      parentName: VBOT_LOD2(Clone)
+      position: {x: -0, y: 0, z: 0.04327458}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.39641514, y: 0.39641514, z: 0.39641514}
+    - name: polySurface1 1
+      parentName: GGMODEL:_Group61196
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform4
+      parentName: polySurface1 1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface2 1
+      parentName: GGMODEL:_Group61196
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform45
+      parentName: polySurface2 1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface3 1
+      parentName: GGMODEL:_Group61196
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform19
+      parentName: polySurface3 1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface4
+      parentName: GGMODEL:_Group61196
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform20
+      parentName: polySurface4
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface5
+      parentName: GGMODEL:_Group61196
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform2
+      parentName: polySurface5
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface6
+      parentName: GGMODEL:_Group61196
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform44
+      parentName: polySurface6
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface7
+      parentName: GGMODEL:_Group61196
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform18
+      parentName: polySurface7
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface8
+      parentName: GGMODEL:_Group61196
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform17
+      parentName: polySurface8
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface9
+      parentName: GGMODEL:_Group61196
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform16
+      parentName: polySurface9
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface10
+      parentName: GGMODEL:_Group61196
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform15
+      parentName: polySurface10
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface11
+      parentName: GGMODEL:_Group61196
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform14
+      parentName: polySurface11
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface12
+      parentName: GGMODEL:_Group61196
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform13
+      parentName: polySurface12
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface13
+      parentName: GGMODEL:_Group61196
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform12
+      parentName: polySurface13
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface14
+      parentName: GGMODEL:_Group61196
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform11
+      parentName: polySurface14
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface15
+      parentName: GGMODEL:_Group61196
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform10
+      parentName: polySurface15
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface16
+      parentName: GGMODEL:_Group61196
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform9
+      parentName: polySurface16
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface17
+      parentName: GGMODEL:_Group61196
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform8
+      parentName: polySurface17
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface18
+      parentName: GGMODEL:_Group61196
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform7
+      parentName: polySurface18
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface19
+      parentName: GGMODEL:_Group61196
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform43
+      parentName: polySurface19
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface20
+      parentName: GGMODEL:_Group61196
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform5
+      parentName: polySurface20
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface21
+      parentName: GGMODEL:_Group61196
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform42
+      parentName: polySurface21
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface22
+      parentName: GGMODEL:_Group61196
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform41
+      parentName: polySurface22
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface23
+      parentName: GGMODEL:_Group61196
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform3
+      parentName: polySurface23
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface24
+      parentName: GGMODEL:_Group61196
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform21
+      parentName: polySurface24
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface25
+      parentName: GGMODEL:_Group61196
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform40
+      parentName: polySurface25
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform1
+      parentName: GGMODEL:_Group61196
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface1
+      parentName: VBOT_LOD2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform6
+      parentName: polySurface1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface26
+      parentName: VBOT_LOD2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface3
+      parentName: VBOT_LOD2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform22
+      parentName: polySurface3
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface27
+      parentName: VBOT_LOD2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface28 1
+      parentName: polySurface27
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform25
+      parentName: polySurface28 1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface29
+      parentName: polySurface27
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform33
+      parentName: polySurface29
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface30
+      parentName: polySurface27
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform29
+      parentName: polySurface30
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface31
+      parentName: polySurface27
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform34
+      parentName: polySurface31
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface32
+      parentName: polySurface27
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform32
+      parentName: polySurface32
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface33
+      parentName: polySurface27
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform28
+      parentName: polySurface33
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface34
+      parentName: polySurface27
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform35
+      parentName: polySurface34
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface35
+      parentName: polySurface27
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform36
+      parentName: polySurface35
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface36
+      parentName: polySurface27
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform30
+      parentName: polySurface36
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface37
+      parentName: polySurface27
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform31
+      parentName: polySurface37
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface38
+      parentName: polySurface27
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform26
+      parentName: polySurface38
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface39
+      parentName: polySurface27
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform27
+      parentName: polySurface39
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface40 1
+      parentName: polySurface27
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform37
+      parentName: polySurface40 1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface41
+      parentName: polySurface27
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform24
+      parentName: polySurface41
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface42
+      parentName: polySurface27
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform38
+      parentName: polySurface42
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform23
+      parentName: polySurface27
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface28
+      parentName: VBOT_LOD2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform39
+      parentName: polySurface28
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface40
+      parentName: VBOT_LOD2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface43
+      parentName: VBOT_LOD2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface2
+      parentName: VBOT_LOD2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface44
+      parentName: polySurface2
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform46
+      parentName: polySurface2
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
