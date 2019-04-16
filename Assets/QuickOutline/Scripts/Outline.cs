@@ -12,9 +12,11 @@ using System.Linq;
 using UnityEngine;
 
 [DisallowMultipleComponent]
-
 public class Outline : MonoBehaviour {
   private static HashSet<Mesh> registeredMeshes = new HashSet<Mesh>();
+  public DateTime lastTime;
+  const float DELAY = 0.5f;
+  public bool lightOff = false;
 
   public enum Mode {
     OutlineAll,
@@ -97,6 +99,7 @@ public class Outline : MonoBehaviour {
 
     // Apply material properties immediately
     needsUpdate = true;
+
   }
 
   void OnEnable() {
@@ -109,6 +112,8 @@ public class Outline : MonoBehaviour {
       materials.Add(outlineFillMaterial);
 
       renderer.materials = materials.ToArray();
+
+      lastTime = DateTime.Now;
     }
   }
 
@@ -135,6 +140,12 @@ public class Outline : MonoBehaviour {
 
       UpdateMaterialProperties();
     }
+
+    if (lightOff)
+      this.enabled = false;
+
+    if ((DateTime.Now - lastTime).Seconds >= DELAY)
+      lightOff = true;
   }
 
   void OnDisable() {

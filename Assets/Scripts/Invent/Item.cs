@@ -81,23 +81,23 @@ public class Item : MonoBehaviour, IDragHandler, IEndDragHandler
         
         x = distance <= temp ? false : true;
        
-        if (x & y && !(Inventary.content3[0].transform.Find(itemsinv[0]) || Inventary.content3[0].transform.Find(itemsinv[1]) || Inventary.content3[0].transform.Find(itemsinv[2]) || Inventary.content3[0].transform.Find(itemsinv[3]) || Inventary.content3[0].transform.Find(itemsinv[4]) || Inventary.content3[0].transform.Find(itemsinv[5]) || Inventary.content3[0].transform.Find(itemsinv[6]) || Inventary.content3[0].transform.Find(itemsinv[7])))
-        {
-            print("работает3");
-            distance = temp;
-            newCell = Inventary.content3[0];
-            Destroy(gameObject);
-            string nameobj = gameObject.name;
-            string nameObj = nameobj + "Object";
-            GameObject xxx = Instantiate(Resources.Load<GameObject>(nameObj));
-            xxx.name = nameObj;
-            Vector3 gamerpos = GameObject.Find("vThirdPersonController").transform.position;
-            Quaternion gamerrot = GameObject.Find("vThirdPersonController").transform.rotation;
-            xxx.transform.SetPositionAndRotation(gamerpos + Vector3.one, gamerrot);
-            xxx.GetComponent<ItemObject>().item = Resources.Load<GameObject>(nameobj);
+        //if (x & y && !(Inventary.content3[0].transform.Find(itemsinv[0]) || Inventary.content3[0].transform.Find(itemsinv[1]) || Inventary.content3[0].transform.Find(itemsinv[2]) || Inventary.content3[0].transform.Find(itemsinv[3]) || Inventary.content3[0].transform.Find(itemsinv[4]) || Inventary.content3[0].transform.Find(itemsinv[5]) || Inventary.content3[0].transform.Find(itemsinv[6]) || Inventary.content3[0].transform.Find(itemsinv[7])))
+        //{
+        //    print("работает3");
+        //    distance = temp;
+        //    newCell = Inventary.content3[0];
+        //    Destroy(gameObject);
+        //    string nameobj = gameObject.name;
+        //    string nameObj = nameobj + "Object";
+        //    GameObject xxx = Instantiate(Resources.Load<GameObject>(nameObj));
+        //    xxx.name = nameObj;
+        //    Vector3 gamerpos = GameObject.Find("vThirdPersonController").transform.position;
+        //    Quaternion gamerrot = GameObject.Find("vThirdPersonController").transform.rotation;
+        //    xxx.transform.SetPositionAndRotation(gamerpos + Vector3.one, gamerrot);
+        //    xxx.GetComponent<ItemObject>().item = Resources.Load<GameObject>(nameobj);
 
-            //GameObject cam = GameObject.Find("CameraInv");
-        }
+        //    //GameObject cam = GameObject.Find("CameraInv");
+        //}
         //реализация 3d просмотра
 
         if (x & !y && !(Inventary.content4[0].transform.Find(itemsinv[0]) || Inventary.content4[0].transform.Find(itemsinv[1]) || Inventary.content4[0].transform.Find(itemsinv[2]) || Inventary.content4[0].transform.Find(itemsinv[3]) || Inventary.content4[0].transform.Find(itemsinv[4]) || Inventary.content4[0].transform.Find(itemsinv[5]) || Inventary.content4[0].transform.Find(itemsinv[6]) || Inventary.content4[0].transform.Find(itemsinv[7])))

@@ -30,7 +30,7 @@ public class CursorControl : MonoBehaviour
     void Update()
     {
         Time.timeScale = timing;
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
             x = !x;
             isPaused = !isPaused;
