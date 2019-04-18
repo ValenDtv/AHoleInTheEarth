@@ -3601,7 +3601,7 @@ MonoBehaviour:
   m_Name: Audio Track
   m_EditorClassIdentifier: 
   m_Locked: 0
-  m_Muted: 0
+  m_Muted: 1
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 11400000}
@@ -5192,10 +5192,10 @@ MonoBehaviour:
   m_Parent: {fileID: 11400000}
   m_Children: []
   m_Clips:
-  - m_Start: 116.92456555366509
-    m_ClipIn: 0.7303085327148438
+  - m_Start: 116.6318180561065
+    m_ClipIn: 0.43756103515625
     m_Asset: {fileID: 114809458086568510}
-    m_Duration: 2.07543444633491
+    m_Duration: 2.3681819438935037
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114533210194124880}
     m_EaseInDuration: 0
