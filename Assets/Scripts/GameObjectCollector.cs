@@ -10,6 +10,7 @@ public class GameObjects
     public GameObject Subtitles;
     public GameObject Dialog_choice;
     public GameObject InventWindow;
+    public GameObject Cutscene_dialogue;
 
     public GameObject[] Options = new GameObject[4];
 
