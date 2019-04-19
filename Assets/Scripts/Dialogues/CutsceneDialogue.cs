@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Playables;
 
 
 [System.Serializable]
@@ -27,12 +28,16 @@ public class CutsceneDialogue : MonoBehaviour
     Actors[] actors;
     CursorLockMode wantedMode;
 
+    public PlayableDirector playableDirector;
+
     // Start is called before the first frame update
     void Start()
     {
+        
         point = 10;
         collector = dialogue_Options.Collector.GetComponent<GameObjectCollector>();
         board = collector.GameObjects.Subtitles.GetComponent<Text>();
+        board.text = "";
         actors = collector.GetActors();
         dialog_choice = collector.GameObjects.Dialog_choice;
         for (int i = 0; i < 4; i++)
@@ -138,6 +143,8 @@ public class CutsceneDialogue : MonoBehaviour
         Cursor.visible = true;
         if (ph[i].isChoice)
         {
+            playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(0);
+
             if (ph[i].conditionsString.Length == 0)
                 yield return StartCoroutine(Choice(ph, i));
             else
@@ -153,6 +160,8 @@ public class CutsceneDialogue : MonoBehaviour
             board.text = "";
             Cursor.lockState = wantedMode = CursorLockMode.Locked;
             Cursor.visible = false;
+
+            playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(1);
             yield break;
         }
         board.text = GetActorName(ph[i].actor) + ": " + ph[i].dialogueText;

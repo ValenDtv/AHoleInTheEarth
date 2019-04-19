@@ -13,6 +13,12 @@ public class PlayCutDialogue : MonoBehaviour
         cd.Cutscene_name = "Первая катсцена";
         cd.point = 10;
         StartCoroutine(PlayD());
+
+    }
+    
+    void OnEnable()
+    {
+        
     }
 
     // Update is called once per frame
@@ -23,6 +29,13 @@ public class PlayCutDialogue : MonoBehaviour
 
     private IEnumerator PlayD()
     {
+        yield return new WaitForSeconds(32);
+        yield return cd.Next_speech(3);
+        yield return cd.Next_speech(3);
+        yield return cd.Next_speech(3);
+        yield return cd.Next_speech(3);
+        yield return cd.Next_speech(3);
+        yield return cd.Next_speech(3);
         yield return cd.Next_speech(3);
         yield return cd.Next_speech(3);
         yield return cd.Next_speech(3);
