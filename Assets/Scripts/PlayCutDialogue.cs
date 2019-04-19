@@ -46,6 +46,12 @@ public class PlayCutDialogue : MonoBehaviour
         yield return cd.Next_speech(3);
         yield return cd.Next_speech(3);
         yield return cd.Next_speech(3);
+        yield return cd.Next_speech(3);
+        yield return cd.Next_speech(3);
+        yield return cd.Next_speech(3);
+        yield return cd.Next_speech(3);
+        yield return cd.Next_speech(3);
+        yield return cd.Next_speech(3);
         yield break;
     }
 }
