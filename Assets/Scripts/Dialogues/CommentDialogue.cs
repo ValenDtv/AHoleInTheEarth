@@ -74,5 +74,28 @@ public class CommentDialogue : MonoBehaviour
         }
         board.text = "";
     }
+
+
+    public IEnumerator Start_thing_dialog(string name)
+    {
+        Phrase[] ph = Find_dialog(collector.GetСategoryDialogs("comment dialogue"), name);
+        if (ph == null)
+            yield break;
+        int i = 0;
+        int? point = ph[0].id;
+        while (true)
+        {
+            board.text = GetActorName(ph[i].actor) + ": " + ph[i].dialogueText;
+            yield return new WaitForSeconds(time);
+            //Если поле выходных ссылок пустое, значит это последняя фраза в диалоге
+            if (ph[i].outgoingLinks.Length == 0)
+                break;
+            //Если номер выходной ссылки меньше номера текущей фразы, значит это последняя фраза кольцевого диалога
+            if (ph[i].outgoingLinks[0] < ph[i].id)
+                break;
+            i++;
+        }
+        board.text = "";
+    }
 }
 

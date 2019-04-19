@@ -26,6 +26,28 @@ public class GameObjectCollector : MonoBehaviour
     {
         string json = Resources.Load<TextAsset>("dialogues").text;
         chat = JsonUtility.FromJson<Chat>(json);
+
+        //foreach (GameObject gameObject in GameObject.FindGameObjectsWithTag("Thing"))
+        //{
+        //    Outline outline = gameObject.AddComponent<Outline>();
+        //    outline.OutlineMode = Outline.Mode.OutlineVisible;
+        //    outline.OutlineWidth = 1;
+        //    outline.OutlineColor = Color.yellow;
+        //}
+        //foreach (GameObject gameObject in GameObject.FindGameObjectsWithTag("Interactive"))
+        //{
+        //    Outline outline = gameObject.AddComponent<Outline>();
+        //    outline.OutlineMode = Outline.Mode.OutlineVisible;
+        //    outline.OutlineWidth = 1;
+        //    outline.OutlineColor = Color.yellow;
+        //}
+        //foreach (GameObject gameObject in GameObject.FindGameObjectsWithTag("Character"))
+        //{
+        //    Outline outline = gameObject.AddComponent<Outline>();
+        //    outline.OutlineMode = Outline.Mode.OutlineVisible;
+        //    outline.OutlineWidth = 1;
+        //    outline.OutlineColor = Color.yellow;
+        //}
     }
 
     public СategoryDialogs[] GetСategoryDialogs(string category)

@@ -33,6 +33,10 @@ public class ItemObject : MonoBehaviour
     {
         if (Inventary.AddItem(item))
         {
+            //Destroy(gameObject);
+            //Сделать вызов диалога нормально 
+             GameObject.Find("person_controller").SendMessage("Start_thing_dialog", gameObject.name);
+            //gameObject.SetActive(false);
             Destroy(gameObject);
         }
     }

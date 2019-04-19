@@ -74,7 +74,7 @@ public class Activate : MonoBehaviour
                             //inventory.Add(thing);
                             //Destroy(hit.collider.gameObject);
                             hit.collider.gameObject.SendMessage("AddI");
-
+                            
                             break;
                         case "Character": //Персонаж
                                           //Активировать диалог
@@ -115,12 +115,12 @@ public class Activate : MonoBehaviour
         //        }
         //    }
         //}
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            Debug.Log("Инвентарь:");
-            foreach (Thing item in inventory)
-                Debug.Log(item.Name);
-        }
+        //if (Input.GetKeyDown(KeyCode.I))
+        //{
+        //    Debug.Log("Инвентарь:");
+        //    foreach (Thing item in inventory)
+        //        Debug.Log(item.Name);
+        //}
     }
 
 }

@@ -20,7 +20,7 @@ public class Item : MonoBehaviour, IDragHandler, IEndDragHandler
     {
         iw = Inventary.iw;
         cell = GetComponentInParent<Cell>();
-        canvas = GameObject.Find("Canvas").transform;
+        canvas = GameObject.Find("dialogue_canvas").transform;
         Debug.Log(canvas);
     }
     public void OnDrag(PointerEventData eventData)
