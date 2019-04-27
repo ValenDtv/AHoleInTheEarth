@@ -11,6 +11,9 @@ public class GameObjects
     public GameObject Dialog_choice;
     public GameObject InventWindow;
     public GameObject Cutscene_dialogue;
+    public GameObject CameraInv;
+    public GameObject Canvas;
+    public GameObject ActionPanel;
 
     public GameObject[] Options = new GameObject[4];
 
@@ -20,10 +23,12 @@ public class GameObjects
 public class GameObjectCollector : MonoBehaviour
 {
     public GameObjects GameObjects;
+    public static GameObject Collector;
     Chat chat;
 
     void Start()
     {
+        Collector = this.gameObject;
         string json = Resources.Load<TextAsset>("dialogues").text;
         chat = JsonUtility.FromJson<Chat>(json);
 

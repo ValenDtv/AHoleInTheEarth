@@ -57,9 +57,12 @@ public class Activate : MonoBehaviour
         Ray ray = camera.ScreenPointToRay(Input.mousePosition);
         if (Physics.SphereCast(ray, radius, out hit, max_distance, layerMask))
         {
-            hit.collider.GetComponent<Outline>().enabled = true;
-            hit.collider.GetComponent<Outline>().lastTime = System.DateTime.Now;
-            hit.collider.GetComponent<Outline>().lightOff = false;
+            if (hit.collider.GetComponent<Outline>() != null)
+            {
+                hit.collider.GetComponent<Outline>().enabled = true;
+                hit.collider.GetComponent<Outline>().lastTime = System.DateTime.Now;
+                hit.collider.GetComponent<Outline>().lightOff = false;
+            }
             if (Input.GetKeyDown(KeyCode.E))
             {
                 if (hit.distance <= dis)
