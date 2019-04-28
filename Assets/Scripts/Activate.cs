@@ -7,6 +7,8 @@ using System.IO;
 public class Activate : MonoBehaviour
 {
     public GameObject item;
+    public GameObject GOCollector;
+    private GameObjectCollector Collector;
 
     private class Thing
     {
@@ -48,6 +50,7 @@ public class Activate : MonoBehaviour
     void Start()
     {
         layerMask = 1 << MaskNumber;
+        Collector = GOCollector.GetComponent<GameObjectCollector>();
     }
 
     void Update()
@@ -62,6 +65,8 @@ public class Activate : MonoBehaviour
                 hit.collider.GetComponent<Outline>().enabled = true;
                 hit.collider.GetComponent<Outline>().lastTime = System.DateTime.Now;
                 hit.collider.GetComponent<Outline>().lightOff = false;
+                if (Inventary.ItemInHand != "")
+                    Collector.GameObjects.PlayerHand.SendMessage("Show");
             }
             if (Input.GetKeyDown(KeyCode.E))
             {

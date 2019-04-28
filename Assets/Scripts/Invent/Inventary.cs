@@ -8,6 +8,10 @@ using UnityEngine.UI;
 public class Inventary : MonoBehaviour
 {
     public static GameObject iw;
+    public static string ItemInHand = "";
+    public GameObject GOCollector;
+    private GameObjectCollector Collector;
+
     [SerializeField]
     private int capacity;
     [SerializeField]
@@ -40,6 +44,7 @@ public class Inventary : MonoBehaviour
         CreateCell3();
         CreateCell4();
         iw = this.gameObject;
+        Collector = GOCollector.GetComponent<GameObjectCollector>();
         this.gameObject.SetActive(false);
     }
 
@@ -116,4 +121,20 @@ public class Inventary : MonoBehaviour
         }
         return false;
     }
+
+    private void Update()
+    {
+        if (ItemInHand != "")
+            Collector.GameObjects.PlayerHand.SendMessage("Show");
+    }
+
+    private void OnDisable()
+    {
+        Collector.GameObjects.ActionPanel.SetActive(false);
+    }
+    //private void OnEnable()
+    //{
+    //    if (ItemInHand != "")
+    //        Collector.GameObjects.PlayerHand.SendMessage("Show");
+    //}
 }

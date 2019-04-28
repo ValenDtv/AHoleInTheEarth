@@ -27,7 +27,9 @@ public class Item : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerEnterH
         ActionPanel = Collector.GameObjects.ActionPanel;
         cell = GetComponentInParent<Cell>();
         canvas = Collector.GameObjects.Canvas.transform;
-            //GameObject.Find("dialogue_canvas").transform;
+        //GameObject.Find("dialogue_canvas").transform;
+        Collector.GameObjects.InspectButton.GetComponent<Button>().onClick.AddListener(InspectButtonCliked);
+        Collector.GameObjects.InHandButton.GetComponent<Button>().onClick.AddListener(InHandButtonCliked);
         Debug.Log(canvas);
     }
 
@@ -46,6 +48,23 @@ public class Item : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerEnterH
         RightMouseButtonPressed = Input.GetKeyDown(KeyCode.Mouse1);
         if (RightMouseButtonPressed && isMouseOver)
             ShowActionPanel();
+    }
+
+    private void InspectButtonCliked()
+    {
+        //StartCoroutine(ViewItem3d());
+        Collector.GameObjects.ViewItem3D.SendMessage("View", this);
+        //this.SendMessage("ViewItem3d");
+        Collector.GameObjects.ActionPanel.SetActive(false);
+    }
+
+    private void InHandButtonCliked()
+    {
+        Inventary.ItemInHand = this.gameObject.name;
+        GameObject itemImage = GameObject.Instantiate(Resources.Load<GameObject>(this.gameObject.name));
+        Collector.GameObjects.ItemInHand.GetComponent<Image>().sprite = itemImage.GetComponent<Image>().sprite;
+        GameObject.Destroy(itemImage);
+        Collector.GameObjects.ActionPanel.SetActive(false);
     }
 
     private void ShowActionPanel()
@@ -79,11 +98,12 @@ public class Item : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerEnterH
     {
         if (!Input.GetKeyUp(KeyCode.Mouse0))
             return;
-        StartCoroutine(TestCoroutine());
+        //StartCoroutine(TestCoroutine());
+        MoveItem();
     }
 
 
-    IEnumerator TestCoroutine()
+    void MoveItem()
     {
        
         float distance = float.MaxValue;
@@ -147,76 +167,7 @@ public class Item : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerEnterH
         //}
         //реализация 3d просмотра
 
-        if (x & !y && !(Inventary.content4[0].transform.Find(itemsinv[0]) || Inventary.content4[0].transform.Find(itemsinv[1]) || Inventary.content4[0].transform.Find(itemsinv[2]) || Inventary.content4[0].transform.Find(itemsinv[3]) || Inventary.content4[0].transform.Find(itemsinv[4]) || Inventary.content4[0].transform.Find(itemsinv[5]) || Inventary.content4[0].transform.Find(itemsinv[6]) || Inventary.content4[0].transform.Find(itemsinv[7])))
-        {
-            print("работает4");
-            vThirdPersonInput inputscr = Collector.GameObjects.Player.GetComponent<vThirdPersonInput>();
-                //GameObject.Find("vThirdPersonController").GetComponent<vThirdPersonInput>();
-            
-            inputscr.disable = true;
-            distance = temp;
-            newCell = Inventary.content4[0];
-
-            GameObject camk = null;
-            Vector3 camkpos = new Vector3(0,0);
-
-            GameObject cam = Collector.GameObjects.CameraInv;
-                //GameObject.Find("CameraInv");
-            cam.GetComponent<Camera>().enabled = true;
-            Vector3 campos = cam.transform.position;
-            //GameObject.Find("CameraInv").transform.position;
-            if (SceneManager.GetActiveScene().name == "Вторая локация")
-            {
-                camk = GameObject.Find("CameraKaps");
-                camk.GetComponent<Camera>().enabled = true;
-                camkpos = GameObject.Find("CameraKaps").transform.position;
-            }
-
-            string name = gameObject.name + "3D";
-            GameObject obj3d = Instantiate(Resources.Load<GameObject>(name));
-            Quaternion rotationY = Quaternion.AngleAxis(1, Vector3.up);
-            obj3d.transform.SetPositionAndRotation(campos + Vector3.forward/2, rotationY);
-
-
-
-            GameObject tm = Collector.GameObjects.ThirdPersonCamera;
-                //GameObject.Find("vThirdPersonCamera");
-            //tm.GetComponent<CursorControl>().timing = 1.0f;
-            Time.timeScale = 1.0f;
-            print(obj3d);
-            tm.GetComponent<CursorControl>().enabled = false;
-            //**       //canvas.GetComponentInParent<Canvas>().enabled = false;
-            iw.SetActive(false);
-            this.gameObject.GetComponent<Image>().enabled = false;
-            yield return new WaitForSeconds(2.0f);
-            //print(name);
-
-            if (name == "Kapsula3D")
-            {
-                print("Это оно");
-
-                
-                GameObject objkaps = Instantiate(Resources.Load<GameObject>(name));
-                objkaps.transform.SetPositionAndRotation(camkpos + Vector3.forward / 4, rotationY);
-
-                camk.GetComponent<Camera>().enabled = true;
-            }
-            //camk.GetComponent<Camera>().enabled = false;
-            Destroy(obj3d);
-
-            inputscr.disable = false;
-            //float t = new Time.deltaTime;
-            tm.GetComponent<CursorControl>().enabled = true;
-            //canvas.GetComponentInParent<Canvas>().enabled = true;
-            iw.SetActive(true);
-            this.gameObject.GetComponent<Image>().enabled = true;
-            this.gameObject.SetActive(true);
-            cam.GetComponent<Camera>().enabled = false;
-            Time.timeScale = 0.0f;
-            //print(tm);
-            //cam.GetComponent<Camera>().enabled = false;
-            /**/
-        }
+        
         
         cell = newCell;
         transform.SetParent(cell.transform);

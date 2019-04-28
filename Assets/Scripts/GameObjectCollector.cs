@@ -14,6 +14,11 @@ public class GameObjects
     public GameObject CameraInv;
     public GameObject Canvas;
     public GameObject ActionPanel;
+    public GameObject InspectButton;
+    public GameObject InHandButton;
+    public GameObject ViewItem3D;
+    public GameObject PlayerHand;
+    public GameObject ItemInHand;
 
     public GameObject[] Options = new GameObject[4];
 
