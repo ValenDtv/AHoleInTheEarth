@@ -15,9 +15,11 @@ public class Item : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerEnterH
     public Cell cell;
     private Transform canvas;
     private bool RightMouseButtonPressed;
+    private bool isSelected = false; 
     private GameObject ActionPanel;
     private bool isMouseOver = false;
     string[] itemsinv = { "Revolver", "Gears", "Gear1", "Gear2", "Kapsula", "Key", "Key1", "Key2"};
+    string[,] combinationsofoitems = { { "Gear1", "Gear2", "Gears" }, { "Key1", "Key2", "Key" } };
 
 
     void Start()
@@ -46,25 +48,33 @@ public class Item : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerEnterH
     void Update()
     {
         RightMouseButtonPressed = Input.GetKeyDown(KeyCode.Mouse1);
+        if (!ActionPanel.activeSelf)
+            isSelected = false;
         if (RightMouseButtonPressed && isMouseOver)
-            ShowActionPanel();
+            ShowActionPanel(); 
     }
 
     private void InspectButtonCliked()
     {
-        //StartCoroutine(ViewItem3d());
-        Collector.GameObjects.ViewItem3D.SendMessage("View", this);
-        //this.SendMessage("ViewItem3d");
-        Collector.GameObjects.ActionPanel.SetActive(false);
+        if (isSelected)
+        {
+            //StartCoroutine(ViewItem3d());
+            Collector.GameObjects.ViewItem3D.SendMessage("View", this);
+            //this.SendMessage("ViewItem3d");
+            Collector.GameObjects.ActionPanel.SetActive(false);
+        }
     }
 
     private void InHandButtonCliked()
     {
-        Inventary.ItemInHand = this.gameObject.name;
-        GameObject itemImage = GameObject.Instantiate(Resources.Load<GameObject>(this.gameObject.name));
-        Collector.GameObjects.ItemInHand.GetComponent<Image>().sprite = itemImage.GetComponent<Image>().sprite;
-        GameObject.Destroy(itemImage);
-        Collector.GameObjects.ActionPanel.SetActive(false);
+        if (isSelected)
+        {
+            Inventary.ItemInHand = this.gameObject.name;
+            GameObject itemImage = GameObject.Instantiate(Resources.Load<GameObject>(this.gameObject.name));
+            Collector.GameObjects.ItemInHand.GetComponent<Image>().sprite = itemImage.GetComponent<Image>().sprite;
+            GameObject.Destroy(itemImage);
+            Collector.GameObjects.ActionPanel.SetActive(false);
+        }
     }
 
     private void ShowActionPanel()
@@ -80,9 +90,12 @@ public class Item : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerEnterH
             //    ActionPanel.GetComponent<RectTransform>().rect.width / 2,
             //   ActionPanel.GetComponent<RectTransform>().rect.position.y - ActionPanel.transform.GetComponent<RectTransform>().rect.height / 2);
             ActionPanel.SetActive(true);
+            isSelected = true;
         }
         else
+        {
             ActionPanel.SetActive(false);
+        }
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -118,23 +131,50 @@ public class Item : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerEnterH
         {
             temp = Vector2.Distance(transform.position, Inventary.content[i].transform.position);
 
-
-            if (distance > temp && !(Inventary.content[i].transform.Find(itemsinv[0]) || Inventary.content[i].transform.Find(itemsinv[1]) || Inventary.content[i].transform.Find(itemsinv[2]) || Inventary.content[i].transform.Find(itemsinv[3]) || Inventary.content[i].transform.Find(itemsinv[4]) || Inventary.content[i].transform.Find(itemsinv[5]) || Inventary.content[i].transform.Find(itemsinv[6]) || Inventary.content[i].transform.Find(itemsinv[7])))
+            if (distance > temp)
             {
                 distance = temp;
                 newCell = Inventary.content[i];
             }
+            //if (distance > temp)
+            //    if (!(
+            //       Inventary.content[i].transform.Find(itemsinv[0]) || Inventary.content[i].transform.Find(itemsinv[1])
+            //    || Inventary.content[i].transform.Find(itemsinv[2]) || Inventary.content[i].transform.Find(itemsinv[3])
+            //    || Inventary.content[i].transform.Find(itemsinv[4]) || Inventary.content[i].transform.Find(itemsinv[5])
+            //    || Inventary.content[i].transform.Find(itemsinv[6]) || Inventary.content[i].transform.Find(itemsinv[7])))
+            //        {
+            //            distance = temp;
+            //            newCell = Inventary.content[i];
+            //        }
+            //        else
+            //        {
+            //            CombineItems(Inventary.content[i], newCell);
+            //        }
         }
+        if ((
+                   newCell.transform.Find(itemsinv[0]) || newCell.transform.Find(itemsinv[1])
+                || newCell.transform.Find(itemsinv[2]) || newCell.transform.Find(itemsinv[3])
+                || newCell.transform.Find(itemsinv[4]) || newCell.transform.Find(itemsinv[5])
+                || newCell.transform.Find(itemsinv[6]) || newCell.transform.Find(itemsinv[7])))
+                {
+                    if (!CombineItems(newCell, cell))
+                        newCell = cell;
+                }
+
         for (int i = 0; i < 2; i++)
         {
             temp = Vector2.Distance(transform.position, Inventary.content2[i].transform.position);
-            if (distance > temp && !(Inventary.content2[i].transform.Find(itemsinv[0]) || Inventary.content2[i].transform.Find(itemsinv[1]) || Inventary.content2[i].transform.Find(itemsinv[2]) || Inventary.content2[i].transform.Find(itemsinv[3]) || Inventary.content2[i].transform.Find(itemsinv[4]) || Inventary.content2[i].transform.Find(itemsinv[5]) || Inventary.content2[i].transform.Find(itemsinv[6]) || Inventary.content2[i].transform.Find(itemsinv[7])))
+            if (distance > temp && !(Inventary.content2[i].transform.Find(itemsinv[0]) || Inventary.content2[i].transform.Find(itemsinv[1])
+                || Inventary.content2[i].transform.Find(itemsinv[2]) || Inventary.content2[i].transform.Find(itemsinv[3])
+                || Inventary.content2[i].transform.Find(itemsinv[4]) || Inventary.content2[i].transform.Find(itemsinv[5])
+                || Inventary.content2[i].transform.Find(itemsinv[6]) || Inventary.content2[i].transform.Find(itemsinv[7])))
             {
                 distance = temp;
                 newCell = Inventary.content2[i];
             }
         }
-        if (Vector2.Distance(transform.position, Inventary.content3[0].transform.position) < Vector2.Distance(transform.position, Inventary.content4[0].transform.position))
+        if (Vector2.Distance(transform.position, Inventary.content3[0].transform.position)
+            < Vector2.Distance(transform.position, Inventary.content4[0].transform.position))
         {
             temp = Vector2.Distance(transform.position, Inventary.content3[0].transform.position);
             y = true;
@@ -174,6 +214,63 @@ public class Item : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerEnterH
         transform.position = cell.transform.position;
         transform.localScale = Vector2.one;
     }
-    
 
+
+    bool CombineItems(Cell cellA, Cell cellB)
+    {
+
+        //bool z = Eq("Pumpkin", "Revolver");
+        bool isCombined = false;
+        //Cell cellA = Inventary.content2[0];
+        //Cell cellB = Inventary.content2[1];
+        switch (Eq(cellA, cellB))
+        {
+            case "Gears":
+                {
+                    GameObject it = GameObject.Find("GearsObject").GetComponent<ItemObject>().item;
+                    Inventary.AddItem(it);
+                    Destroy(GameObject.Find("GearsObject"));
+                    Destroy(GameObject.Find("Gear1"));
+                    Destroy(GameObject.Find("Gear2"));
+                    isCombined = true;
+                    break;
+                }     
+            case "Key":
+                {
+                    GameObject it = GameObject.Find("KeyObject").GetComponent<ItemObject>().item;
+                    Inventary.AddItem(it);
+                    Destroy(GameObject.Find("KeyObject"));
+                    Destroy(GameObject.Find("Key1"));
+                    Destroy(GameObject.Find("Key2"));
+                    isCombined = true;
+                    break;
+                }
+        }
+        return isCombined;
+        /*
+        else if (z)
+        {
+            GameObject it = GameObject.Find("ScorpioObject").GetComponent<ItemObject>().item;
+            Inventary.AddItem(it);
+            Destroy(GameObject.Find("ScorpioObject"));
+            Destroy(GameObject.Find("Pumpkin"));
+            Destroy(GameObject.Find("Revolver"));
+        }
+        */
+    }
+
+    string Eq(Cell cellA, Cell cellB)
+    {
+        for (int i = 0; i < combinationsofoitems.GetLength(0); i++)
+        {
+            if (
+                cellA.transform.Find(combinationsofoitems[i,0]) & canvas.transform.Find(combinationsofoitems[i, 1]) ||
+                canvas.transform.Find(combinationsofoitems[i, 0]) & cellA.transform.Find(combinationsofoitems[i, 1])
+                )
+            {
+                return combinationsofoitems[i, 2];
+            }
+        }
+        return "";
+    }
 }
