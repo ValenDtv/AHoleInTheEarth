@@ -1,0 +1,166 @@
+fileFormatVersion: 2
+guid: d410c210490922e48af31036e06ad418
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: VP_Free_FieldPlant
+    100002: VP_Free_FieldPlant_1
+    100004: VP_Free_FieldPlant_2
+    100006: VP_Free_FieldPlant_3
+    100008: VP_Free_Grass_1
+    100010: VP_Free_Grass_2
+    100012: //RootNode
+    100014: VP_Free_Iris_1
+    100016: VP_Free_Iris_2
+    100018: VP_Free_Iris_3
+    100020: VP_Free_Iris_4
+    100022: VP_Free_SowThistle_1
+    100024: VP_Free_SowThistle_2
+    100026: VP_Free_SowThistle_3
+    400000: VP_Free_FieldPlant
+    400002: VP_Free_FieldPlant_1
+    400004: VP_Free_FieldPlant_2
+    400006: VP_Free_FieldPlant_3
+    400008: VP_Free_Grass_1
+    400010: VP_Free_Grass_2
+    400012: //RootNode
+    400014: VP_Free_Iris_1
+    400016: VP_Free_Iris_2
+    400018: VP_Free_Iris_3
+    400020: VP_Free_Iris_4
+    400022: VP_Free_SowThistle_1
+    400024: VP_Free_SowThistle_2
+    400026: VP_Free_SowThistle_3
+    2100000: STEM
+    2100002: GRASS_BLADE_2
+    2100004: FEATHERS
+    2100006: GRASS_BLADE_1
+    2100008: GRASS_BLADE_3
+    2100010: Sow_Thistle_LEAF
+    2100012: PETAL
+    2100014: 'Material #31'
+    2300000: VP_Free_FieldPlant
+    2300002: VP_Free_FieldPlant_1
+    2300004: VP_Free_FieldPlant_2
+    2300006: VP_Free_FieldPlant_3
+    2300008: VP_Free_Grass_1
+    2300010: VP_Free_Grass_2
+    2300012: VP_Free_Iris_1
+    2300014: VP_Free_Iris_2
+    2300016: VP_Free_Iris_3
+    2300018: VP_Free_Iris_4
+    2300020: VP_Free_SowThistle_1
+    2300022: VP_Free_SowThistle_2
+    2300024: VP_Free_SowThistle_3
+    3300000: VP_Free_FieldPlant
+    3300002: VP_Free_FieldPlant_1
+    3300004: VP_Free_FieldPlant_2
+    3300006: VP_Free_FieldPlant_3
+    3300008: VP_Free_Grass_1
+    3300010: VP_Free_Grass_2
+    3300012: VP_Free_Iris_1
+    3300014: VP_Free_Iris_2
+    3300016: VP_Free_Iris_3
+    3300018: VP_Free_Iris_4
+    3300020: VP_Free_SowThistle_1
+    3300022: VP_Free_SowThistle_2
+    3300024: VP_Free_SowThistle_3
+    4300000: VP_Free_FieldPlant
+    4300002: VP_Free_Grass_2
+    4300004: VP_Free_Grass_1
+    4300006: VP_Free_SowThistle_3
+    4300008: VP_Free_SowThistle_1
+    4300010: VP_Free_SowThistle_2
+    4300012: VP_Free_Iris_2
+    4300014: VP_Free_Iris_4
+    4300016: VP_Free_Iris_3
+    4300018: VP_Free_Iris_1
+    4300020: VP_Free_FieldPlant_1
+    4300022: VP_Free_FieldPlant_3
+    4300024: VP_Free_FieldPlant_2
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
