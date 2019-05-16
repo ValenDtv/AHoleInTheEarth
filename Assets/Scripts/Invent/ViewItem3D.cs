@@ -9,12 +9,34 @@ public class ViewItem3D : MonoBehaviour
 {
     public GameObject GOCollector;
     private GameObjectCollector Collector;
+    private bool RightMouseButtonPressed;
+    private bool LeftMouseButtonPressed;
     GameObject iw;
 
     private void Start()
     {
         Collector = GOCollector.GetComponent<GameObjectCollector>();
         iw = Collector.GameObjects.InventWindow;
+    }
+
+    private void Update()
+    {
+        RightMouseButtonPressed = Input.GetKey(KeyCode.Mouse1);
+        LeftMouseButtonPressed = Input.GetKeyDown(KeyCode.Mouse0);
+    }
+
+    private IEnumerator RotateObject(GameObject obj)
+    {
+        while (!LeftMouseButtonPressed)
+        {
+            yield return null;
+            if (RightMouseButtonPressed)
+            {
+                //transform.Rotate((Input.GetAxis("Mouse X") 30f Time.deltaTime),(Input.GetAxis("Mouse Y") 30f Time.deltaTime), 0, Space.World);
+                obj.transform.Rotate(Input.GetAxis("Mouse Y")*30f*0, -Input.GetAxis("Mouse X")*30f, 0, Space.World);
+            }
+        }
+        yield break;
     }
 
     public IEnumerator View(Item item)
@@ -62,7 +84,8 @@ public class ViewItem3D : MonoBehaviour
         //canvas.GetComponentInParent<Canvas>().enabled = false;
         iw.SetActive(false);
         item.gameObject.GetComponent<Image>().enabled = false;
-        yield return new WaitForSeconds(2.0f);
+        //yield return new WaitForSeconds(2.0f);
+        yield return StartCoroutine(RotateObject(obj3d));
         //print(name);
 
         if (name == "Kapsula3D")

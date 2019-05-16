@@ -32,4 +32,10 @@ public class BacklightButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
         else
             back.enabled = false;
     }
+
+    public void ButtonClick()
+    {
+        isMouseOver = false;
+        back.enabled = false;
+    }
 }
