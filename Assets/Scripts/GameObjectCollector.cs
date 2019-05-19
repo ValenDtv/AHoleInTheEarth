@@ -19,6 +19,7 @@ public class GameObjects
     public GameObject ViewItem3D;
     public GameObject PlayerHand;
     public GameObject ItemInHand;
+    public GameObject PauseCanvas;
 
     public GameObject[] Options = new GameObject[4];
 

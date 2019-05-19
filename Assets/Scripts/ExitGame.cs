@@ -7,7 +7,7 @@ public class ExitGame : MonoBehaviour
 {
     public void Quit()
     {
-        Application.Quit();
+            Application.Quit();
         // убивает процесс Юнити
         //System.Diagnostics.Process.GetCurrentProcess().Kill();
 
