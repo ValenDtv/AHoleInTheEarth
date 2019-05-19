@@ -16,6 +16,7 @@ namespace Invector.CharacterController
         public KeyCode strafeInput = KeyCode.Tab;
         public KeyCode sprintInput = KeyCode.LeftShift;
 
+
         [Header("Camera Settings")]
         public string rotateCameraXInput ="Mouse X";
         public string rotateCameraYInput = "Mouse Y";
@@ -186,6 +187,7 @@ namespace Invector.CharacterController
             }
         }
 
-        #endregion     
+        #endregion
+
     }
 }
