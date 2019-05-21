@@ -74,7 +74,7 @@ public class Activate : MonoBehaviour
                 {
                     switch (hit.collider.tag)
                     {
-                        case "Interactive": //Интерактивный объект
+                        case "Commented": //Интерактивный объект
                             hit.collider.gameObject.SendMessage("Start_dialog");
                             break;
                         case "Thing": //Вещь, которую можно поднять
@@ -87,6 +87,9 @@ public class Activate : MonoBehaviour
                         case "Character": //Персонаж
                                           //Активировать диалог
                             hit.collider.gameObject.SendMessage("Start_dialog");
+                            break;
+                        case "Interactive":
+                            hit.collider.gameObject.SendMessage("Action");
                             break;
                     }
                 }
