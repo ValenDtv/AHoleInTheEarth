@@ -10,27 +10,31 @@ public class KeypadLock : MonoBehaviour
     public Text text_password;
     public GameObject panelForActivate;
     public GameObject[] objectsForDisable;
+    public bool isOpen = false;
 
 
     public void PressKey(string key) 
     {
+        if (password.Length >= 4)
+            password = "";
         password += key;
         text_password.text = password;
         if (password.Length == 4)
         {
             if (password == CORRECT_PASSWORD)
             {
+                password = "OPEN";
                 SuccessOpenDoor();
             }
             else
-                password = "";
+                password = "LOCK";
         }
         text_password.text = password;
     }
 
     private void SuccessOpenDoor()
     {
-
+        isOpen = true;
     }
 
     public void ActivateKeypadUI()
@@ -61,7 +65,10 @@ public class KeypadLock : MonoBehaviour
     
     void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.E))
+        {
+            DisableKeypadUI();
+        }
     }
 
     

@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class KeypadTrigger : MonoBehaviour
 {
-    public KeypadLock KeypadLock;
+    public KeypadLock keypadLock;
 
     void OnTriggerEnter(Collider coll)
     {
-        if (coll.tag == "Player")
+        if (coll.tag == "Player" &&  !keypadLock.isOpen)
         {
-            KeypadLock.ActivateKeypadUI();
+            keypadLock.ActivateKeypadUI();
         }
     }
 }

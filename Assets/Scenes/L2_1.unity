@@ -1686,7 +1686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.735849, g: 0.6022436, b: 0.3991634, a: 1}
+  m_Color: {r: 0.735849, g: 0.6022436, b: 0.3991634, a: 0.34117648}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3467,7 +3467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25a20f9fffe760b4da513066b7ec0df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KeypadLock: {fileID: 553405732}
+  keypadLock: {fileID: 553405732}
 --- !u!1 &301781011 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5858219375363077057, guid: 6f508adc3bba8c240b4bb04086503303,
@@ -6847,6 +6847,7 @@ MonoBehaviour:
   panelForActivate: {fileID: 816096768}
   objectsForDisable:
   - {fileID: 1519327464}
+  isOpen: 0
 --- !u!1 &553872859 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5858219375363079405, guid: 6f508adc3bba8c240b4bb04086503303,
@@ -28226,6 +28227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: 2_2
+  keypad: {fileID: 553405732}
 --- !u!65 &5851558358043460091
 BoxCollider:
   m_ObjectHideFlags: 0

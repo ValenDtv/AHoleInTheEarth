@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class ToAnotherScene : MonoBehaviour
 {
     public string SceneName;
+    public KeypadLock keypad;
 
     // Start is called before the first frame update
     void Start()
@@ -15,6 +16,7 @@ public class ToAnotherScene : MonoBehaviour
 
     public void Action()
     {
-        SceneManager.LoadScene(SceneName);
+        if (keypad.isOpen)
+            SceneManager.LoadScene(SceneName);
     }
 }
