@@ -21540,8 +21540,8 @@ MonoBehaviour:
   TintColor: {r: 1, g: 1, b: 1, a: 1}
   Hue: 0
   Saturation: 0.45
-  Brightness: -0.05
-  Contrast: 0.05
+  Brightness: -0.07
+  Contrast: 0.1
   Sharpness: 0
 --- !u!1 &1736742798
 GameObject:
