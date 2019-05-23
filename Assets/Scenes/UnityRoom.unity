@@ -298,6 +298,7 @@ GameObject:
   - component: {fileID: 67961986}
   - component: {fileID: 67961985}
   - component: {fileID: 67961984}
+  - component: {fileID: 67961987}
   m_Layer: 0
   m_Name: CameraInv
   m_TagString: Untagged
@@ -369,6 +370,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &67961987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67961983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2fd0b11cfb2fb4ca4ed47adfcc3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Shader: {fileID: 4800000, guid: 9d7e8f87435780644abb4acdfd72a2f0, type: 3}
+  LookupTexture: {fileID: 0}
+  Amount: 1
+  TintColor: {r: 1, g: 1, b: 1, a: 1}
+  Hue: 0
+  Saturation: 0.1
+  Brightness: 0
+  Contrast: 0.075
+  Sharpness: 0
 --- !u!1 &88679626
 GameObject:
   m_ObjectHideFlags: 0
@@ -1874,6 +1896,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a81b19cb677d87d48be6416a22f59896, type: 2}
+    - target: {fileID: 2300000, guid: ad8050f5b66651d43b499a133f189195, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad8050f5b66651d43b499a133f189195, type: 3}
 --- !u!1 &325765909
@@ -2860,6 +2886,75 @@ Transform:
   m_Father: {fileID: 672908337}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &495496946
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 495496948}
+  - component: {fileID: 495496947}
+  m_Layer: 0
+  m_Name: Spot Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &495496947
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495496946}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 1, g: 0.985992, b: 0.9764151, a: 1}
+  m_Intensity: 11
+  m_Range: 68.53654
+  m_SpotAngle: 9.452641
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 0.9
+    m_Bias: 0
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 2.26
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &495496948
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495496946}
+  m_LocalRotation: {x: 0.27765587, y: -0.2874851, z: 0.67174065, w: 0.62371796}
+  m_LocalPosition: {x: 0.49, y: 24.58, z: -27.04}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 47.104004, y: 1.213, z: 94.775}
 --- !u!1 &495921013
 GameObject:
   m_ObjectHideFlags: 0
@@ -4570,6 +4665,7 @@ GameObject:
   - component: {fileID: 653230546}
   - component: {fileID: 653230545}
   - component: {fileID: 653230548}
+  - component: {fileID: 653230549}
   m_Layer: 0
   m_Name: cutscene_sofa_camera_sister
   m_TagString: Untagged
@@ -4660,6 +4756,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &653230549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653230544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2fd0b11cfb2fb4ca4ed47adfcc3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Shader: {fileID: 4800000, guid: 9d7e8f87435780644abb4acdfd72a2f0, type: 3}
+  LookupTexture: {fileID: 0}
+  Amount: 1
+  TintColor: {r: 1, g: 1, b: 1, a: 1}
+  Hue: 0
+  Saturation: 0.1
+  Brightness: 0
+  Contrast: 0.075
+  Sharpness: 0
 --- !u!1 &664310272
 GameObject:
   m_ObjectHideFlags: 0
@@ -5555,6 +5672,27 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1196515588}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &754489231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754489223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2fd0b11cfb2fb4ca4ed47adfcc3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Shader: {fileID: 4800000, guid: 9d7e8f87435780644abb4acdfd72a2f0, type: 3}
+  LookupTexture: {fileID: 0}
+  Amount: 1
+  TintColor: {r: 1, g: 1, b: 1, a: 1}
+  Hue: 0
+  Saturation: 0.1
+  Brightness: 0
+  Contrast: 0.075
+  Sharpness: 0
 --- !u!4 &758829051 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400020, guid: 1a6d4d6270ec90447b0545f94981a287,
@@ -15285,6 +15423,7 @@ GameObject:
   - component: {fileID: 1130784493}
   - component: {fileID: 1130784492}
   - component: {fileID: 1130784491}
+  - component: {fileID: 1130784495}
   m_Layer: 0
   m_Name: cutscene_sofa_camera_main
   m_TagString: Untagged
@@ -15375,6 +15514,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 14.708001, y: 226.80699, z: 1.996}
+--- !u!114 &1130784495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130784490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2fd0b11cfb2fb4ca4ed47adfcc3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Shader: {fileID: 4800000, guid: 9d7e8f87435780644abb4acdfd72a2f0, type: 3}
+  LookupTexture: {fileID: 0}
+  Amount: 1
+  TintColor: {r: 1, g: 1, b: 1, a: 1}
+  Hue: 0
+  Saturation: 0.1
+  Brightness: 0
+  Contrast: 0.075
+  Sharpness: 0
 --- !u!1 &1133441701
 GameObject:
   m_ObjectHideFlags: 0
@@ -15857,6 +16017,7 @@ GameObject:
   - component: {fileID: 1167159668}
   - component: {fileID: 1167159667}
   - component: {fileID: 1167159670}
+  - component: {fileID: 1167159671}
   m_Layer: 0
   m_Name: cutscene_sofa_camera_person
   m_TagString: Untagged
@@ -15947,6 +16108,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1167159671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167159666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2fd0b11cfb2fb4ca4ed47adfcc3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Shader: {fileID: 4800000, guid: 9d7e8f87435780644abb4acdfd72a2f0, type: 3}
+  LookupTexture: {fileID: 0}
+  Amount: 1
+  TintColor: {r: 1, g: 1, b: 1, a: 1}
+  Hue: 0
+  Saturation: 0.1
+  Brightness: 0
+  Contrast: 0.075
+  Sharpness: 0
 --- !u!1 &1172519625
 GameObject:
   m_ObjectHideFlags: 0
@@ -16795,6 +16977,18 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c129033427756ea45a736cf6d50754ae, type: 2}
+    - target: {fileID: 2300058, guid: fd18156e997e4644fabaed2afd43a796, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300058, guid: fd18156e997e4644fabaed2afd43a796, type: 3}
+      propertyPath: m_StitchLightmapSeams
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300058, guid: fd18156e997e4644fabaed2afd43a796, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2300060, guid: fd18156e997e4644fabaed2afd43a796, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -16803,10 +16997,18 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c129033427756ea45a736cf6d50754ae, type: 2}
+    - target: {fileID: 2300062, guid: fd18156e997e4644fabaed2afd43a796, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2300064, guid: fd18156e997e4644fabaed2afd43a796, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c129033427756ea45a736cf6d50754ae, type: 2}
+    - target: {fileID: 2300064, guid: fd18156e997e4644fabaed2afd43a796, type: 3}
+      propertyPath: m_StitchLightmapSeams
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd18156e997e4644fabaed2afd43a796, type: 3}
 --- !u!1 &1224944101 stripped
@@ -18163,6 +18365,7 @@ GameObject:
   - component: {fileID: 1424480129}
   - component: {fileID: 1424480128}
   - component: {fileID: 1424480130}
+  - component: {fileID: 1424480131}
   m_Layer: 0
   m_Name: cutscene_sofa_dialogue
   m_TagString: Untagged
@@ -18212,6 +18415,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2bc48161e693cc4a8b763f16ca794d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1424480131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424480127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2fd0b11cfb2fb4ca4ed47adfcc3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Shader: {fileID: 4800000, guid: 9d7e8f87435780644abb4acdfd72a2f0, type: 3}
+  LookupTexture: {fileID: 0}
+  Amount: 1
+  TintColor: {r: 1, g: 1, b: 1, a: 1}
+  Hue: 0
+  Saturation: 0.1
+  Brightness: 0
+  Contrast: 0.075
+  Sharpness: 0
 --- !u!114 &1425626563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18981,7 +19205,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 03ed9af8adf3e2e4aa33e6e4fb24cf58, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ce18fb08568b4d4489c625a6a57e16ec, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -21752,6 +21976,7 @@ GameObject:
   - component: {fileID: 1819762464}
   - component: {fileID: 1819762463}
   - component: {fileID: 1819762462}
+  - component: {fileID: 1819762465}
   m_Layer: 0
   m_Name: cutscene_sofa_camera_big_plan
   m_TagString: Untagged
@@ -21823,6 +22048,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 251.82, z: 0}
+--- !u!114 &1819762465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819762461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2fd0b11cfb2fb4ca4ed47adfcc3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Shader: {fileID: 4800000, guid: 9d7e8f87435780644abb4acdfd72a2f0, type: 3}
+  LookupTexture: {fileID: 0}
+  Amount: 1
+  TintColor: {r: 1, g: 1, b: 1, a: 1}
+  Hue: 0
+  Saturation: 0.1
+  Brightness: 0
+  Contrast: 0.075
+  Sharpness: 0
 --- !u!1 &1829982728
 GameObject:
   m_ObjectHideFlags: 0
@@ -23554,6 +23800,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2107061845}
   - component: {fileID: 2107061846}
+  - component: {fileID: 2107061847}
   m_Layer: 0
   m_Name: cutscene_sofa_person
   m_TagString: Untagged
@@ -23595,6 +23842,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2107061847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107061844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2fd0b11cfb2fb4ca4ed47adfcc3b26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Shader: {fileID: 4800000, guid: 9d7e8f87435780644abb4acdfd72a2f0, type: 3}
+  LookupTexture: {fileID: 0}
+  Amount: 1
+  TintColor: {r: 1, g: 1, b: 1, a: 1}
+  Hue: 0
+  Saturation: 0.1
+  Brightness: 0
+  Contrast: 0.075
+  Sharpness: 0
 --- !u!1 &2107738703
 GameObject:
   m_ObjectHideFlags: 0
