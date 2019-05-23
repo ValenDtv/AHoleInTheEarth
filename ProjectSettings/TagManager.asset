@@ -8,6 +8,7 @@ TagManager:
   - Character
   - Interactive
   - Commented
+  - cog
   layers:
   - Default
   - TransparentFX
