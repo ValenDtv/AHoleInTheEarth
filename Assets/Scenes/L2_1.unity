@@ -10452,11 +10452,6 @@ PrefabInstance:
       propertyPath: cco.Collector
       value: 
       objectReference: {fileID: 1960001045}
-    - target: {fileID: 403816842540947837, guid: 40807baa2e6ee924981a66f776d474ea,
-        type: 3}
-      propertyPath: height
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 754489224, guid: 40807baa2e6ee924981a66f776d474ea, type: 3}
       propertyPath: item
       value: 
@@ -10465,6 +10460,11 @@ PrefabInstance:
       propertyPath: GOCollector
       value: 
       objectReference: {fileID: 1960001045}
+    - target: {fileID: 403816842540947837, guid: 40807baa2e6ee924981a66f776d474ea,
+        type: 3}
+      propertyPath: height
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40807baa2e6ee924981a66f776d474ea, type: 3}
 --- !u!1 &892969163
@@ -21045,6 +21045,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.9
       objectReference: {fileID: 0}
+    - target: {fileID: 1828303918376540849, guid: c5d02b0324edfda4db06fad6a52592e6,
+        type: 3}
+      propertyPath: options.Collector
+      value: 
+      objectReference: {fileID: 1960001045}
     - target: {fileID: 1828303918386733026, guid: c5d02b0324edfda4db06fad6a52592e6,
         type: 3}
       propertyPath: freeWalkSpeed
@@ -21060,11 +21065,6 @@ PrefabInstance:
       propertyPath: freeSprintSpeed
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 1828303918376540849, guid: c5d02b0324edfda4db06fad6a52592e6,
-        type: 3}
-      propertyPath: options.Collector
-      value: 
-      objectReference: {fileID: 1960001045}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5d02b0324edfda4db06fad6a52592e6, type: 3}
 --- !u!1 &1687100923
@@ -21539,9 +21539,9 @@ MonoBehaviour:
   Amount: 1
   TintColor: {r: 1, g: 1, b: 1, a: 1}
   Hue: 0
-  Saturation: 0
-  Brightness: 0
-  Contrast: 0
+  Saturation: 0.45
+  Brightness: -0.05
+  Contrast: 0.05
   Sharpness: 0
 --- !u!1 &1736742798
 GameObject:
