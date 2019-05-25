@@ -2467,7 +2467,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -107.79999, y: 147.5}
+  m_AnchoredPosition: {x: -140, y: 141.6}
   m_SizeDelta: {x: 88.900024, y: 86.400024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &364313935
@@ -8573,9 +8573,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 0.97
-  m_Text: 'StartCoroutine(PlayD());gStartCoroutine(PlayD());fjhb
-
-    void OnEnable()'
+  m_Text: 
 --- !u!222 &1109968050
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -30137,35 +30135,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8268570818662642848
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8268570818662642877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.3962264, g: 0.072890714, b: 0.072890714, a: 0.79607844}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &8268570818662642849
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -30192,8 +30161,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.52675515, y: 0}
   m_AnchorMax: {x: 0.52675515, y: 0}
-  m_AnchoredPosition: {x: -27, y: 386.5}
-  m_SizeDelta: {x: 600, y: 450}
+  m_AnchoredPosition: {x: 272.9, y: 417.4}
+  m_SizeDelta: {x: 522, y: 635.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8268570818662642877
 GameObject:
@@ -30205,9 +30174,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8268570818662642850}
   - component: {fileID: 8268570818662642849}
-  - component: {fileID: 8268570818662642848}
   - component: {fileID: 1425626563}
   - component: {fileID: 1425626566}
+  - component: {fileID: 8268570818662642878}
   m_Layer: 5
   m_Name: ivent_window
   m_TagString: Untagged
@@ -30215,6 +30184,33 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8268570818662642878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8268570818662642877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Texture: {fileID: 2800000, guid: 6dda0194e368f754d838d3d87c6f3c90, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
 --- !u!1 &8268570818743723672
 GameObject:
   m_ObjectHideFlags: 0
@@ -30250,8 +30246,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -220.8}
-  m_SizeDelta: {x: 550, y: 391.6}
+  m_AnchoredPosition: {x: 0.7, y: -317.2}
+  m_SizeDelta: {x: 427.9, y: 551.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8268570818743723676
 CanvasRenderer:
@@ -30282,7 +30278,7 @@ MonoBehaviour:
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 125, y: 120}
-  m_Spacing: {x: 6, y: 6}
+  m_Spacing: {x: 10, y: 18}
   m_Constraint: 0
   m_ConstraintCount: 2
 --- !u!114 &8268570818743723679
@@ -30298,7 +30294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.18039216}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
