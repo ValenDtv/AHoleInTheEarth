@@ -44,8 +44,8 @@ public class Activate : MonoBehaviour
     List<Thing> inventory = new List<Thing>(); //Инвентарь
     CursorLockMode wantedMode;
     //int radius = 1;
-    float radius = 0.3f;
-    float max_distance = 3f;
+    float radius = 0.8f;
+    float max_distance = 3.5f;
     public int MaskNumber;
     int layerMask;
 

@@ -8,7 +8,7 @@ public class LoadScene : MonoBehaviour
     public void StartGame()
     {
         PlayerPrefs.DeleteAll();
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     public void LoadGame()
