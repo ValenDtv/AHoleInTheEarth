@@ -15,7 +15,7 @@ using UnityEngine;
 public class Outline : MonoBehaviour {
   private static HashSet<Mesh> registeredMeshes = new HashSet<Mesh>();
   public DateTime lastTime;
-  const float DELAY = 0.5f;
+  const float DELAY = 0f;
   public bool lightOff = false;
 
   public enum Mode {
@@ -135,7 +135,8 @@ public class Outline : MonoBehaviour {
   }
 
   void Update() {
-    if (needsUpdate) {
+
+        if (needsUpdate) {
       needsUpdate = false;
 
       UpdateMaterialProperties();

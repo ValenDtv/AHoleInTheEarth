@@ -8,6 +8,7 @@ public class KeypadLock : MonoBehaviour
     private const string CORRECT_PASSWORD = "8314";
     private string password = "";
     public Text text_password;
+    private GameObjectCollector Collector;
     public GameObject panelForActivate;
     public GameObject[] objectsForDisable;
     public bool isOpen = false;
@@ -42,7 +43,7 @@ public class KeypadLock : MonoBehaviour
         panelForActivate.SetActive(true);
         foreach (GameObject ob in objectsForDisable)
             ob.SetActive(false);
-        
+        Collector.GameObjects.ThirdPersonCamera.GetComponent<Activate>().DisableInteraction = true;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
     }
@@ -52,15 +53,19 @@ public class KeypadLock : MonoBehaviour
         panelForActivate.SetActive(false);
         foreach (GameObject ob in objectsForDisable)
             ob.SetActive(true);
-
+        Collector.GameObjects.ThirdPersonCamera.GetComponent<Activate>().DisableInteraction = false;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    private void Awake()
+    {
+        Collector = GameObjectCollector.Collector.GetComponent<GameObjectCollector>();
     }
 
     void Start()
     {
         text_password.text = "";
-        
     }
     
     void Update()
