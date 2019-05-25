@@ -36,7 +36,7 @@ public class ItemObject : MonoBehaviour
         {
             //Destroy(gameObject);
             //Сделать вызов диалога нормально
-            PlayerPrefs.SetString(gameObject.name, "IsHave");
+
             GameObjectCollector.Collector.GetComponent<GameObjectCollector>().GameObjects.Player.SendMessage("Start_thing_dialog", gameObject.name);
           
              //GameObject.Find("person_controller");

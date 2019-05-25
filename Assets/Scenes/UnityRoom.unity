@@ -1243,7 +1243,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3, y: 125}
+  m_AnchoredPosition: {x: -26.650024, y: -217.6}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &217323635
@@ -1258,7 +1258,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 286852ced1a85624ba32de0563885887, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 
 --- !u!114 &217323636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1485,10 +1484,10 @@ RectTransform:
   m_Father: {fileID: 308434825}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -165.29999, y: -207.5}
-  m_SizeDelta: {x: 330.59998, y: 415}
+  m_AnchoredPosition: {x: -165.29999, y: 0}
+  m_SizeDelta: {x: 330.59998, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &282352680
 MonoBehaviour:
@@ -2895,7 +2894,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: def1cf9b6509e2742953f4978c09787f, type: 3}
       propertyPath: m_TagString
-      value: Commented
+      value: Interactive
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: def1cf9b6509e2742953f4978c09787f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4205,7 +4204,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100022, guid: 694c0fbaeb3dd3242859da65a3d11883, type: 3}
       propertyPath: m_TagString
-      value: Commented
+      value: Interactive
       objectReference: {fileID: 0}
     - target: {fileID: 100022, guid: 694c0fbaeb3dd3242859da65a3d11883, type: 3}
       propertyPath: m_Layer
@@ -20509,7 +20508,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3, y: 72.600006}
+  m_AnchoredPosition: {x: -26.650024, y: -270}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1630741159
@@ -25943,7 +25942,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 991b9617db9f2b24281beadff5108f0b, type: 3}
       propertyPath: m_TagString
-      value: Commented
+      value: Interactive
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 991b9617db9f2b24281beadff5108f0b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26946,49 +26945,6 @@ Transform:
   - {fileID: 874660938}
   m_Father: {fileID: 988295525}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1803663027
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1803663029}
-  - component: {fileID: 1803663028}
-  m_Layer: 0
-  m_Name: SaveLoadManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1803663028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1803663027}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f91c944f770dda645ab4a1d29b0a835e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1803663029
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1803663027}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 726.0347, y: 123.69176, z: 57.851116}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1819762461
 GameObject:
@@ -29683,8 +29639,6 @@ MonoBehaviour:
     PlayerHand: {fileID: 364313933}
     ItemInHand: {fileID: 1444972964}
     PauseCanvas: {fileID: 308434821}
-    ButtonContinue: {fileID: 0}
-    KeyPad: {fileID: 0}
     Options:
     - {fileID: 352954908}
     - {fileID: 968751004}
@@ -30296,7 +30250,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.6999998, y: -317.2}
+  m_AnchoredPosition: {x: 0.7, y: -317.2}
   m_SizeDelta: {x: 427.9, y: 551.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8268570818743723676

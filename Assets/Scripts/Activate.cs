@@ -9,7 +9,6 @@ public class Activate : MonoBehaviour
     public GameObject item;
     public GameObject GOCollector;
     private GameObjectCollector Collector;
-    public bool DisableInteraction = false; 
 
     private class Thing
     {
@@ -43,9 +42,8 @@ public class Activate : MonoBehaviour
     float dis = 3f; //Максимальное расстояние от камеры до объекта
     List<Thing> inventory = new List<Thing>(); //Инвентарь
     CursorLockMode wantedMode;
-    //int radius = 1;
-    float radius = 0.3f;
-    float max_distance = 3f;
+    int radius = 1;
+    int max_distance = 2;
     public int MaskNumber;
     int layerMask;
 
@@ -62,12 +60,6 @@ public class Activate : MonoBehaviour
         Ray ray = camera.ScreenPointToRay(Input.mousePosition);
         if (Physics.SphereCast(ray, radius, out hit, max_distance, layerMask))
         {
-            if (DisableInteraction)
-            {
-                if (hit.collider.GetComponent<Outline>() != null)
-                    hit.collider.GetComponent<Outline>().enabled = false;
-                return;
-            }
             if (hit.collider.GetComponent<Outline>() != null)
             {
                 hit.collider.GetComponent<Outline>().enabled = true;
@@ -82,7 +74,7 @@ public class Activate : MonoBehaviour
                 {
                     switch (hit.collider.tag)
                     {
-                        case "Commented": //Объект, которому игрок может дать комментарий
+                        case "Commented": //Интерактивный объект
                             hit.collider.gameObject.SendMessage("Start_dialog");
                             break;
                         case "Thing": //Вещь, которую можно поднять
@@ -96,7 +88,7 @@ public class Activate : MonoBehaviour
                                           //Активировать диалог
                             hit.collider.gameObject.SendMessage("Start_dialog");
                             break;
-                        case "Interactive": //Интерактивный объект
+                        case "Interactive":
                             hit.collider.gameObject.SendMessage("Action");
                             break;
                     }

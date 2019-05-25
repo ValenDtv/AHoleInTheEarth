@@ -6,11 +6,6 @@ public class KeypadTrigger : MonoBehaviour
 {
     public KeypadLock keypadLock;
 
-    private void Start()
-    {
-        
-    }
-
     void OnTriggerEnter(Collider coll)
     {
         if (coll.tag == "Player" &&  !keypadLock.isOpen)
