@@ -20,6 +20,8 @@ public class GameObjects
     public GameObject PlayerHand;
     public GameObject ItemInHand;
     public GameObject PauseCanvas;
+    public GameObject ButtonContinue;
+    public GameObject KeyPad;
 
     public GameObject[] Options = new GameObject[4];
 
