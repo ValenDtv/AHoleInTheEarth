@@ -21,6 +21,16 @@ public class Pause : MonoBehaviour
     void Update()
     {
         Paused();
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            RaycastHit hit;
+            Camera camera = Collector.GameObjects.ThirdPersonCamera.GetComponent("vThirdPersonCamera").GetComponent<Camera>();
+            Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out hit, 40))
+            {
+                Debug.Log(hit.collider.gameObject.name);
+            }
+        }
     }
 
     //Пауза

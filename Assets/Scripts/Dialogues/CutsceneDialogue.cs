@@ -143,7 +143,8 @@ public class CutsceneDialogue : MonoBehaviour
         Cursor.visible = true;
         if (ph[i].isChoice)
         {
-            playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(0);
+            if (playableDirector != null)
+                playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(0);
 
             if (ph[i].conditionsString.Length == 0)
                 yield return StartCoroutine(Choice(ph, i));

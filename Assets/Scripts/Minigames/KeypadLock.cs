@@ -12,6 +12,7 @@ public class KeypadLock : MonoBehaviour
     public GameObject panelForActivate;
     public GameObject[] objectsForDisable;
     public bool isOpen = false;
+    
 
 
     public void PressKey(string key) 

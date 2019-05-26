@@ -4177,7 +4177,7 @@ GameObject:
   - component: {fileID: 324175569}
   - component: {fileID: 324175568}
   m_Layer: 0
-  m_Name: KeyObject
+  m_Name: Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7904,7 +7904,7 @@ GameObject:
   - component: {fileID: 626556393}
   - component: {fileID: 626556392}
   m_Layer: 0
-  m_Name: GearsObject
+  m_Name: Gears
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9667,7 +9667,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &791493503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12753,6 +12753,40 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 514887709084838924}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1030604064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030604063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99b330c24471471409864ac9ff804b23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  options:
+    Collector: {fileID: 1960001045}
+    Time: 4
+--- !u!114 &1030604065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030604063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightOff: 0
+  outlineMode: 1
+  outlineColor: {r: 0, g: 0.9490196, b: 1, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!64 &1030604067
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14881,10 +14915,10 @@ RectTransform:
   m_Father: {fileID: 1887051754}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 2, y: -425}
-  m_SizeDelta: {x: 1707.6, y: 917.4}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 2, y: -38.5}
+  m_SizeDelta: {x: 13.599976, y: 144.40002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1189188182 stripped
 GameObject:
@@ -18623,6 +18657,21 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 950815006}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1448134462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448134460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99b330c24471471409864ac9ff804b23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  options:
+    Collector: {fileID: 1960001045}
+    Time: 4
 --- !u!114 &1448134465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27520,6 +27569,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bench
       objectReference: {fileID: 0}
+    - target: {fileID: 925488174858540340, guid: 34ebe2556192cb048bb2230826eb7bc5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 925488174858540340, guid: 34ebe2556192cb048bb2230826eb7bc5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Commented
+      objectReference: {fileID: 0}
     - target: {fileID: 925488174858438932, guid: 34ebe2556192cb048bb2230826eb7bc5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28925,6 +28984,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.14525011, y: 0.024780778, z: 0.20967539}
   m_Center: {x: 0.0018293113, y: -0.00015965333, z: -0.0015392897}
+--- !u!114 &5851558358043460092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5851558358043460089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99b330c24471471409864ac9ff804b23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  options:
+    Collector: {fileID: 1960001045}
+    Time: 4
 --- !u!114 &5851558358043460095
 MonoBehaviour:
   m_ObjectHideFlags: 0
