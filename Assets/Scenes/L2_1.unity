@@ -26573,11 +26573,14 @@ MonoBehaviour:
     ItemInHand: {fileID: 1639336711}
     PauseCanvas: {fileID: 1447180906}
     ButtonContinue: {fileID: 0}
-    KeyPad: {fileID: 0}
+    KeyPad: {fileID: 553405728}
     LiftPanel: {fileID: 0}
     LiftArm: {fileID: 0}
     Canvastxt: {fileID: 0}
     Load: {fileID: 1462678618}
+    UR_Cutscene_timeline: {fileID: 0}
+    UR_Cutscene_camera: {fileID: 0}
+    Bench: {fileID: 1030604063}
     Options:
     - {fileID: 0}
     - {fileID: 0}

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6440212416193961016}
   - component: {fileID: 4307634044547360891}
   - component: {fileID: 9195512796429487535}
+  - component: {fileID: 684893810964968897}
   m_Layer: 9
   m_Name: Gear1Object
   m_TagString: Thing
@@ -111,3 +112,16 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!65 &684893810964968897
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6440212416196215544}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08613543, y: 0.052177835, z: 0.12090628}
+  m_Center: {x: -0.0065155383, y: 0.022805372, z: -0.023900969}

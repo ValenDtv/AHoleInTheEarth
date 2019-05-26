@@ -12,7 +12,7 @@ public class KeypadLock : MonoBehaviour
     public GameObject panelForActivate;
     public GameObject[] objectsForDisable;
     public bool isOpen = false;
-    
+    SinglePhrase sp;
 
 
     public void PressKey(string key) 
@@ -37,6 +37,8 @@ public class KeypadLock : MonoBehaviour
     private void SuccessOpenDoor()
     {
         isOpen = true;
+        PlayerPrefs.SetString("KeyPadIsOpen", "yes");
+        StartCoroutine(sp.Say("Дверь открылась, отлично.", 4));
     }
 
     public void ActivateKeypadUI()
@@ -47,6 +49,7 @@ public class KeypadLock : MonoBehaviour
         Collector.GameObjects.ThirdPersonCamera.GetComponent<Activate>().DisableInteraction = true;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+        CursorControl.disableInventory = true;
     }
 
     public void DisableKeypadUI()
@@ -57,11 +60,13 @@ public class KeypadLock : MonoBehaviour
         Collector.GameObjects.ThirdPersonCamera.GetComponent<Activate>().DisableInteraction = false;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        CursorControl.disableInventory = false;
     }
 
     private void Awake()
     {
         Collector = GameObjectCollector.Collector.GetComponent<GameObjectCollector>();
+        sp = new SinglePhrase(Collector.GameObjects.Subtitles.GetComponent<Text>());
     }
 
     void Start()

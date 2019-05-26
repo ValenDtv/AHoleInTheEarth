@@ -14,6 +14,7 @@ public class LoadScene : MonoBehaviour
     public void StartGame()
     {
         PlayerPrefs.DeleteAll();
+        //PlayerPrefs.Save();
         Load("UnityRoom");
     }
 

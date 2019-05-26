@@ -14,6 +14,7 @@ public class CogsGameManager : MonoBehaviour
     private GameObject player;
     bool isWin = false;
     GameObject liftPanel;
+    float time = 0f;
 
     void Start()
     {
@@ -27,6 +28,17 @@ public class CogsGameManager : MonoBehaviour
     {
         if (isWin)
             return;
+        time += Time.deltaTime;
+        if (Input.GetKeyDown(KeyCode.E) && time < 0.5)
+        {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            CameraCog.SetActive(false);
+            player.GetComponent<vThirdPersonInput>().disable = false;
+            Collector.GameObjects.ThirdPersonCamera.GetComponent<Activate>().DisableInteraction = false;
+            CursorControl.disableInventory = false;
+            time = 0f;
+        }
         if (cog1.isRotate && cog2.isRotate)
         {
             cog1.StopRotation();
@@ -49,5 +61,6 @@ public class CogsGameManager : MonoBehaviour
         PlayerPrefs.SetString("LiftFixed", "yes");
         Destroy(GameObject.Find("Gears"));
         PlayerPrefs.SetString("Gears", "IsNotHave");
+        CursorControl.disableInventory = false;
     }
 }
