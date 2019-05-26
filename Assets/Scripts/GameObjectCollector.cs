@@ -25,6 +25,7 @@ public class GameObjects
     public GameObject LiftPanel;
     public GameObject LiftArm;
     public GameObject Canvastxt;
+    public GameObject Load;
 
     public GameObject[] Options = new GameObject[4];
 
