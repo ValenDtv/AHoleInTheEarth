@@ -40,25 +40,28 @@ public class Activate : MonoBehaviour
         }
     }
 
-    float dis = 3.5f; //Максимальное расстояние от камеры до объекта
+    float dis = 2f; //Максимальное расстояние от камеры до объекта
     List<Thing> inventory = new List<Thing>(); //Инвентарь
     CursorLockMode wantedMode;
     //int radius = 1;
     float radius = 0.2f;
-    float max_distance = 3.5f;
+    float max_distance = 2f;
     public int MaskNumber;
     int layerMask;
+    Camera camera;
 
     void Start()
     {
         layerMask = 1 << MaskNumber;
         Collector = GOCollector.GetComponent<GameObjectCollector>();
+        camera = GetComponent("vThirdPersonCamera").GetComponent<Camera>();
+        dis += camera.GetComponent<vThirdPersonCamera>().defaultDistance;
+        max_distance += camera.GetComponent<vThirdPersonCamera>().defaultDistance;
     }
 
     void Update()
     {
         RaycastHit hit;
-        Camera camera = GetComponent("vThirdPersonCamera").GetComponent<Camera>();
         Ray ray = camera.ScreenPointToRay(Input.mousePosition);
         if (Physics.SphereCast(ray, radius, out hit, max_distance, layerMask))
         {
