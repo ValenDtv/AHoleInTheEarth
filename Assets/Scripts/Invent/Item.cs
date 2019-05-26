@@ -241,13 +241,14 @@ public class Item : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerEnterH
                 }     
             case "Key":
                 {
+                    Inventary.DeleteItem("Key1");
+                    Inventary.DeleteItem("Key2");
                     GameObject it = GameObject.Find("KeyObject").GetComponent<ItemObject>().item;
                     Inventary.AddItem(it);
                     Destroy(GameObject.Find("KeyObject"));
                     //Destroy(GameObject.Find("Key1"));
                     //Destroy(GameObject.Find("Key2"));
-                    Inventary.DeleteItem("Key1");
-                    Inventary.DeleteItem("Key2");
+
                     PlayerPrefs.SetString("Key1Object", "IsNotHave");
                     PlayerPrefs.SetString("Key2Object", "IsNotHave");
                     isCombined = true;

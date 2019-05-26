@@ -14,19 +14,26 @@ public class ToAnotherScene : MonoBehaviour
     void Start()
     {
         comment = this.gameObject.GetComponent<CommentDialogue>();
+        Collector = GameObjectCollector.Collector.GetComponent<GameObjectCollector>();
     }
 
     public void Action()
     {
         if (SceneManager.GetActiveScene().name == "L2_1")
             if (keypad.isOpen)
-                SceneManager.LoadScene(SceneName);
+                Load(SceneName);
             else
             {
                 comment.SendMessage("Start_dialog");
                 keypad.ActivateKeypadUI();
             }
         else
-            SceneManager.LoadScene(SceneName);
+           Load(SceneName);
+    }
+
+    private void Load(string name)
+    {
+        Collector.GameObjects.Load.SetActive(true);
+        SceneManager.LoadScene(name);
     }
 }

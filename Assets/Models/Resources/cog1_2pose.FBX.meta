@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 12aa8daefe6f50143861cac421b2d504
+guid: 1e99002fef9a7bc46aec86f1718878f7
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -9,9 +9,12 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Gear_28.005_Gear.001
-    7400000: Take 001
-    9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.010
+    second: {fileID: 2100000, guid: 2d8e0ef3525de5642b55b4069fdd271c, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -63,8 +66,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -91,7 +94,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
