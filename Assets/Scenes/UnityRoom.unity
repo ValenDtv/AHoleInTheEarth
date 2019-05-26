@@ -16430,7 +16430,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 754489223, guid: 40807baa2e6ee924981a66f776d474ea, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6781958723384375621, guid: 40807baa2e6ee924981a66f776d474ea,
         type: 3}
@@ -16499,7 +16499,7 @@ PrefabInstance:
     - target: {fileID: 5130860195443345789, guid: 40807baa2e6ee924981a66f776d474ea,
         type: 3}
       propertyPath: field of view
-      value: 25
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 403816842540947837, guid: 40807baa2e6ee924981a66f776d474ea,
         type: 3}
@@ -16509,7 +16509,7 @@ PrefabInstance:
     - target: {fileID: 403816842540947837, guid: 40807baa2e6ee924981a66f776d474ea,
         type: 3}
       propertyPath: rightOffset
-      value: 0.11
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 403816842540947837, guid: 40807baa2e6ee924981a66f776d474ea,
         type: 3}
@@ -16520,6 +16520,11 @@ PrefabInstance:
         type: 3}
       propertyPath: yMouseSensitivity
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 403816842540947837, guid: 40807baa2e6ee924981a66f776d474ea,
+        type: 3}
+      propertyPath: defaultDistance
+      value: 1.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40807baa2e6ee924981a66f776d474ea, type: 3}
@@ -29603,7 +29608,7 @@ PrefabInstance:
     - target: {fileID: 1828303918376540848, guid: c5d02b0324edfda4db06fad6a52592e6,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1828303918376727740, guid: c5d02b0324edfda4db06fad6a52592e6,
         type: 3}
@@ -29838,12 +29843,12 @@ PrefabInstance:
     - target: {fileID: 1828303918386733026, guid: c5d02b0324edfda4db06fad6a52592e6,
         type: 3}
       propertyPath: freeWalkSpeed
-      value: 2.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1828303918386733026, guid: c5d02b0324edfda4db06fad6a52592e6,
         type: 3}
       propertyPath: freeRunningSpeed
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1828303918386733026, guid: c5d02b0324edfda4db06fad6a52592e6,
         type: 3}
