@@ -16864,17 +16864,17 @@ PrefabInstance:
     - target: {fileID: 5130860195443345789, guid: 40807baa2e6ee924981a66f776d474ea,
         type: 3}
       propertyPath: field of view
-      value: 34
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 403816842540947837, guid: 40807baa2e6ee924981a66f776d474ea,
         type: 3}
       propertyPath: height
-      value: 1.7
+      value: 1.65
       objectReference: {fileID: 0}
     - target: {fileID: 403816842540947837, guid: 40807baa2e6ee924981a66f776d474ea,
         type: 3}
       propertyPath: rightOffset
-      value: 0.2
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 403816842540947837, guid: 40807baa2e6ee924981a66f776d474ea,
         type: 3}
@@ -16890,6 +16890,21 @@ PrefabInstance:
         type: 3}
       propertyPath: defaultDistance
       value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 403816842540947837, guid: 40807baa2e6ee924981a66f776d474ea,
+        type: 3}
+      propertyPath: smoothCameraRotation
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 403816842540947837, guid: 40807baa2e6ee924981a66f776d474ea,
+        type: 3}
+      propertyPath: yMinLimit
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 403816842540947837, guid: 40807baa2e6ee924981a66f776d474ea,
+        type: 3}
+      propertyPath: yMaxLimit
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40807baa2e6ee924981a66f776d474ea, type: 3}
