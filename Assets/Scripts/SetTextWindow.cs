@@ -11,6 +11,7 @@ public class SetTextWindow : MonoBehaviour
     Canvas x;
     Image p;
     Text t;
+    string textInstruction;
 
     void Start()
     {
@@ -23,6 +24,15 @@ public class SetTextWindow : MonoBehaviour
         x = canvastxt.GetComponentInChildren<Canvas>();
         p = x.GetComponentInChildren<Image>();
         t = p.GetComponentInChildren<Text>();
+
+        textInstruction =
+@"W,A,S,D - движение вперед/влево/назад/вправо
+E - использование предмета
+P - пауза в игре
+Tab - меню инвентаря
+    В инвентаре для перетаскивание предмета на предмет позволяет
+    получать их совмещение(если предметы подходят друг к другу)
+    ";
         t.text = str;
         //canvastxt.GetComponent<Canvas>().enabled = true;
     }
