@@ -19,8 +19,8 @@ public class SaveLoadScript : MonoBehaviour
     void Start()
     {
         Collector = GameObjectCollector.Collector.GetComponent<GameObjectCollector>();
-        if (SceneManager.GetActiveScene().name != "MainMenu")
-            PlayerPrefs.SetString("CurrentScene", SceneManager.GetActiveScene().name);
+        //if (SceneManager.GetActiveScene().name != "MainMenu")
+          //  PlayerPrefs.SetString("CurrentScene", SceneManager.GetActiveScene().name);
         CheckSave(SceneManager.GetActiveScene().name);
     }
 
@@ -46,19 +46,27 @@ public class SaveLoadScript : MonoBehaviour
                 if (PlayerPrefs.HasKey("CurrentScene"))
                     if (PlayerPrefs.GetString("CurrentScene") == sceneName)
                     checkPlayerPosition();
+                    else
+                        PlayerPrefs.SetString("CurrentScene", SceneManager.GetActiveScene().name);
                 break;
             case "L2_1":
                 checkItems(L2_1Items);
                 if (PlayerPrefs.HasKey("CurrentScene"))
                     if (PlayerPrefs.GetString("CurrentScene") == sceneName)
                         checkPlayerPosition();
+                    else
+                        PlayerPrefs.SetString("CurrentScene", SceneManager.GetActiveScene().name);
                 checkKeyPad();
+                checkL2_1appearance();
+                checkEva();
                 break;
             case "L2_2":
                 checkItems(L2_2Items);
                 if (PlayerPrefs.HasKey("CurrentScene"))
                     if (PlayerPrefs.GetString("CurrentScene") == sceneName)
                         checkPlayerPosition();
+                    else
+                        PlayerPrefs.SetString("CurrentScene", SceneManager.GetActiveScene().name);
                 break;
         }
     }
@@ -98,4 +106,23 @@ public class SaveLoadScript : MonoBehaviour
             if (PlayerPrefs.GetString("KeyPadIsOpen") == "Yes")
                 Collector.GameObjects.KeyPad.GetComponent<KeypadLock>().isOpen = true;
     }
+
+    private void checkEva()
+    {
+        int s = 1;
+        if (PlayerPrefs.HasKey("Eva"))
+             s = 2; // Поменять номер диалога Евы.
+    }
+
+    private void checkL2_1appearance()
+    {
+        int s = 1;
+        if (PlayerPrefs.HasKey("L2_1FirstAppearance"))
+            if (PlayerPrefs.GetString("L2_1FirstAppearance") == "Yes")
+            {
+                //Изменить координаты игрока
+                //
+            }
+    }
+
 }
