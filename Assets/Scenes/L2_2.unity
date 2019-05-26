@@ -11208,6 +11208,25 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300002, guid: 9db85c620ff280f4cbde986c0cdc4816, type: 3}
+--- !u!1 &2019743383 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: ad8050f5b66651d43b499a133f189195,
+    type: 3}
+  m_PrefabInstance: {fileID: 1148043674}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &2019743387
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019743383}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 215.78
+  m_Center: {x: -8.933022, y: 1116.6, z: 158.86932}
 --- !u!1 &2028624578 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1072127636309491449, guid: f91d6176a7d66ac4bb39d12a7b74daa3,
@@ -30671,6 +30690,7 @@ GameObject:
   - component: {fileID: 307296915872376094}
   - component: {fileID: 307296915871049022}
   - component: {fileID: 307296915869951870}
+  - component: {fileID: 307296915872217407}
   m_Layer: 0
   m_Name: Glass_wall
   m_TagString: Untagged
@@ -30678,6 +30698,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
+--- !u!64 &307296915872217407
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307296915872217406}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300336, guid: d33db64b9fe2ebd4889dd4e1b62ac818, type: 3}
 --- !u!1 &307296915872217408
 GameObject:
   m_ObjectHideFlags: 0
