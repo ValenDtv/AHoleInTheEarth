@@ -24,6 +24,7 @@ public class GameObjects
     public GameObject KeyPad;
     public GameObject LiftPanel;
     public GameObject LiftArm;
+    public GameObject Canvastxt;
 
     public GameObject[] Options = new GameObject[4];
 
