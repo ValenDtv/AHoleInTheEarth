@@ -13,14 +13,14 @@ public class SaveLoadScript : MonoBehaviour
     string[] UnityRoomItems = { "Revolver" };
     string[] L2_1Items = { "" };
     string[] L2_2Items = { "" };
-    
+
 
     // Start is called before the first frame update
     void Start()
     {
         Collector = GameObjectCollector.Collector.GetComponent<GameObjectCollector>();
         //if (SceneManager.GetActiveScene().name != "MainMenu")
-          //  PlayerPrefs.SetString("CurrentScene", SceneManager.GetActiveScene().name);
+        //  PlayerPrefs.SetString("CurrentScene", SceneManager.GetActiveScene().name);
         CheckSave(SceneManager.GetActiveScene().name);
     }
 
@@ -45,7 +45,7 @@ public class SaveLoadScript : MonoBehaviour
                 checkItems(UnityRoomItems);
                 if (PlayerPrefs.HasKey("CurrentScene"))
                     if (PlayerPrefs.GetString("CurrentScene") == sceneName)
-                    checkPlayerPosition();
+                        checkPlayerPosition();
                     else
                         PlayerPrefs.SetString("CurrentScene", SceneManager.GetActiveScene().name);
                 break;
@@ -67,13 +67,14 @@ public class SaveLoadScript : MonoBehaviour
                         checkPlayerPosition();
                     else
                         PlayerPrefs.SetString("CurrentScene", SceneManager.GetActiveScene().name);
+                checkLift();
                 break;
         }
     }
 
     public Vector3 StringToVector3(string vector)
     {
-        vector = vector.Trim(new char[] {'(', ')' });
+        vector = vector.Trim(new char[] { '(', ')' });
         // string[] k = vector.Split(',', ' ');
         //float[] v = vector.Split(','' ').Select(n => (float)System.Convert.ToDouble(n)).ToArray<float>();
         float[] v = Regex.Split(vector, ", ").Select(n => (float)System.Convert.ToDouble(n)).ToArray<float>();
@@ -97,7 +98,7 @@ public class SaveLoadScript : MonoBehaviour
         if (PlayerPrefs.HasKey("PlayerPosition"))
             Collector.GameObjects.Player.transform.localPosition = StringToVector3(PlayerPrefs.GetString("PlayerPosition"));
         //if (PlayerPrefs.HasKey("PlayerRotation"))
-           // Collector.GameObjects.Player.transform.rotation =  new Quaternion(StringToVector3(PlayerPrefs.GetString("PlayerRotation"));
+        // Collector.GameObjects.Player.transform.rotation =  new Quaternion(StringToVector3(PlayerPrefs.GetString("PlayerRotation"));
     }
 
     private void checkKeyPad()
@@ -111,7 +112,7 @@ public class SaveLoadScript : MonoBehaviour
     {
         int s = 1;
         if (PlayerPrefs.HasKey("Eva"))
-             s = 2; // Поменять номер диалога Евы.
+            s = 2; // Поменять номер диалога Евы.
     }
 
     private void checkL2_1appearance()
@@ -122,6 +123,20 @@ public class SaveLoadScript : MonoBehaviour
             {
                 //Изменить координаты игрока
                 //
+            }
+    }
+
+    private void checkLift()
+    {
+        if (PlayerPrefs.HasKey("LiftPanelOpen"))
+            if (PlayerPrefs.GetString("LiftPanelOpen") == "yes")
+            {
+                Collector.GameObjects.LiftPanel.GetComponent<LiftPanelScript>().isOpen = true;
+            }
+        if (PlayerPrefs.HasKey("LiftFixed"))
+            if (PlayerPrefs.GetString("LiftFixed") == "yes")
+            {
+                Collector.GameObjects.LiftPanel.GetComponent<LiftPanelScript>().isOpen = true;
             }
     }
 

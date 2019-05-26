@@ -115,7 +115,7 @@ public class Inventary : MonoBehaviour
                 newItem.GetComponent<RectTransform>().offsetMin = new Vector2(0, 0);
                 newItem.GetComponent<RectTransform>().offsetMax = new Vector2(0, 0);
                 newItem.GetComponent<Item>().cell = content[i];
-
+                content[i].item = newItem;
                 return true;
             }
         }
@@ -131,7 +131,29 @@ public class Inventary : MonoBehaviour
     private void OnDisable()
     {
         Collector.GameObjects.ActionPanel.SetActive(false);
+        Collector.GameObjects.ThirdPersonCamera.GetComponent<Activate>().DisableInteraction = false;
     }
+
+    private void OnEnable()
+    {
+        Collector.GameObjects.ThirdPersonCamera.GetComponent<Activate>().DisableInteraction = true;
+    }
+
+    public static void DeleteItem(string name)
+    {
+        foreach (Cell cell in content)
+        {
+            if (cell.item != null)
+                if (cell.item.name == name)
+                {
+                    if (Inventary.ItemInHand == name)
+                        Inventary.ItemInHand = "";
+                    Destroy(cell.item);
+                    break;
+                }
+        }
+    }
+
     //private void OnEnable()
     //{
     //    if (ItemInHand != "")
