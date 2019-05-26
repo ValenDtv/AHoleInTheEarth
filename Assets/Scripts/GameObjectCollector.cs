@@ -22,6 +22,7 @@ public class GameObjects
     public GameObject PauseCanvas;
     public GameObject ButtonContinue;
     public GameObject KeyPad;
+    public GameObject Canvastxt;
 
     public GameObject[] Options = new GameObject[4];
 
