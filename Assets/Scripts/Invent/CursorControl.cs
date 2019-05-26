@@ -14,7 +14,7 @@ public class CursorControl : MonoBehaviour
     public CursorControlOptions cco;
     bool x = true;
     private GameObject iw;
-    private float timing = 1f;
+    public static float timing = 1f;
     private bool isPaused = false;
     /**/ //    private Transform canvas;
 
@@ -24,8 +24,8 @@ public class CursorControl : MonoBehaviour
     void Start()
     {
         iw = cco.Collector.GetComponent<GameObjectCollector>().GameObjects.InventWindow;
-  /**/  //canvas = GameObject.Find("Canvas").transform;
-        //canvas = GetComponent<Canvas>();
+        /**/  //canvas = GameObject.Find("Canvas").transform;
+              //canvas = GetComponent<Canvas>();
     }
     void Update()
     {
@@ -35,24 +35,25 @@ public class CursorControl : MonoBehaviour
             x = !x;
             isPaused = !isPaused;
             //Debug.Log(x);
-        }
-        if (x)
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-            /**/  //           canvas.GetComponentInParent<Canvas>().enabled = false;
-            iw.SetActive(false);
-            timing = 1f;
-            //panel.
-        }
-        else
-        {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-            /**/  //           canvas.GetComponentInParent<Canvas>().enabled = true;
-            iw.SetActive(true);
-            timing = 0f;
+
+            if (x)
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+                /**/  //           canvas.GetComponentInParent<Canvas>().enabled = false;
+                iw.SetActive(false);
+                timing = 1f;
+                //panel.
+            }
+            else
+            {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+                /**/  //           canvas.GetComponentInParent<Canvas>().enabled = true;
+                iw.SetActive(true);
+                timing = 0f;
+            }
         }
     }
-    
+
 }

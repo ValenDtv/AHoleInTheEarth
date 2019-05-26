@@ -1,0 +1,256 @@
+fileFormatVersion: 2
+guid: c14c825a2903f164bb5aeb372cb2e883
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: book01
+    100002: book011
+    100004: book012
+    100006: book013
+    100008: book014
+    100010: book015
+    100012: book016
+    100014: book017
+    100016: book018
+    100018: book019
+    100020: book02
+    100022: book020
+    100024: book021
+    100026: book022
+    100028: book023
+    100030: book024
+    100032: book025
+    100034: book04
+    100036: book05
+    100038: book06
+    100040: book09
+    100042: book10
+    100044: //RootNode
+    100046: cartridge
+    100048: glass
+    100050: glower
+    100052: pipes
+    100054: tachometer
+    400000: book01
+    400002: book011
+    400004: book012
+    400006: book013
+    400008: book014
+    400010: book015
+    400012: book016
+    400014: book017
+    400016: book018
+    400018: book019
+    400020: book02
+    400022: book020
+    400024: book021
+    400026: book022
+    400028: book023
+    400030: book024
+    400032: book025
+    400034: book04
+    400036: book05
+    400038: book06
+    400040: book09
+    400042: book10
+    400044: //RootNode
+    400046: cartridge
+    400048: glass
+    400050: glower
+    400052: pipes
+    400054: tachometer
+    2100000: 'Material #191'
+    2100002: cartridge
+    2100004: 'Material #30'
+    2100006: tachometer
+    2100008: 'Material #200'
+    2100010: 'Material #199'
+    2100012: 'Material #188'
+    2100014: 'Material #185'
+    2100016: 'Material #183'
+    2100018: 'Material #181'
+    2100020: 'Material #184'
+    2100022: 'Material #179'
+    2100024: 'Material #193'
+    2100026: 'Material #194'
+    2100028: 'Material #195'
+    2100030: 'Material #196'
+    2100032: 'Material #198'
+    2100034: 'Material #201'
+    2100036: 'Material #202'
+    2100038: 'Material #197'
+    2100040: 'Material #186'
+    2100042: pipes
+    2100044: 'Material #192'
+    2100046: 'Material #187'
+    2100048: 'Material #189'
+    2100050: 'Material #190'
+    2100052: glower
+    2300000: book01
+    2300002: book011
+    2300004: book012
+    2300006: book013
+    2300008: book014
+    2300010: book015
+    2300012: book016
+    2300014: book017
+    2300016: book018
+    2300018: book019
+    2300020: book02
+    2300022: book020
+    2300024: book021
+    2300026: book022
+    2300028: book023
+    2300030: book024
+    2300032: book025
+    2300034: book04
+    2300036: book05
+    2300038: book06
+    2300040: book09
+    2300042: book10
+    2300044: cartridge
+    2300046: glass
+    2300048: glower
+    2300050: pipes
+    2300052: tachometer
+    3300000: book01
+    3300002: book011
+    3300004: book012
+    3300006: book013
+    3300008: book014
+    3300010: book015
+    3300012: book016
+    3300014: book017
+    3300016: book018
+    3300018: book019
+    3300020: book02
+    3300022: book020
+    3300024: book021
+    3300026: book022
+    3300028: book023
+    3300030: book024
+    3300032: book025
+    3300034: book04
+    3300036: book05
+    3300038: book06
+    3300040: book09
+    3300042: book10
+    3300044: cartridge
+    3300046: glass
+    3300048: glower
+    3300050: pipes
+    3300052: tachometer
+    4300000: book02
+    4300002: cartridge
+    4300004: glass
+    4300006: tachometer
+    4300008: book024
+    4300010: book025
+    4300012: book023
+    4300014: book022
+    4300016: book021
+    4300018: book020
+    4300020: book019
+    4300022: book018
+    4300024: book013
+    4300026: book012
+    4300028: book011
+    4300030: book09
+    4300032: book10
+    4300034: book017
+    4300036: book014
+    4300038: book015
+    4300040: book016
+    4300042: pipes
+    4300044: book01
+    4300046: book06
+    4300048: book05
+    4300050: book04
+    4300052: glower
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

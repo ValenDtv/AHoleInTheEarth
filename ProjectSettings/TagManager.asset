@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Thing
+  - Character
+  - Interactive
+  - Commented
+  - cog
   layers:
   - Default
   - TransparentFX

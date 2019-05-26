@@ -5,38 +5,118 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using Invector.CharacterController;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-
-public class Item : MonoBehaviour, IDragHandler, IEndDragHandler
+public class Item : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerEnterHandler, IPointerExitHandler
 {
     GameObject iw;
+    private GameObjectCollector Collector;
     [HideInInspector]
     public Cell cell;
     private Transform canvas;
+    private bool RightMouseButtonPressed;
+    private bool isSelected = false; 
+    private GameObject ActionPanel;
+    private bool isMouseOver = false;
     string[] itemsinv = { "Revolver", "Gears", "Gear1", "Gear2", "Kapsula", "Key", "Key1", "Key2"};
+    string[,] combinationsofoitems = { { "Gear1", "Gear2", "Gears" }, { "Key1", "Key2", "Key" } };
 
 
     void Start()
     {
+        Collector = GameObjectCollector.Collector.GetComponent<GameObjectCollector>();
         iw = Inventary.iw;
+        ActionPanel = Collector.GameObjects.ActionPanel;
         cell = GetComponentInParent<Cell>();
-        canvas = GameObject.Find("Canvas").transform;
+        canvas = Collector.GameObjects.Canvas.transform;
+        //GameObject.Find("dialogue_canvas").transform;
+        Collector.GameObjects.InspectButton.GetComponent<Button>().onClick.AddListener(InspectButtonCliked);
+        Collector.GameObjects.InHandButton.GetComponent<Button>().onClick.AddListener(InHandButtonCliked);
         Debug.Log(canvas);
     }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        isMouseOver = true;
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        isMouseOver = false;
+    }
+
+    void Update()
+    {
+        RightMouseButtonPressed = Input.GetKeyDown(KeyCode.Mouse1);
+        if (!ActionPanel.activeSelf)
+            isSelected = false;
+        if (RightMouseButtonPressed && isMouseOver)
+            ShowActionPanel(); 
+    }
+
+    private void InspectButtonCliked()
+    {
+        if (isSelected)
+        {
+            //StartCoroutine(ViewItem3d());
+            Collector.GameObjects.ViewItem3D.SendMessage("View", this);
+            //this.SendMessage("ViewItem3d");
+            Collector.GameObjects.ActionPanel.SetActive(false);
+        }
+    }
+
+    private void InHandButtonCliked()
+    {
+        if (isSelected)
+        {
+            Inventary.ItemInHand = this.gameObject.name;
+            GameObject itemImage = GameObject.Instantiate(Resources.Load<GameObject>(this.gameObject.name));
+            Collector.GameObjects.ItemInHand.GetComponent<Image>().sprite = itemImage.GetComponent<Image>().sprite;
+            GameObject.Destroy(itemImage);
+            Collector.GameObjects.ActionPanel.SetActive(false);
+        }
+    }
+
+    private void ShowActionPanel()
+    {
+        if (!ActionPanel.activeSelf)
+        {
+            ActionPanel.GetComponent<RectTransform>().position = Input.mousePosition;
+            //ActionPanel.GetComponent<RectTransform>().localPosition = new Vector2(0,0);
+            ActionPanel.GetComponent<RectTransform>().position = new Vector3(ActionPanel.GetComponent<RectTransform>().position.x +
+                ActionPanel.GetComponent<RectTransform>().rect.width / 2 - 25,
+                ActionPanel.GetComponent<RectTransform>().position.y - ActionPanel.transform.GetComponent<RectTransform>().rect.height / 2);
+            //ActionPanel.GetComponent<RectTransform>().localPosition = new Vector3(ActionPanel.GetComponent<RectTransform>().rect.position.x +
+            //    ActionPanel.GetComponent<RectTransform>().rect.width / 2,
+            //   ActionPanel.GetComponent<RectTransform>().rect.position.y - ActionPanel.transform.GetComponent<RectTransform>().rect.height / 2);
+            ActionPanel.SetActive(true);
+            isSelected = true;
+        }
+        else
+        {
+            ActionPanel.SetActive(false);
+        }
+    }
+
     public void OnDrag(PointerEventData eventData)
     {
         //
+        if (!Input.GetKey(KeyCode.Mouse0))
+            return;
         transform.SetParent(canvas);
         transform.position = eventData.position;
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-
-        StartCoroutine(TestCoroutine());
+        if (!Input.GetKeyUp(KeyCode.Mouse0))
+            return;
+        //StartCoroutine(TestCoroutine());
+        MoveItem();
     }
 
-    IEnumerator TestCoroutine()
+
+    void MoveItem()
     {
        
         float distance = float.MaxValue;
@@ -51,23 +131,50 @@ public class Item : MonoBehaviour, IDragHandler, IEndDragHandler
         {
             temp = Vector2.Distance(transform.position, Inventary.content[i].transform.position);
 
-
-            if (distance > temp && !(Inventary.content[i].transform.Find(itemsinv[0]) || Inventary.content[i].transform.Find(itemsinv[1]) || Inventary.content[i].transform.Find(itemsinv[2]) || Inventary.content[i].transform.Find(itemsinv[3]) || Inventary.content[i].transform.Find(itemsinv[4]) || Inventary.content[i].transform.Find(itemsinv[5]) || Inventary.content[i].transform.Find(itemsinv[6]) || Inventary.content[i].transform.Find(itemsinv[7])))
+            if (distance > temp)
             {
                 distance = temp;
                 newCell = Inventary.content[i];
             }
+            //if (distance > temp)
+            //    if (!(
+            //       Inventary.content[i].transform.Find(itemsinv[0]) || Inventary.content[i].transform.Find(itemsinv[1])
+            //    || Inventary.content[i].transform.Find(itemsinv[2]) || Inventary.content[i].transform.Find(itemsinv[3])
+            //    || Inventary.content[i].transform.Find(itemsinv[4]) || Inventary.content[i].transform.Find(itemsinv[5])
+            //    || Inventary.content[i].transform.Find(itemsinv[6]) || Inventary.content[i].transform.Find(itemsinv[7])))
+            //        {
+            //            distance = temp;
+            //            newCell = Inventary.content[i];
+            //        }
+            //        else
+            //        {
+            //            CombineItems(Inventary.content[i], newCell);
+            //        }
         }
+        if ((
+                   newCell.transform.Find(itemsinv[0]) || newCell.transform.Find(itemsinv[1])
+                || newCell.transform.Find(itemsinv[2]) || newCell.transform.Find(itemsinv[3])
+                || newCell.transform.Find(itemsinv[4]) || newCell.transform.Find(itemsinv[5])
+                || newCell.transform.Find(itemsinv[6]) || newCell.transform.Find(itemsinv[7])))
+                {
+                    if (!CombineItems(newCell, cell))
+                        newCell = cell;
+                }
+
         for (int i = 0; i < 2; i++)
         {
             temp = Vector2.Distance(transform.position, Inventary.content2[i].transform.position);
-            if (distance > temp && !(Inventary.content2[i].transform.Find(itemsinv[0]) || Inventary.content2[i].transform.Find(itemsinv[1]) || Inventary.content2[i].transform.Find(itemsinv[2]) || Inventary.content2[i].transform.Find(itemsinv[3]) || Inventary.content2[i].transform.Find(itemsinv[4]) || Inventary.content2[i].transform.Find(itemsinv[5]) || Inventary.content2[i].transform.Find(itemsinv[6]) || Inventary.content2[i].transform.Find(itemsinv[7])))
+            if (distance > temp && !(Inventary.content2[i].transform.Find(itemsinv[0]) || Inventary.content2[i].transform.Find(itemsinv[1])
+                || Inventary.content2[i].transform.Find(itemsinv[2]) || Inventary.content2[i].transform.Find(itemsinv[3])
+                || Inventary.content2[i].transform.Find(itemsinv[4]) || Inventary.content2[i].transform.Find(itemsinv[5])
+                || Inventary.content2[i].transform.Find(itemsinv[6]) || Inventary.content2[i].transform.Find(itemsinv[7])))
             {
                 distance = temp;
                 newCell = Inventary.content2[i];
             }
         }
-        if (Vector2.Distance(transform.position, Inventary.content3[0].transform.position) < Vector2.Distance(transform.position, Inventary.content4[0].transform.position))
+        if (Vector2.Distance(transform.position, Inventary.content3[0].transform.position)
+            < Vector2.Distance(transform.position, Inventary.content4[0].transform.position))
         {
             temp = Vector2.Distance(transform.position, Inventary.content3[0].transform.position);
             y = true;
@@ -100,72 +207,70 @@ public class Item : MonoBehaviour, IDragHandler, IEndDragHandler
         //}
         //реализация 3d просмотра
 
-        if (x & !y && !(Inventary.content4[0].transform.Find(itemsinv[0]) || Inventary.content4[0].transform.Find(itemsinv[1]) || Inventary.content4[0].transform.Find(itemsinv[2]) || Inventary.content4[0].transform.Find(itemsinv[3]) || Inventary.content4[0].transform.Find(itemsinv[4]) || Inventary.content4[0].transform.Find(itemsinv[5]) || Inventary.content4[0].transform.Find(itemsinv[6]) || Inventary.content4[0].transform.Find(itemsinv[7])))
-        {
-            print("работает4");
-            vThirdPersonInput inputscr = GameObject.Find("vThirdPersonController").GetComponent<vThirdPersonInput>();
-            
-            inputscr.disable = true;
-            distance = temp;
-            newCell = Inventary.content4[0];
-
-            GameObject cam = GameObject.Find("CameraInv");
-            cam.GetComponent<Camera>().enabled = true;
-            Vector3 campos = GameObject.Find("CameraInv").transform.position;
-
-            GameObject camk = GameObject.Find("CameraKaps");
-            cam.GetComponent<Camera>().enabled = true;
-            Vector3 camkpos = GameObject.Find("CameraKaps").transform.position;
-            
-            string name = gameObject.name + "3D";
-            GameObject obj3d = Instantiate(Resources.Load<GameObject>(name));
-            Quaternion rotationY = Quaternion.AngleAxis(1, Vector3.up);
-            obj3d.transform.SetPositionAndRotation(campos + Vector3.left/2, rotationY);
-
-            
-
-            GameObject tm = GameObject.Find("vThirdPersonCamera");
-            //tm.GetComponent<CursorControl>().timing = 1.0f;
-            Time.timeScale = 1.0f;
-            print(obj3d);
-            tm.GetComponent<CursorControl>().enabled = false;
-            //**       //canvas.GetComponentInParent<Canvas>().enabled = false;
-            iw.SetActive(false);
-            this.gameObject.GetComponent<Image>().enabled = false;
-            yield return new WaitForSeconds(2.0f);
-            //print(name);
-            if (name == "Kapsula3D")
-            {
-                print("Это оно");
-
-                
-                GameObject objkaps = Instantiate(Resources.Load<GameObject>(name));
-                objkaps.transform.SetPositionAndRotation(camkpos + Vector3.forward / 4, rotationY);
-
-                camk.GetComponent<Camera>().enabled = true;
-            }
-            //camk.GetComponent<Camera>().enabled = false;
-            Destroy(obj3d);
-
-            inputscr.disable = false;
-            //float t = new Time.deltaTime;
-            tm.GetComponent<CursorControl>().enabled = true;
-            //canvas.GetComponentInParent<Canvas>().enabled = true;
-            iw.SetActive(true);
-            this.gameObject.GetComponent<Image>().enabled = true;
-            this.gameObject.SetActive(true);
-            cam.GetComponent<Camera>().enabled = false;
-            Time.timeScale = 0.0f;
-            //print(tm);
-            //cam.GetComponent<Camera>().enabled = false;
-            /**/
-        }
+        
         
         cell = newCell;
         transform.SetParent(cell.transform);
         transform.position = cell.transform.position;
         transform.localScale = Vector2.one;
     }
-    
 
+
+    bool CombineItems(Cell cellA, Cell cellB)
+    {
+
+        //bool z = Eq("Pumpkin", "Revolver");
+        bool isCombined = false;
+        //Cell cellA = Inventary.content2[0];
+        //Cell cellB = Inventary.content2[1];
+        switch (Eq(cellA, cellB))
+        {
+            case "Gears":
+                {
+                    GameObject it = GameObject.Find("GearsObject").GetComponent<ItemObject>().item;
+                    Inventary.AddItem(it);
+                    Destroy(GameObject.Find("GearsObject"));
+                    Destroy(GameObject.Find("Gear1"));
+                    Destroy(GameObject.Find("Gear2"));
+                    isCombined = true;
+                    break;
+                }     
+            case "Key":
+                {
+                    GameObject it = GameObject.Find("KeyObject").GetComponent<ItemObject>().item;
+                    Inventary.AddItem(it);
+                    Destroy(GameObject.Find("KeyObject"));
+                    Destroy(GameObject.Find("Key1"));
+                    Destroy(GameObject.Find("Key2"));
+                    isCombined = true;
+                    break;
+                }
+        }
+        return isCombined;
+        /*
+        else if (z)
+        {
+            GameObject it = GameObject.Find("ScorpioObject").GetComponent<ItemObject>().item;
+            Inventary.AddItem(it);
+            Destroy(GameObject.Find("ScorpioObject"));
+            Destroy(GameObject.Find("Pumpkin"));
+            Destroy(GameObject.Find("Revolver"));
+        }
+        */
+    }
+
+    string Eq(Cell cellA, Cell cellB)
+    {
+        for (int i = 0; i < combinationsofoitems.GetLength(0); i++)
+        {
+            if (
+                cellA.transform.Find(combinationsofoitems[i,0]) & canvas.transform.Find(combinationsofoitems[i, 1]) ||
+                canvas.transform.Find(combinationsofoitems[i, 0]) & cellA.transform.Find(combinationsofoitems[i, 1])
+                )
+            {
+                return combinationsofoitems[i, 2];
+            }
+        }
+        return "";
+    }
 }

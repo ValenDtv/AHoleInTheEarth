@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -33,6 +34,13 @@ public class ItemObject : MonoBehaviour
     {
         if (Inventary.AddItem(item))
         {
+            //Destroy(gameObject);
+            //Сделать вызов диалога нормально
+            PlayerPrefs.SetString(gameObject.name, "IsHave");
+            GameObjectCollector.Collector.GetComponent<GameObjectCollector>().GameObjects.Player.SendMessage("Start_thing_dialog", gameObject.name);
+          
+             //GameObject.Find("person_controller");
+            //gameObject.SetActive(false);
             Destroy(gameObject);
         }
     }

@@ -11,9 +11,9 @@ public class Rotation : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
-    {
-        Quaternion rotationY = Quaternion.AngleAxis(1, Vector3.up);
-        transform.rotation *= rotationY;
-    }
+    //void FixedUpdate()
+    //{
+    //    Quaternion rotationY = Quaternion.AngleAxis(1, Vector3.up);
+    //    transform.rotation *= rotationY;
+    //}
 }
