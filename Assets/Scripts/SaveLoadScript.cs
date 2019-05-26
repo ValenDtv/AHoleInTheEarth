@@ -9,7 +9,7 @@ public class SaveLoadScript : MonoBehaviour
 
 {
     GameObjectCollector Collector;
-    string[] items = { "Gear1Object", "Gear2Object", "Gears", "Key1Object", "Key2Object", "Key", "object_revolver" };
+    string[] items = { "Gear1Object", "Gear2Object", "GearsObject", "Key1Object", "Key2Object", "KeyObject", "object_revolver" };
     string[] UnityRoomItems = { "Revolver" };
     string[] L2_1Items = { "" };
     string[] L2_2Items = { "" };

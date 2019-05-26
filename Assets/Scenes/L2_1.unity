@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.7113112, g: 0.80085343, b: 0.88005173, a: 1}
+  m_IndirectSpecularColor: {r: 0.7113021, g: 0.80085737, b: 0.8800615, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4274,7 +4274,7 @@ GameObject:
   - component: {fileID: 324175569}
   - component: {fileID: 324175568}
   m_Layer: 0
-  m_Name: Key
+  m_Name: KeyObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8186,7 +8186,7 @@ GameObject:
   - component: {fileID: 626556393}
   - component: {fileID: 626556392}
   m_Layer: 0
-  m_Name: Gears
+  m_Name: GearsObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10864,19 +10864,13 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842862077}
   m_Mesh: {fileID: 4300000, guid: d410c210490922e48af31036e06ad418, type: 3}
---- !u!1 &847690941 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4133734389506652476, guid: aac9ce2a427b9344d81cb38991277b5a,
-    type: 3}
-  m_PrefabInstance: {fileID: 2262617009081108571}
-  m_PrefabAsset: {fileID: 0}
 --- !u!64 &847690945
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 847690941}
+  m_GameObject: {fileID: 2754962345067639143}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -30008,6 +30002,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f508adc3bba8c240b4bb04086503303, type: 3}
+--- !u!1 &2754962345067639143 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4133734389506652476, guid: aac9ce2a427b9344d81cb38991277b5a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2262617009081108571}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2840536119650075590
 PrefabInstance:
   m_ObjectHideFlags: 0

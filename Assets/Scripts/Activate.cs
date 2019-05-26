@@ -40,12 +40,12 @@ public class Activate : MonoBehaviour
         }
     }
 
-    float dis = 2f; //Максимальное расстояние от камеры до объекта
+    float dis = 1.5f; //Максимальное расстояние от камеры до объекта
     List<Thing> inventory = new List<Thing>(); //Инвентарь
     CursorLockMode wantedMode;
     //int radius = 1;
     float radius = 0.2f;
-    float max_distance = 2f;
+    float max_distance = 1.5f;
     public int MaskNumber;
     int layerMask;
     Camera camera;
