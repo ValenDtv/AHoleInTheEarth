@@ -8,12 +8,13 @@ public class CogBehavior : MonoBehaviour
     public int dir = 1;
     public bool isStatic = false;
     public List<GameObject> childs = new List<GameObject>();
-    
-    void OnTriggerEnter(Collider coll)
+
+
+    private void OnTriggerStay(Collider coll)
     {
         if (coll.tag == "cog")
         {
-            
+
             if (coll.gameObject.GetComponent<CogBehavior>().isRotate && !this.isRotate)
             {
                 if (!isStatic)
@@ -23,6 +24,23 @@ public class CogBehavior : MonoBehaviour
             };
         }
     }
+
+
+    //void OnTriggerEnter(Collider coll)
+    //{
+    //    if (coll.tag == "cog")
+    //    {
+            
+    //        if (coll.gameObject.GetComponent<CogBehavior>().isRotate && !this.isRotate)
+    //        {
+    //            if (!isStatic)
+    //                coll.gameObject.GetComponent<CogBehavior>().childs.Add(this.gameObject);
+    //            isRotate = true;
+    //            dir = coll.gameObject.GetComponent<CogBehavior>().dir * (-1);
+    //        };
+    //    }
+    //}
+
     void Update()
     {
         if (isRotate)

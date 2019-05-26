@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class Chat
@@ -44,4 +45,22 @@ public class СategoryDialogs
 {
     public string dg_name;
     public Phrase[] dialogues;
+}
+
+
+public class SinglePhrase
+{
+    Text board;
+
+    public SinglePhrase(Text board)
+    {
+        this.board = board;
+    }
+
+    public IEnumerator Say(string text, float time)
+    {
+        board.text = "Марк: " + text;
+        yield return new WaitForSeconds(time);
+        board.text = "";
+    }
 }

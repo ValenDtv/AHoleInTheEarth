@@ -990,6 +990,11 @@ PrefabInstance:
       propertyPath: outlineMode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2568819940207835887, guid: 981ad6291010ca04aa95f9635c9428c8,
+        type: 3}
+      propertyPath: outlineWidth
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 981ad6291010ca04aa95f9635c9428c8, type: 3}
 --- !u!1 &75969687 stripped
@@ -7146,7 +7151,7 @@ MonoBehaviour:
   lightOff: 0
   outlineMode: 1
   outlineColor: {r: 0, g: 0.9490196, b: 1, a: 1}
-  outlineWidth: 10
+  outlineWidth: 5
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -10725,10 +10730,30 @@ PrefabInstance:
       propertyPath: GOCollector
       value: 
       objectReference: {fileID: 1960001045}
+    - target: {fileID: 5130860195443345789, guid: 40807baa2e6ee924981a66f776d474ea,
+        type: 3}
+      propertyPath: field of view
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 403816842540947837, guid: 40807baa2e6ee924981a66f776d474ea,
         type: 3}
       propertyPath: height
-      value: 3
+      value: 3.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 403816842540947837, guid: 40807baa2e6ee924981a66f776d474ea,
+        type: 3}
+      propertyPath: xMouseSensitivity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 403816842540947837, guid: 40807baa2e6ee924981a66f776d474ea,
+        type: 3}
+      propertyPath: yMouseSensitivity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 403816842540947837, guid: 40807baa2e6ee924981a66f776d474ea,
+        type: 3}
+      propertyPath: rightOffset
+      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40807baa2e6ee924981a66f776d474ea, type: 3}
@@ -18091,7 +18116,7 @@ MonoBehaviour:
   lightOff: 0
   outlineMode: 1
   outlineColor: {r: 0, g: 0.9490196, b: 1, a: 1}
-  outlineWidth: 10
+  outlineWidth: 5
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -20819,6 +20844,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 14.656548
       objectReference: {fileID: 0}
+    - target: {fileID: 9156548599988149511, guid: bdc2cbacc775f9f4ebf3e414fc4c5a79,
+        type: 3}
+      propertyPath: outlineWidth
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9156548599988149511, guid: bdc2cbacc775f9f4ebf3e414fc4c5a79,
+        type: 3}
+      propertyPath: outlineMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bdc2cbacc775f9f4ebf3e414fc4c5a79, type: 3}
 --- !u!1 &1634059862 stripped
@@ -21621,7 +21656,7 @@ MonoBehaviour:
   lightOff: 0
   outlineMode: 1
   outlineColor: {r: 0, g: 0.9490196, b: 1, a: 1}
-  outlineWidth: 10
+  outlineWidth: 5
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -25467,6 +25502,8 @@ MonoBehaviour:
     PauseCanvas: {fileID: 1447180906}
     ButtonContinue: {fileID: 0}
     KeyPad: {fileID: 0}
+    LiftPanel: {fileID: 0}
+    LiftArm: {fileID: 0}
     Options:
     - {fileID: 0}
     - {fileID: 0}
@@ -29014,7 +29051,7 @@ MonoBehaviour:
   lightOff: 0
   outlineMode: 1
   outlineColor: {r: 0, g: 0.9490196, b: 1, a: 1}
-  outlineWidth: 10
+  outlineWidth: 5
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
