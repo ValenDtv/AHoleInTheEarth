@@ -230,8 +230,12 @@ public class Item : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerEnterH
                     GameObject it = GameObject.Find("GearsObject").GetComponent<ItemObject>().item;
                     Inventary.AddItem(it);
                     Destroy(GameObject.Find("GearsObject"));
-                    Destroy(GameObject.Find("Gear1"));
-                    Destroy(GameObject.Find("Gear2"));
+                    //Destroy(GameObject.Find("Gear1"));
+                    //Destroy(GameObject.Find("Gear2"));
+                    Inventary.DeleteItem("Gear1");
+                    Inventary.DeleteItem("Gear2");
+                    PlayerPrefs.SetString("Gear1Object", "IsNotHave");
+                    PlayerPrefs.SetString("Gear2Object", "IsNotHave");
                     isCombined = true;
                     break;
                 }     
@@ -240,8 +244,12 @@ public class Item : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerEnterH
                     GameObject it = GameObject.Find("KeyObject").GetComponent<ItemObject>().item;
                     Inventary.AddItem(it);
                     Destroy(GameObject.Find("KeyObject"));
-                    Destroy(GameObject.Find("Key1"));
-                    Destroy(GameObject.Find("Key2"));
+                    //Destroy(GameObject.Find("Key1"));
+                    //Destroy(GameObject.Find("Key2"));
+                    Inventary.DeleteItem("Key1");
+                    Inventary.DeleteItem("Key2");
+                    PlayerPrefs.SetString("Key1Object", "IsNotHave");
+                    PlayerPrefs.SetString("Key2Object", "IsNotHave");
                     isCombined = true;
                     break;
                 }

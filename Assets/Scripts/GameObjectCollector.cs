@@ -22,6 +22,8 @@ public class GameObjects
     public GameObject PauseCanvas;
     public GameObject ButtonContinue;
     public GameObject KeyPad;
+    public GameObject LiftPanel;
+    public GameObject LiftArm;
 
     public GameObject[] Options = new GameObject[4];
 
