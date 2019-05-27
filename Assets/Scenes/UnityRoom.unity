@@ -35,10 +35,10 @@ RenderSettings:
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
-  m_ReflectionIntensity: 1
+  m_ReflectionIntensity: 0.3
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.45134586, g: 0.500319, b: 0.5695332, a: 1}
+  m_IndirectSpecularColor: {r: 0.25160635, g: 0.2812609, b: 0.32317203, a: 0.3}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6331,8 +6331,8 @@ MonoBehaviour:
   TintColor: {r: 1, g: 1, b: 1, a: 1}
   Hue: 0
   Saturation: 0.1
-  Brightness: 0
-  Contrast: 0.075
+  Brightness: 0.85
+  Contrast: 0.05
   Sharpness: 0
 --- !u!4 &758829051 stripped
 Transform:
