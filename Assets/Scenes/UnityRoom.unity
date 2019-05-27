@@ -20299,13 +20299,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1508392713}
-  m_LocalRotation: {x: 0.22527455, y: -0.048839763, z: 0.2065314, w: 0.9509001}
-  m_LocalPosition: {x: 0.9736328, y: -0.3713379, z: -7.01}
+  m_LocalRotation: {x: -0.03944849, y: -0.41924727, z: 0.8747955, w: -0.23960052}
+  m_LocalPosition: {x: 0.1, y: 0.98, z: -6.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 34
-  m_LocalEulerAnglesHint: {x: 26.654001, y: 0.011000001, z: 24.511002}
+  m_LocalEulerAnglesHint: {x: 48.8, y: -348.45, z: -144.112}
 --- !u!1 &1509637997
 GameObject:
   m_ObjectHideFlags: 0
@@ -30676,6 +30676,9 @@ MonoBehaviour:
     LiftArm: {fileID: 0}
     Canvastxt: {fileID: 248039734}
     Load: {fileID: 1541335410}
+    UR_Cutscene_timeline: {fileID: 0}
+    UR_Cutscene_camera: {fileID: 0}
+    Bench: {fileID: 0}
     Tit: {fileID: 1812644136}
     Options:
     - {fileID: 352954908}
