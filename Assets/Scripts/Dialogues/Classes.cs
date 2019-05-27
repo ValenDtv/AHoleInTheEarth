@@ -63,4 +63,11 @@ public class SinglePhrase
         yield return new WaitForSeconds(time);
         board.text = "";
     }
+
+    public IEnumerator Say(string name,string text, float time)
+    {
+        board.text = name + ": " + text;
+        yield return new WaitForSeconds(time);
+        board.text = "";
+    }
 }
