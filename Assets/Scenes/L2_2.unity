@@ -2737,6 +2737,9 @@ MonoBehaviour:
     UR_Cutscene_camera: {fileID: 0}
     Bench: {fileID: 0}
     Tit: {fileID: 0}
+    CutsceneSofa: {fileID: 0}
+    EventDialogManager: {fileID: 0}
+    sister_dialog: {fileID: 0}
     Options:
     - {fileID: 0}
     - {fileID: 0}
@@ -6713,7 +6716,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ad8050f5b66651d43b499a133f189195, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.338
+      value: 1.616
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ad8050f5b66651d43b499a133f189195, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6753,15 +6756,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ad8050f5b66651d43b499a133f189195, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.0032998826
+      value: 0.0015
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ad8050f5b66651d43b499a133f189195, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.0032998826
+      value: 0.0015
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ad8050f5b66651d43b499a133f189195, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.0032998826
+      value: 0.0015
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: ad8050f5b66651d43b499a133f189195, type: 3}
       propertyPath: m_Materials.Array.data[0]
