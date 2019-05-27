@@ -10,6 +10,9 @@ public class CreditsScript : MonoBehaviour
     public GameObject CanvasTit;
     private bool start = false;
     SinglePhrase sp;
+
+    public AudioSource mainSource;
+    public AudioSource titles;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,8 +38,15 @@ public class CreditsScript : MonoBehaviour
         {
             StartCoroutine(sp.Say("Ева: Наруже опасно. Нужно взять оружие.", 4));
             return;
+        } else
+        if (Inventary.ItemInHand == "Revolver")
+        {
+            titles.Play();
+            mainSource.mute = true;
+            //GetComponent<AudioSource>().Play();
+            CanvasTit.GetComponent<Canvas>().enabled = true;
+            start = true;
         }
-        CanvasTit.GetComponent<Canvas>().enabled = true;
-        start = true;
+        
     }
 }

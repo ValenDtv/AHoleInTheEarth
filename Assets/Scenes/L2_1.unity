@@ -8976,7 +8976,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1519327472}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &645743716
 GameObject:
@@ -23110,7 +23110,7 @@ PrefabInstance:
     - target: {fileID: 1828303918376727740, guid: c5d02b0324edfda4db06fad6a52592e6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23.64
+      value: -23.8
       objectReference: {fileID: 0}
     - target: {fileID: 1828303918376727740, guid: c5d02b0324edfda4db06fad6a52592e6,
         type: 3}
@@ -23196,6 +23196,16 @@ PrefabInstance:
         type: 3}
       propertyPath: freeSprintSpeed
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1828303918386032622, guid: c5d02b0324edfda4db06fad6a52592e6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225593549385471807, guid: c5d02b0324edfda4db06fad6a52592e6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5d02b0324edfda4db06fad6a52592e6, type: 3}
@@ -27535,6 +27545,9 @@ MonoBehaviour:
     UR_Cutscene_camera: {fileID: 0}
     Bench: {fileID: 1030604063}
     Tit: {fileID: 0}
+    CutsceneSofa: {fileID: 0}
+    EventDialogManager: {fileID: 0}
+    sister_dialog: {fileID: 0}
     Options:
     - {fileID: 1828274366}
     - {fileID: 764510693}
