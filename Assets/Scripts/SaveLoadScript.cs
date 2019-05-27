@@ -45,25 +45,25 @@ public class SaveLoadScript : MonoBehaviour
             case "UnityRoom":
                 checkUnityRoomCutscene();
                 checkItems(UnityRoomItems);
-                if (PlayerPrefs.HasKey("CurrentScene"))
-                    if (PlayerPrefs.GetString("CurrentScene") == sceneName)
-                        checkPlayerPosition();
-                    else
+                if (!PlayerPrefs.HasKey("CurrentScene"))
                     {
                         PlayerPrefs.SetString("CurrentScene", SceneManager.GetActiveScene().name);
                         PlayerPrefs.Save();
                     }
+                else
+                    if (PlayerPrefs.GetString("CurrentScene") == sceneName)
+                        checkPlayerPosition();
                 break;
             case "L2_1":
                 checkItems(L2_1Items);
-                if (PlayerPrefs.HasKey("CurrentScene"))
+                if (!PlayerPrefs.HasKey("CurrentScene"))
+                {
+                    PlayerPrefs.SetString("CurrentScene", SceneManager.GetActiveScene().name);
+                    PlayerPrefs.Save();
+                }
+                else
                     if (PlayerPrefs.GetString("CurrentScene") == sceneName)
-                        checkPlayerPosition();
-                    else
-                    {
-                        PlayerPrefs.SetString("CurrentScene", SceneManager.GetActiveScene().name);
-                        PlayerPrefs.Save();
-                    }
+                    checkPlayerPosition();
                 checkKeyPad();
                 checkL2_1Cutscene();
                 checkEva();
@@ -71,14 +71,14 @@ public class SaveLoadScript : MonoBehaviour
                 break;
             case "L2_2":
                 checkItems(L2_2Items);
-                if (PlayerPrefs.HasKey("CurrentScene"))
+                if (!PlayerPrefs.HasKey("CurrentScene"))
+                {
+                    PlayerPrefs.SetString("CurrentScene", SceneManager.GetActiveScene().name);
+                    PlayerPrefs.Save();
+                }
+                else
                     if (PlayerPrefs.GetString("CurrentScene") == sceneName)
-                        checkPlayerPosition();
-                    else
-                    {
-                        PlayerPrefs.SetString("CurrentScene", SceneManager.GetActiveScene().name);
-                        PlayerPrefs.Save();
-                    }
+                    checkPlayerPosition();
                 checkLift();
                 break;
         }

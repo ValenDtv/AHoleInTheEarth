@@ -103,7 +103,8 @@ public class Activate : MonoBehaviour
                             //inventory.Add(thing);
                             //Destroy(hit.collider.gameObject);
                             hit.collider.gameObject.SendMessage("AddI");
-                            
+                            GameObjectCollector.Collector.GetComponent<GameObjectCollector>().GameObjects
+                                .Player.SendMessage("Start_thing_dialog", hit.collider.name);
                             break;
                         case "Character": //Персонаж
                                           //Активировать диалог
