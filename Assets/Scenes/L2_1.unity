@@ -5507,7 +5507,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Camera: {fileID: 599127079}
   BinocularsView: {fileID: 1188208165}
-  Numeral: {fileID: 1643232617}
+  Numeral: {fileID: 1089977675}
 --- !u!65 &393713143
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7964,7 +7964,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Camera: {fileID: 1870563238}
   BinocularsView: {fileID: 1188208165}
-  Numeral: {fileID: 992385328}
+  Numeral: {fileID: 465433369}
 --- !u!65 &562463783
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19739,7 +19739,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Camera: {fileID: 1963356451}
   BinocularsView: {fileID: 1188208165}
-  Numeral: {fileID: 465433369}
+  Numeral: {fileID: 992385328}
 --- !u!65 &1417972662
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23332,7 +23332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Camera: {fileID: 1778873989}
   BinocularsView: {fileID: 1188208165}
-  Numeral: {fileID: 1089977675}
+  Numeral: {fileID: 1643232617}
 --- !u!65 &1693154177
 BoxCollider:
   m_ObjectHideFlags: 0

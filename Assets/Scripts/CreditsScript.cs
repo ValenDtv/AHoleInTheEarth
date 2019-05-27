@@ -36,7 +36,7 @@ public class CreditsScript : MonoBehaviour
     {
         if (Inventary.ItemInHand != "Revolver")
         {
-            StartCoroutine(sp.Say("Ева","Наруже опасно. Нужно взять оружие.", 4));
+            StartCoroutine(sp.Say("Снаружи опасно. Нужно взять револьвер.", 4));
             return;
         } else
         if (Inventary.ItemInHand == "Revolver")
