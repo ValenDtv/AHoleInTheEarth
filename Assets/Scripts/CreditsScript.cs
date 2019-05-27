@@ -2,21 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class CreditsScript : MonoBehaviour
 {
     public GameObject Text;
     public GameObject CanvasTit;
     private bool start = false;
+    SinglePhrase sp;
     // Start is called before the first frame update
     void Start()
     {
-        
+        sp = new SinglePhrase(GameObject.Find("subtitles").GetComponent<Text>());
     }
 
     // Update is called once per frame
     void Update()
     {
+
         if (start)
         {
             Text.transform.Translate(Vector3.up * 30 * Time.deltaTime);
@@ -28,6 +31,11 @@ public class CreditsScript : MonoBehaviour
 
     public void Action()
     {
+        if (Inventary.ItemInHand != "Revolver")
+        {
+            StartCoroutine(sp.Say("Ева: Наруже опасно. Нужно взять оружие.", 4));
+            return;
+        }
         CanvasTit.GetComponent<Canvas>().enabled = true;
         start = true;
     }
