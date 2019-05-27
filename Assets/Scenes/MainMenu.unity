@@ -2500,6 +2500,7 @@ MonoBehaviour:
     CutsceneSofa: {fileID: 0}
     EventDialogManager: {fileID: 0}
     sister_dialog: {fileID: 0}
+    cutscene_sofa_dialogue: {fileID: 0}
     Options:
     - {fileID: 0}
     - {fileID: 0}

@@ -57,6 +57,7 @@ public class SaveLoadScript : MonoBehaviour
                     else
                     {
                         PlayerPrefs.SetString("CurrentScene", SceneManager.GetActiveScene().name);
+                        PlayerPrefs.SetString("PlayerPosition", Collector.GameObjects.Player.transform.localPosition.ToString());
                         PlayerPrefs.Save();
                     }
                 }
@@ -79,6 +80,7 @@ public class SaveLoadScript : MonoBehaviour
                             Collector.GameObjects.Player.transform.localPosition = new Vector3(-2.444761f, 5.710278f, 4.018018f);
                             Collector.GameObjects.Player.transform.Rotate(0, -3.424f * Mathf.Rad2Deg - 90, 0);
                         }
+                        PlayerPrefs.SetString("PlayerPosition", Collector.GameObjects.Player.transform.localPosition.ToString());
                         PlayerPrefs.SetString("CurrentScene", SceneManager.GetActiveScene().name);
                         PlayerPrefs.Save();
                     }
@@ -100,6 +102,7 @@ public class SaveLoadScript : MonoBehaviour
                         checkPlayerPosition();
                     else
                     {
+                        PlayerPrefs.SetString("PlayerPosition", Collector.GameObjects.Player.transform.localPosition.ToString());
                         PlayerPrefs.SetString("CurrentScene", SceneManager.GetActiveScene().name);
                         PlayerPrefs.Save();
                     }

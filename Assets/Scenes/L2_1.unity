@@ -14483,11 +14483,11 @@ RectTransform:
   m_Father: {fileID: 1462678619}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 538, y: -303}
-  m_SizeDelta: {x: 525, y: 117.2}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 85, y: 0}
+  m_SizeDelta: {x: 525, y: 117.20001}
+  m_Pivot: {x: 1, y: 0}
 --- !u!114 &1058211073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14501,7 +14501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8584906, g: 0.03644534, b: 0.073620886, a: 1}
+  m_Color: {r: 0.85882354, g: 0.23664299, b: 0.035294138, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -14510,8 +14510,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 100
-    m_FontStyle: 1
+    m_FontSize: 65
+    m_FontStyle: 3
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 100
@@ -20460,7 +20460,7 @@ RectTransform:
   m_GameObject: {fileID: 1462678618}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0000092, y: 1.0000092, z: 1.0000092}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2136403120}
   - {fileID: 1058211072}
@@ -20469,7 +20469,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.9946901, y: 1}
-  m_AnchoredPosition: {x: 4.5006104, y: -0.0016479492}
+  m_AnchoredPosition: {x: 4.5006104, y: -0.0016174316}
   m_SizeDelta: {x: 8, y: 1.3100586}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1463691384
@@ -27553,6 +27553,7 @@ MonoBehaviour:
     CutsceneSofa: {fileID: 0}
     EventDialogManager: {fileID: 0}
     sister_dialog: {fileID: 0}
+    cutscene_sofa_dialogue: {fileID: 0}
     Options:
     - {fileID: 1828274366}
     - {fileID: 764510693}
