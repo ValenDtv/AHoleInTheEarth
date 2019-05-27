@@ -26,7 +26,11 @@ public class GameObjects
     public GameObject LiftArm;
     public GameObject Canvastxt;
     public GameObject Load;
+    public GameObject UR_Cutscene_timeline;
+    public GameObject UR_Cutscene_camera;
+    public GameObject Bench;
     public GameObject Tit;
+
 
     public GameObject[] Options = new GameObject[4];
 

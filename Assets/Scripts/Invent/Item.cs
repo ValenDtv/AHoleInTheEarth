@@ -227,13 +227,13 @@ public class Item : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerEnterH
         {
             case "Gears":
                 {
+                    Inventary.DeleteItem("Gear1");
+                    Inventary.DeleteItem("Gear2");
                     GameObject it = GameObject.Find("GearsObject").GetComponent<ItemObject>().item;
                     Inventary.AddItem(it);
                     Destroy(GameObject.Find("GearsObject"));
                     //Destroy(GameObject.Find("Gear1"));
                     //Destroy(GameObject.Find("Gear2"));
-                    Inventary.DeleteItem("Gear1");
-                    Inventary.DeleteItem("Gear2");
                     PlayerPrefs.SetString("Gear1Object", "IsNotHave");
                     PlayerPrefs.SetString("Gear2Object", "IsNotHave");
                     isCombined = true;

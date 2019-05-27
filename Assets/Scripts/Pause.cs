@@ -46,6 +46,7 @@ public class Pause : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
                 isPaused = false;
+                CursorControl.disableInventory = false;
             }
             else
             {
@@ -55,6 +56,7 @@ public class Pause : MonoBehaviour
                 pausecanvas.GetComponent<Canvas>().enabled = true;
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
+                CursorControl.disableInventory = true;
             } 
         }
     }
@@ -65,5 +67,6 @@ public class Pause : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         isPaused = false;
+        CursorControl.disableInventory = false;
     }
 }

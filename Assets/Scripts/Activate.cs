@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using UnityEngine.SceneManagement;
 
 //Вешать на камеру
 public class Activate : MonoBehaviour
@@ -55,8 +56,17 @@ public class Activate : MonoBehaviour
         layerMask = 1 << MaskNumber;
         Collector = GOCollector.GetComponent<GameObjectCollector>();
         camera = GetComponent("vThirdPersonCamera").GetComponent<Camera>();
-        dis += camera.GetComponent<vThirdPersonCamera>().defaultDistance;
-        max_distance += camera.GetComponent<vThirdPersonCamera>().defaultDistance;
+        if (SceneManager.GetActiveScene().name == "L2_1")
+        {
+            dis += camera.GetComponent<vThirdPersonCamera>().defaultDistance + 0.5f;
+            max_distance += camera.GetComponent<vThirdPersonCamera>().defaultDistance + 0.5f;
+        }
+        else
+        {
+            dis += camera.GetComponent<vThirdPersonCamera>().defaultDistance;
+            max_distance += camera.GetComponent<vThirdPersonCamera>().defaultDistance;
+        }
+        
     }
 
     void Update()

@@ -16,6 +16,7 @@ public class CursorControl : MonoBehaviour
     private GameObject iw;
     public static float timing = 1f;
     private bool isPaused = false;
+    public static bool disableInventory = false;
     /**/ //    private Transform canvas;
 
 
@@ -30,7 +31,7 @@ public class CursorControl : MonoBehaviour
     void Update()
     {
         Time.timeScale = timing;
-        if (Input.GetKeyDown(KeyCode.Tab))
+        if (Input.GetKeyDown(KeyCode.Tab) && !disableInventory)
         {
             x = !x;
             isPaused = !isPaused;

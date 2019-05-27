@@ -9,8 +9,8 @@ public class SaveLoadScript : MonoBehaviour
 
 {
     GameObjectCollector Collector;
-    string[] items = { "Gear1Object", "Gear2Object", "GearsObject", "Key1Object", "Key2Object", "KeyObject", "object_revolver" };
-    string[] UnityRoomItems = { "Revolver" };
+    string[] items = { "Gear1Object", "Gear2Object", "GearsObject", "Key1Object", "Key2Object", "KeyObject" };
+    string[] UnityRoomItems = { "object_revolver" };
     string[] L2_1Items = { "" };
     string[] L2_2Items = { "" };
 
@@ -42,6 +42,7 @@ public class SaveLoadScript : MonoBehaviour
                 }
                 break;
             case "UnityRoom":
+                checkUnityRoomCutscene();
                 checkItems(UnityRoomItems);
                 if (PlayerPrefs.HasKey("CurrentScene"))
                     if (PlayerPrefs.GetString("CurrentScene") == sceneName)
@@ -57,7 +58,7 @@ public class SaveLoadScript : MonoBehaviour
                     else
                         PlayerPrefs.SetString("CurrentScene", SceneManager.GetActiveScene().name);
                 checkKeyPad();
-                checkL2_1appearance();
+                checkL2_1Cutscene();
                 checkEva();
                 break;
             case "L2_2":
@@ -104,7 +105,7 @@ public class SaveLoadScript : MonoBehaviour
     private void checkKeyPad()
     {
         if (PlayerPrefs.HasKey("KeyPadIsOpen"))
-            if (PlayerPrefs.GetString("KeyPadIsOpen") == "Yes")
+            if (PlayerPrefs.GetString("KeyPadIsOpen") == "yes")
                 Collector.GameObjects.KeyPad.GetComponent<KeypadLock>().isOpen = true;
     }
 
@@ -115,14 +116,20 @@ public class SaveLoadScript : MonoBehaviour
             s = 2; // Поменять номер диалога Евы.
     }
 
-    private void checkL2_1appearance()
+    private void checkL2_1Cutscene()
     {
         int s = 1;
         if (PlayerPrefs.HasKey("L2_1FirstAppearance"))
-            if (PlayerPrefs.GetString("L2_1FirstAppearance") == "Yes")
+            if (PlayerPrefs.GetString("L2_1FirstAppearance") == "viewed")
             {
                 //Изменить координаты игрока
-                //
+                //Выключить объекты катсцены
+                if (PlayerPrefs.HasKey("L2_1Bench"))
+                    if (PlayerPrefs.GetString("L2_1Bench") == "viewed")
+                    {
+                        //выключить объекты катсцены
+                        Collector.GameObjects.Bench.layer = 0;
+                    }
             }
     }
 
@@ -137,6 +144,22 @@ public class SaveLoadScript : MonoBehaviour
             if (PlayerPrefs.GetString("LiftFixed") == "yes")
             {
                 Collector.GameObjects.LiftPanel.GetComponent<LiftPanelScript>().isOpen = true;
+            }
+    }
+
+    private void checkUnityRoomCutscene()
+    {
+        if (PlayerPrefs.HasKey("UnityRoomFirstAppearance"))
+            if (PlayerPrefs.GetString("UnityRoomFirstAppearance") == "viewed")
+            {
+                Collector.GameObjects.UR_Cutscene_timeline.SetActive(false);
+                Collector.GameObjects.UR_Cutscene_camera.SetActive(false);
+                if (PlayerPrefs.HasKey("UnityRoomAfterMemories"))
+                    if (PlayerPrefs.GetString("UnityRoomAfterMemories") == "viewed")
+                    {
+                        //выключить катсцену
+                    }
+
             }
     }
 

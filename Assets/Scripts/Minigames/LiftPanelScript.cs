@@ -54,6 +54,7 @@ public class LiftPanelScript : MonoBehaviour
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
                 Collector.GameObjects.ThirdPersonCamera.GetComponent<Activate>().DisableInteraction = true;
+                CursorControl.disableInventory = true;
             }
             else
                 comment.SendMessage("Start_dialog");

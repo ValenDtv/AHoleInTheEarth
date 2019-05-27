@@ -23,13 +23,14 @@ public class KeyPadHint : MonoBehaviour
     {
         if (active)
             time += Time.deltaTime;
-        if (Input.GetKeyDown(KeyCode.E) && time > 1)
+        if (Input.GetKeyDown(KeyCode.E) && time > 0.5)
         {
             Hint.SetActive(false);
             comment.SendMessage("Start_dialog");
             Collector.GameObjects.Player.SetActive(true);
             active = false;
             time = 0;
+            CursorControl.disableInventory = false;
         }
     }
 
@@ -38,5 +39,6 @@ public class KeyPadHint : MonoBehaviour
         Hint.SetActive(true);
         Collector.GameObjects.Player.SetActive(false);
         active = true;
+        CursorControl.disableInventory = true;
     }
 }
