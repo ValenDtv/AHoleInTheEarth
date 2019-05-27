@@ -64,7 +64,9 @@ public class PlayCutDialogue : MonoBehaviour
         yield return cd.Next_speech(3);
         //LoadAsync();
         yield return new WaitForSeconds(120);
-        Application.LoadLevel(levelName);
+        GameObjectCollector.Collector.GetComponent<GameObjectCollector>().GameObjects.Load.SetActive(true);
+        SceneManager.LoadScene(levelName);
+
         yield break;
     }
 }
