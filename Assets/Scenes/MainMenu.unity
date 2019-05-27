@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2497,6 +2497,9 @@ MonoBehaviour:
     UR_Cutscene_camera: {fileID: 0}
     Bench: {fileID: 0}
     Tit: {fileID: 0}
+    CutsceneSofa: {fileID: 0}
+    EventDialogManager: {fileID: 0}
+    sister_dialog: {fileID: 0}
     Options:
     - {fileID: 0}
     - {fileID: 0}
@@ -2586,7 +2589,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0421\u0442\u0430\u0440\u0442"
+  m_Text: "\u041D\u043E\u0432\u0430\u044F \u0438\u0433\u0440\u0430"
 --- !u!222 &1761755362
 CanvasRenderer:
   m_ObjectHideFlags: 0

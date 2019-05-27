@@ -134,7 +134,7 @@ namespace Invector.CharacterController
         protected virtual void ExitGameInput()
         {
             // just a example to quit the application 
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (Input.GetKeyDown(KeyCode.Escape) && false)
             {
                 if (!Cursor.visible)
                     Cursor.visible = true;
