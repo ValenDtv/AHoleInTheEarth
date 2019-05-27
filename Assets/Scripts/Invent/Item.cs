@@ -236,6 +236,7 @@ public class Item : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerEnterH
                     //Destroy(GameObject.Find("Gear2"));
                     PlayerPrefs.SetString("Gear1Object", "IsNotHave");
                     PlayerPrefs.SetString("Gear2Object", "IsNotHave");
+                    PlayerPrefs.Save();
                     isCombined = true;
                     break;
                 }     
@@ -251,6 +252,7 @@ public class Item : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerEnterH
 
                     PlayerPrefs.SetString("Key1Object", "IsNotHave");
                     PlayerPrefs.SetString("Key2Object", "IsNotHave");
+                    PlayerPrefs.Save();
                     isCombined = true;
                     break;
                 }

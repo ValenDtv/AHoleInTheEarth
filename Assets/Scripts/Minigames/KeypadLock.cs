@@ -38,6 +38,7 @@ public class KeypadLock : MonoBehaviour
     {
         isOpen = true;
         PlayerPrefs.SetString("KeyPadIsOpen", "yes");
+        PlayerPrefs.Save();
         StartCoroutine(sp.Say("Дверь открылась, отлично.", 4));
     }
 

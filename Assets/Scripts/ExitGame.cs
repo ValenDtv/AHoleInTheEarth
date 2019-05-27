@@ -17,6 +17,7 @@ public class ExitGame : MonoBehaviour
     public void Quit()
     {
         PlayerPrefs.SetString("PlayerPosition", player.transform.localPosition.ToString());
+        PlayerPrefs.Save();
         //PlayerPrefs.SetString("PlayerRotation", player.transform.position.ToString());
         Application.Quit();
         // убивает процесс Юнити
