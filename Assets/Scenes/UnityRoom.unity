@@ -4552,7 +4552,7 @@ GameObject:
   - component: {fileID: 603020623}
   - component: {fileID: 603020622}
   m_Layer: 5
-  m_Name: Text
+  m_Name: CreditsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4574,7 +4574,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -546}
+  m_AnchoredPosition: {x: 0, y: -472}
   m_SizeDelta: {x: 361.2, y: 513.1}
   m_Pivot: {x: 0.5, y: 0.4999999}
 --- !u!114 &603020622
@@ -7724,7 +7724,7 @@ GameObject:
   - component: {fileID: 1007406230}
   - component: {fileID: 1007406229}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Credits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27477,13 +27477,14 @@ GameObject:
   - component: {fileID: 1812644139}
   - component: {fileID: 1812644138}
   - component: {fileID: 1812644137}
+  - component: {fileID: 1812644141}
   m_Layer: 5
   m_Name: CanvasTit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1812644137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27530,7 +27531,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1812644136}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
@@ -27564,6 +27565,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1812644141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812644136}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c198b852f760a3d40aee2df46da82c7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Text: {fileID: 603020620}
 --- !u!1 &1819762461
 GameObject:
   m_ObjectHideFlags: 0

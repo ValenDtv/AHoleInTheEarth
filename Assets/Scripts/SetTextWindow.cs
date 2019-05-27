@@ -17,15 +17,21 @@ public class SetTextWindow : MonoBehaviour
     {
         Collector = GameObjectCollector.Collector.GetComponent<GameObjectCollector>();
         canvastxt = Collector.GameObjects.Canvastxt;
-        Settext(@"W,A,S,D - движение вперед/влево/назад/вправо
-E - использование предмета
-P - пауза в игре
-Tab - меню инвентаря
-    Нажатие правой кнопки мыши по предмету открывает меню взаимодействия с ним.
-    Для того, что применить предмет из ивентаря к объекту на локации, нужно сначала взять его в руки.
-    В инвентаре для перетаскивание предмета на предмет позволяет
-    получать их совмещение(если предметы подходят друг к другу)
-    ");
+        Collector.GameObjects.ThirdPersonCamera.GetComponent<Activate>().DisableInteraction = true;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        CursorControl.disableInventory = true;
+        CursorControl.timing = 0f;
+        //Collector.GameObjects.Player.SetActive(true);
+        //        Settext(@"W,A,S,D - движение вперед/влево/назад/вправо
+        //E - использование предмета
+        //P - пауза в игре
+        //Tab - меню инвентаря
+        //    Нажатие правой кнопки мыши по предмету открывает меню взаимодействия с ним.
+        //    Для того, что применить предмет из ивентаря к объекту на локации, нужно сначала взять его в руки.
+        //    В инвентаре для перетаскивание предмета на предмет позволяет
+        //    получать их совмещение(если предметы подходят друг к другу)
+        //    ");
     }
     void Settext(string str)
     {
@@ -50,6 +56,11 @@ Tab - меню инвентаря
     public void ButtonOKClick()
     {
         canvastxt.GetComponent<Canvas>().enabled = false;
+        Collector.GameObjects.ThirdPersonCamera.GetComponent<Activate>().DisableInteraction = false;
+        Collector.GameObjects.Player.SetActive(true);
         Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        CursorControl.disableInventory = false;
+        CursorControl.timing = 1f;
     }
 }
