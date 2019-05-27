@@ -43,7 +43,8 @@ public class Disappearance : MonoBehaviour
     public void Show()
     {
         PlayerHand.color = new Color(PlayerHand.color.r, PlayerHand.color.b, PlayerHand.color.g, 0.390625f);
-        ItemInHand.color = new Color(ItemInHand.color.r, ItemInHand.color.b, ItemInHand.color.g, 1);
+        //PlayerHand.color = new Color(PlayerHand.color.r, PlayerHand.color.b, PlayerHand.color.g, 1f);
+        ItemInHand.color = new Color(ItemInHand.color.r, ItemInHand.color.b, ItemInHand.color.g, 1f);
         showtime = 2f;
     }
 }
