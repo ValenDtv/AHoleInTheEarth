@@ -240,9 +240,10 @@ public class InteractiveDialogue : MonoBehaviour
             float y = (p_transform.rotation.eulerAngles.y) * Mathf.Deg2Rad;
             float center_x = p_transform.position.x + distance / 2 * Mathf.Sin(y);
             float center_z = p_transform.position.z + distance / 2 * Mathf.Cos(y);
-            Vector3 vector = new Vector3(center_x + (characters[ch_num].character.transform.position.x - center_x) * 0.4f,
-                    characters[ch_num].character.transform.position.y + 1.5f,
-                    center_z + (characters[ch_num].character.transform.position.z - center_z) * 0.4f);
+            Vector3 vector = new Vector3(center_x - (characters[ch_num].character.transform.position.x + center_x) * 0.4f,
+                    //characters[ch_num].character.transform.position.y + 1.5f,
+                    characters[ch_num].character.transform.position.y + 3.5f,
+                    center_z - (characters[ch_num].character.transform.position.z + center_z) * 0.4f);
             camera.transform.position = vector;
             camera.transform.LookAt(GameObject.Find(characters[ch_num].character.name + ":Head").transform);
             //Заполнение словаря с камерами

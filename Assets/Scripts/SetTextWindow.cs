@@ -62,5 +62,9 @@ Tab - меню инвентаря
         Cursor.lockState = CursorLockMode.Locked;
         CursorControl.disableInventory = false;
         CursorControl.timing = 1f;
+        PlayerPrefs.SetString("Instruction", "viewed");
+        PlayerPrefs.SetString("UnityRoomFirstAppearance", "viewed");
+        ///GameObject.Find("ojidanie").SendMessage("Start_dialog");
+        GameObject.Find("DialogueEventManager").GetComponent<EventDialogue>().ToActivate(0);
     }
 }

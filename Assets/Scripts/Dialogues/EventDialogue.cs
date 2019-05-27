@@ -164,4 +164,9 @@ public class EventDialogue : MonoBehaviour
         }
         board.text = "";
     }
+
+    public void ToActivate(int num)
+    {
+        TimeEvents[num].Active = true;
+    }
 }
