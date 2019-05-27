@@ -48,7 +48,10 @@ public class SaveLoadScript : MonoBehaviour
                     if (PlayerPrefs.GetString("CurrentScene") == sceneName)
                         checkPlayerPosition();
                     else
+                    {
                         PlayerPrefs.SetString("CurrentScene", SceneManager.GetActiveScene().name);
+                        PlayerPrefs.Save();
+                    }
                 break;
             case "L2_1":
                 checkItems(L2_1Items);
@@ -56,7 +59,10 @@ public class SaveLoadScript : MonoBehaviour
                     if (PlayerPrefs.GetString("CurrentScene") == sceneName)
                         checkPlayerPosition();
                     else
+                    {
                         PlayerPrefs.SetString("CurrentScene", SceneManager.GetActiveScene().name);
+                        PlayerPrefs.Save();
+                    }
                 checkKeyPad();
                 checkL2_1Cutscene();
                 checkEva();
@@ -67,7 +73,10 @@ public class SaveLoadScript : MonoBehaviour
                     if (PlayerPrefs.GetString("CurrentScene") == sceneName)
                         checkPlayerPosition();
                     else
+                    {
                         PlayerPrefs.SetString("CurrentScene", SceneManager.GetActiveScene().name);
+                        PlayerPrefs.Save();
+                    }
                 checkLift();
                 break;
         }
@@ -152,8 +161,12 @@ public class SaveLoadScript : MonoBehaviour
         if (PlayerPrefs.HasKey("UnityRoomFirstAppearance"))
             if (PlayerPrefs.GetString("UnityRoomFirstAppearance") == "viewed")
             {
-                Collector.GameObjects.UR_Cutscene_timeline.SetActive(false);
-                Collector.GameObjects.UR_Cutscene_camera.SetActive(false);
+                //Collector.GameObjects.UR_Cutscene_timeline.SetActive(false);
+                //Collector.GameObjects.UR_Cutscene_camera.SetActive(false);
+                GameObject.Find("cutscene_sofa").SetActive(false);
+                GameObject.Find("cutscene_sofa_dialogue").SetActive(false);
+                Collector.GameObjects.Player.SetActive(true);
+                Collector.GameObjects.ThirdPersonCamera.SetActive(true);
                 if (PlayerPrefs.HasKey("UnityRoomAfterMemories"))
                     if (PlayerPrefs.GetString("UnityRoomAfterMemories") == "viewed")
                     {

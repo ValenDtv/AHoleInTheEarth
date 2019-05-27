@@ -39,6 +39,7 @@ public class LiftPanelScript : MonoBehaviour
                 Inventary.DeleteItem("Key");
                 PlayerPrefs.SetString("Key", "IsNotHave");
                 PlayerPrefs.SetString("LiftPanelOpen", "yes");
+                PlayerPrefs.Save();
                 StartCoroutine(sp.Say("Есть! Получилось открыть!", 4));
             }
             else

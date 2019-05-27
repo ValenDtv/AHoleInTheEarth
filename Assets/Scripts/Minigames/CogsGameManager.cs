@@ -62,5 +62,6 @@ public class CogsGameManager : MonoBehaviour
         Destroy(GameObject.Find("Gears"));
         PlayerPrefs.SetString("Gears", "IsNotHave");
         CursorControl.disableInventory = false;
+        PlayerPrefs.Save();
     }
 }
