@@ -33,6 +33,7 @@ public class GameObjects
     public GameObject CutsceneSofa;
     public GameObject EventDialogManager;
     public GameObject sister_dialog;
+    public GameObject cutscene_sofa_dialogue;
 
 
     public GameObject[] Options = new GameObject[4];

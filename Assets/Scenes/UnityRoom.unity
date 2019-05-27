@@ -31102,6 +31102,7 @@ MonoBehaviour:
     CutsceneSofa: {fileID: 439594939}
     EventDialogManager: {fileID: 7776441829654046487}
     sister_dialog: {fileID: 471816306}
+    cutscene_sofa_dialogue: {fileID: 1424480127}
     Options:
     - {fileID: 352954908}
     - {fileID: 968751004}

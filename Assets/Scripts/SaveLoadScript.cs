@@ -193,6 +193,7 @@ public class SaveLoadScript : MonoBehaviour
                 //Collector.GameObjects.UR_Cutscene_camera.SetActive(false);
                 //GameObject.Find("cutscene_sofa").SetActive(false);
                 Collector.GameObjects.CutsceneSofa.SetActive(false);
+                Collector.GameObjects.cutscene_sofa_dialogue.SetActive(false);
                 //GameObject.Find("cutscene_sofa_dialogue").SetActive(false);
                 Collector.GameObjects.Player.SetActive(true);
                 Collector.GameObjects.ThirdPersonCamera.SetActive(true);
