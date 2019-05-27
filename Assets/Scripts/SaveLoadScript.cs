@@ -160,6 +160,7 @@ public class SaveLoadScript : MonoBehaviour
 
     private void checkUnityRoomCutscene()
     {
+        Inventary.ItemInHand = "";
         if (PlayerPrefs.HasKey("UnityRoomFirstAppearance"))
             if (PlayerPrefs.GetString("UnityRoomFirstAppearance") == "viewed")
             {
@@ -173,6 +174,7 @@ public class SaveLoadScript : MonoBehaviour
                 Collector.GameObjects.sister_dialog.transform.Rotate(new Vector3(0, 145, 0));
                 // GameObject.Find("DialogueEventManager").GetComponent<EventDialogue>().ToActivate(0);
                 Collector.GameObjects.EventDialogManager.GetComponent<EventDialogue>().ToActivate(0);
+                Inventary.ItemInHand = "";
                 if (PlayerPrefs.HasKey("UnityRoomAfterMemories"))
                     if (PlayerPrefs.GetString("UnityRoomAfterMemories") == "viewed")
                     {
