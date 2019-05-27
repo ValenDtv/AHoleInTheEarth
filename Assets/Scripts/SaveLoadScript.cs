@@ -165,11 +165,14 @@ public class SaveLoadScript : MonoBehaviour
             {
                 //Collector.GameObjects.UR_Cutscene_timeline.SetActive(false);
                 //Collector.GameObjects.UR_Cutscene_camera.SetActive(false);
-                GameObject.Find("cutscene_sofa").SetActive(false);
-                GameObject.Find("cutscene_sofa_dialogue").SetActive(false);
+                //GameObject.Find("cutscene_sofa").SetActive(false);
+                Collector.GameObjects.CutsceneSofa.SetActive(false);
+                //GameObject.Find("cutscene_sofa_dialogue").SetActive(false);
                 Collector.GameObjects.Player.SetActive(true);
                 Collector.GameObjects.ThirdPersonCamera.SetActive(true);
-                GameObject.Find("DialogueEventManager").GetComponent<EventDialogue>().ToActivate(0);
+                Collector.GameObjects.sister_dialog.transform.Rotate(new Vector3(0, 145, 0));
+                // GameObject.Find("DialogueEventManager").GetComponent<EventDialogue>().ToActivate(0);
+                Collector.GameObjects.EventDialogManager.GetComponent<EventDialogue>().ToActivate(0);
                 if (PlayerPrefs.HasKey("UnityRoomAfterMemories"))
                     if (PlayerPrefs.GetString("UnityRoomAfterMemories") == "viewed")
                     {

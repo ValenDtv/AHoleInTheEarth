@@ -30,6 +30,9 @@ public class GameObjects
     public GameObject UR_Cutscene_camera;
     public GameObject Bench;
     public GameObject Tit;
+    public GameObject CutsceneSofa;
+    public GameObject EventDialogManager;
+    public GameObject sister_dialog;
 
 
     public GameObject[] Options = new GameObject[4];
