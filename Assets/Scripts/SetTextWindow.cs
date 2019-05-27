@@ -65,6 +65,7 @@ Tab - меню инвентаря
         CursorControl.timing = 1f;
         PlayerPrefs.SetString("Instruction", "viewed");
         PlayerPrefs.SetString("UnityRoomFirstAppearance", "viewed");
+        PlayerPrefs.Save();
         ///GameObject.Find("ojidanie").SendMessage("Start_dialog");
         GameObject.Find("DialogueEventManager").GetComponent<EventDialogue>().ToActivate(0);
         Collector.GameObjects.Player.SetActive(true);

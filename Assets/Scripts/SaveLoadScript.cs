@@ -51,8 +51,15 @@ public class SaveLoadScript : MonoBehaviour
                         PlayerPrefs.Save();
                     }
                 else
+                {
                     if (PlayerPrefs.GetString("CurrentScene") == sceneName)
                         checkPlayerPosition();
+                    else
+                    {
+                        PlayerPrefs.SetString("CurrentScene", SceneManager.GetActiveScene().name);
+                        PlayerPrefs.Save();
+                    }
+                }
                 break;
             case "L2_1":
                 checkItems(L2_1Items);
@@ -62,8 +69,20 @@ public class SaveLoadScript : MonoBehaviour
                     PlayerPrefs.Save();
                 }
                 else
+                {
                     if (PlayerPrefs.GetString("CurrentScene") == sceneName)
-                    checkPlayerPosition();
+                            checkPlayerPosition();
+                    else
+                    {
+                        if (PlayerPrefs.GetString("CurrentScene") == "L2_2")
+                        {
+                            Collector.GameObjects.Player.transform.localPosition = new Vector3(-2.444761f, 5.710278f, 4.018018f);
+                            Collector.GameObjects.Player.transform.Rotate(0, -3.424f * Mathf.Rad2Deg - 90, 0);
+                        }
+                        PlayerPrefs.SetString("CurrentScene", SceneManager.GetActiveScene().name);
+                        PlayerPrefs.Save();
+                    }
+                }
                 checkKeyPad();
                 checkL2_1Cutscene();
                 checkEva();
@@ -76,9 +95,15 @@ public class SaveLoadScript : MonoBehaviour
                     PlayerPrefs.SetString("CurrentScene", SceneManager.GetActiveScene().name);
                     PlayerPrefs.Save();
                 }
-                else
+                {
                     if (PlayerPrefs.GetString("CurrentScene") == sceneName)
-                    checkPlayerPosition();
+                        checkPlayerPosition();
+                    else
+                    {
+                        PlayerPrefs.SetString("CurrentScene", SceneManager.GetActiveScene().name);
+                        PlayerPrefs.Save();
+                    }
+                }
                 checkLift();
                 break;
         }
@@ -189,7 +214,7 @@ public class SaveLoadScript : MonoBehaviour
         if (PlayerPrefs.HasKey("Instruction"))
             if (PlayerPrefs.GetString("Instruction") == "viewed")
             {
-               // Collector.GameObjects.Canvastxt.SetActive(false);
+               Collector.GameObjects.Canvastxt.SetActive(false);
             }
     }
 
