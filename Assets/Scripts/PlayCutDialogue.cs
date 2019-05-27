@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayCutDialogue : MonoBehaviour
 {
     private CutsceneDialogue cd;
+    public string levelName = "L2_1";
+    private AsyncOperation async;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +28,13 @@ public class PlayCutDialogue : MonoBehaviour
     void Update()
     {
         
+    }
+
+    IEnumerator LoadAsync()
+    {
+        async = SceneManager.LoadSceneAsync(levelName);
+        yield return true;
+        async.allowSceneActivation = false;
     }
 
     private IEnumerator PlayD()
@@ -52,6 +62,9 @@ public class PlayCutDialogue : MonoBehaviour
         yield return cd.Next_speech(3);
         yield return cd.Next_speech(3);
         yield return cd.Next_speech(3);
+        //LoadAsync();
+        yield return new WaitForSeconds(120);
+        Application.LoadLevel(levelName);
         yield break;
     }
 }
