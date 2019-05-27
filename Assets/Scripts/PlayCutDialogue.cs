@@ -34,7 +34,7 @@ public class PlayCutDialogue : MonoBehaviour
     {
         async = SceneManager.LoadSceneAsync(levelName);
         yield return true;
-        async.allowSceneActivation = true;
+        async.allowSceneActivation = false;
     }
 
     private IEnumerator PlayD()

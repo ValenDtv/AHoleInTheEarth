@@ -9965,7 +9965,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1124388000}
-  m_LocalRotation: {x: -0.08094022, y: -0.121597484, z: -0.6376258, w: 0.7563703}
+  m_LocalRotation: {x: -0.080940224, y: -0.12159749, z: -0.6376258, w: 0.75637037}
   m_LocalPosition: {x: -0.00000002538794, y: 0.2878293, z: 0.000000033412178}
   m_LocalScale: {x: 1.0000001, y: 0.99999964, z: 0.9999999}
   m_Children:
@@ -9999,7 +9999,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1124388004}
-  m_LocalRotation: {x: 0.07826949, y: -0.044577513, z: -0.027629234, w: 0.9955518}
+  m_LocalRotation: {x: 0.0817947, y: -0.036153417, z: -0.07165285, w: 0.99341255}
   m_LocalPosition: {x: 0.0000000020954773, y: 0.12885074, z: 0.000000044703512}
   m_LocalScale: {x: 0.9999999, y: 1.0000001, z: 1.0000001}
   m_Children:
@@ -10043,8 +10043,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1124388010}
-  m_LocalRotation: {x: -0.25878644, y: 0.12660977, z: 0.03734365, w: 0.95687246}
-  m_LocalPosition: {x: -1.3638506, y: 1.8648247, z: -6.127146}
+  m_LocalRotation: {x: -0.26802745, y: 0.12510057, z: 0.0383646, w: 0.9544838}
+  m_LocalPosition: {x: -1.3639824, y: 1.8639028, z: -6.129431}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1124290752}
@@ -10060,7 +10060,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1124388012}
-  m_LocalRotation: {x: -0.049686126, y: 0.33672628, z: -0.0090598455, w: 0.9402472}
+  m_LocalRotation: {x: 0.01311673, y: 0.32562953, z: -0.0048362906, w: 0.94539416}
   m_LocalPosition: {x: 9.826532e-15, y: 0.056972772, z: 0.0241401}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -10461,7 +10461,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1124388066}
-  m_LocalRotation: {x: 0.025506016, y: -0.0015223024, z: 0.0037067528, w: 0.99966663}
+  m_LocalRotation: {x: 0.023921948, y: -0.0016807016, z: 0.004072502, w: 0.9997041}
   m_LocalPosition: {x: -2.1448053e-13, y: 0.1455582, z: -0.0000000030267988}
   m_LocalScale: {x: 1, y: 0.9999996, z: 0.99999964}
   m_Children:
@@ -12178,7 +12178,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1124385620}
-  m_LocalRotation: {x: 0.07697987, y: -0, z: -0, w: 0.99703264}
+  m_LocalRotation: {x: 0.096943915, y: -0, z: -0, w: 0.9952899}
   m_LocalPosition: {x: 3.2596396e-14, y: 0.1132121, z: -0.0000000020954756}
   m_LocalScale: {x: 1, y: 0.99999994, z: 0.99999994}
   m_Children:
@@ -30531,6 +30531,7 @@ GameObject:
   - component: {fileID: 2107061845}
   - component: {fileID: 2107061846}
   - component: {fileID: 2107061847}
+  - component: {fileID: 2107061848}
   m_Layer: 0
   m_Name: cutscene_sofa_person
   m_TagString: Untagged
@@ -30593,6 +30594,25 @@ MonoBehaviour:
   Brightness: 0
   Contrast: 0.075
   Sharpness: 0
+--- !u!320 &2107061848
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107061844}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 0a6c80f2ca503584e86411bcff36613c, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 114202960604377546, guid: 0a6c80f2ca503584e86411bcff36613c, type: 2}
+    value: {fileID: 1951382452}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &2107738703
 GameObject:
   m_ObjectHideFlags: 0
