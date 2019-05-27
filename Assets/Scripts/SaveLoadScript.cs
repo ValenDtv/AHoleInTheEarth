@@ -28,6 +28,7 @@ public class SaveLoadScript : MonoBehaviour
     void Update()
     {
 
+        
     }
 
     private void CheckSave(string sceneName)
@@ -66,6 +67,7 @@ public class SaveLoadScript : MonoBehaviour
                 checkKeyPad();
                 checkL2_1Cutscene();
                 checkEva();
+                checkInstruction();
                 break;
             case "L2_2":
                 checkItems(L2_2Items);
@@ -167,12 +169,22 @@ public class SaveLoadScript : MonoBehaviour
                 GameObject.Find("cutscene_sofa_dialogue").SetActive(false);
                 Collector.GameObjects.Player.SetActive(true);
                 Collector.GameObjects.ThirdPersonCamera.SetActive(true);
+                GameObject.Find("DialogueEventManager").GetComponent<EventDialogue>().ToActivate(0);
                 if (PlayerPrefs.HasKey("UnityRoomAfterMemories"))
                     if (PlayerPrefs.GetString("UnityRoomAfterMemories") == "viewed")
                     {
                         //выключить катсцену
                     }
 
+            }
+    }
+
+    private void checkInstruction()
+    {
+        if (PlayerPrefs.HasKey("Instruction"))
+            if (PlayerPrefs.GetString("Instruction") == "viewed")
+            {
+               // Collector.GameObjects.Canvastxt.SetActive(false);
             }
     }
 
