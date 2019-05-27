@@ -3116,7 +3116,7 @@ PlayableDirector:
   m_PlayableAsset: {fileID: 11400000, guid: f79b27bad41cea64d94a032d41265d8a, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
-  m_DirectorUpdateMode: 1
+  m_DirectorUpdateMode: 2
   m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: 114754283194091180, guid: f79b27bad41cea64d94a032d41265d8a, type: 2}
@@ -20720,7 +20720,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.9946901, y: 1}
-  m_AnchoredPosition: {x: 4.5006104, y: -0.0016479492}
+  m_AnchoredPosition: {x: 4.5007324, y: -0.0017089844}
   m_SizeDelta: {x: 8, y: 1.3099976}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1550567007
