@@ -127,7 +127,7 @@ public class CutsceneDialogue : MonoBehaviour
         {
             yield return null;
             time_passed += Time.deltaTime;
-            //if (MouseButtonPressed || time_passed >= time) break;
+            if (MouseButtonPressed || time_passed >= time) break;
         }
     }
 

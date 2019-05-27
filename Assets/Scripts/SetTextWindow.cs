@@ -18,7 +18,6 @@ public class SetTextWindow : MonoBehaviour
         Collector = GameObjectCollector.Collector.GetComponent<GameObjectCollector>();
         canvastxt = Collector.GameObjects.Canvastxt;
         Collector.GameObjects.ThirdPersonCamera.GetComponent<Activate>().DisableInteraction = true;
-        Collector.GameObjects.Player.SetActive(false);
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         CursorControl.disableInventory = true;
@@ -67,6 +66,5 @@ Tab - меню инвентаря
         PlayerPrefs.SetString("UnityRoomFirstAppearance", "viewed");
         ///GameObject.Find("ojidanie").SendMessage("Start_dialog");
         GameObject.Find("DialogueEventManager").GetComponent<EventDialogue>().ToActivate(0);
-        Collector.GameObjects.Player.SetActive(true);
     }
 }
