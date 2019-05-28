@@ -2469,7 +2469,7 @@ Light:
   m_GameObject: {fileID: 332735718}
   m_Enabled: 1
   serializedVersion: 8
-  m_Type: 2
+  m_Type: 3
   m_Color: {r: 0.9339623, g: 0.832287, b: 0.6123621, a: 1}
   m_Intensity: 0.42
   m_Range: 7
@@ -2490,7 +2490,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0.5
@@ -17300,7 +17300,7 @@ Light:
   m_GameObject: {fileID: 1204586475}
   m_Enabled: 1
   serializedVersion: 8
-  m_Type: 2
+  m_Type: 3
   m_Color: {r: 0.9339623, g: 0.832287, b: 0.6123621, a: 1}
   m_Intensity: 0.1
   m_Range: 7
@@ -17321,7 +17321,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0.5
@@ -29771,7 +29771,7 @@ Light:
   m_GameObject: {fileID: 1969821813}
   m_Enabled: 1
   serializedVersion: 8
-  m_Type: 2
+  m_Type: 3
   m_Color: {r: 0.9339623, g: 0.832287, b: 0.6123621, a: 1}
   m_Intensity: 0.2
   m_Range: 7
@@ -29792,7 +29792,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0.5
@@ -30458,7 +30458,7 @@ Light:
   m_GameObject: {fileID: 2072442869}
   m_Enabled: 1
   serializedVersion: 8
-  m_Type: 2
+  m_Type: 3
   m_Color: {r: 0.9339623, g: 0.832287, b: 0.6123621, a: 1}
   m_Intensity: 0.13
   m_Range: 7
@@ -30479,7 +30479,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0.5
