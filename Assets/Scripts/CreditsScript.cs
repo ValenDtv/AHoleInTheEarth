@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -27,7 +28,11 @@ public class CreditsScript : MonoBehaviour
         {
             Text.transform.Translate(Vector3.up * 30 * Time.deltaTime);
                     if (Text.transform.position.y > Screen.height + Screen.height/2)
+					{
+						PlayerPrefs.DeleteAll();
+						PlayerPrefs.Save();
                         SceneManager.LoadScene("MainMenu");
+					}
         }
         
     }
