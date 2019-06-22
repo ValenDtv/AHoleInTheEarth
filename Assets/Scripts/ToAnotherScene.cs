@@ -9,17 +9,19 @@ public class ToAnotherScene : MonoBehaviour
     public KeypadLock keypad;
     private GameObjectCollector Collector;
     CommentDialogue comment;
+    private string CurrentScene;
 
     // Start is called before the first frame update
     void Start()
     {
         comment = this.gameObject.GetComponent<CommentDialogue>();
         Collector = GameObjectCollector.Collector.GetComponent<GameObjectCollector>();
+        CurrentScene = SceneManager.GetActiveScene().name;
     }
 
     public void Action()
     {
-        if (SceneManager.GetActiveScene().name == "L2_1")
+        if (CurrentScene == "L2_1")
             if (keypad.isOpen)
                 Load(SceneName);
             else
